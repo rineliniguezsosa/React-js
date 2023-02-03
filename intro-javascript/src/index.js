@@ -10,5 +10,6 @@ const persona = {
 }
 
 const persona2 = {...persona}
+persona2.apellido = 'sosa';
 
 console.log(persona.nombre);
