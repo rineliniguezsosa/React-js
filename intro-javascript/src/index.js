@@ -9,5 +9,6 @@ if(true){
     let dado = 6; //la variable dado esta en el alcance de la funcion
     console.log(dado) //6
 }
+console.log(dado)
 console.log(pi);
 console.log(apellido)
