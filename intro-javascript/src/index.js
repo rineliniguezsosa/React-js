@@ -12,4 +12,5 @@ const persona = {
 const persona2 = {...persona}
 persona2.apellido = 'sosa';
 
-console.log(persona.nombre);
+console.log(persona2)
+console.log(persona);
