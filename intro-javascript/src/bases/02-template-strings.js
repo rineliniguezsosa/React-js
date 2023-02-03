@@ -5,3 +5,5 @@ const apellido = 'iñiguez';
 const getsaludo = (nombre) =>{
     return `Hola ${nombre}`
 }
+
+console.log(`hey ${getsaludo(nombre)}`)
