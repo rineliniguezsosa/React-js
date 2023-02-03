@@ -9,4 +9,6 @@ const persona = {
     }
 }
 
+const persona2 = {...persona}
+
 console.log(persona.nombre);
