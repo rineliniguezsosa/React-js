@@ -8,6 +8,8 @@ const heroe = {
 const {nombre,edad,clave} = heroe;
 console.log(nombre)
 
-const retornapersona = () =>{
-    
+const retornapersona = ({nombre}) =>{
+    console.log(nombre)
 }
+
+console.log(retornapersona(heroe))
