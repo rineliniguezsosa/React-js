@@ -4,3 +4,6 @@ const heroe = {
     edad:35,
     clave:'iron man'
 }
+
+const {nombre,edad,clave} = heroe;
+console.log(nombre)
