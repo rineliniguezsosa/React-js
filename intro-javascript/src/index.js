@@ -7,3 +7,7 @@ const heroe = {
 
 const {nombre,edad,clave} = heroe;
 console.log(nombre)
+
+const retornapersona = () =>{
+    
+}
