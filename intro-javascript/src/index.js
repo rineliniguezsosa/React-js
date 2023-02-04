@@ -5,8 +5,8 @@ const heroe = {
     clave:'iron man'
 }
 
-const {nombre,edad,clave} = heroe;
-console.log(nombre)
+//const {nombre,edad,clave} = heroe;
+//console.log(nombre)
 
 const retornapersona = ({nombre}) =>{
     console.log(nombre)
