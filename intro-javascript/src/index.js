@@ -22,3 +22,4 @@ const getheroebyid = (id) =>{
 }
 
 getheroebyid(4)
+    .then(hero => console.log(hero))
