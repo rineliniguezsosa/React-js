@@ -6,5 +6,5 @@ import './estilos.css'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root')) //REACT 18 YA  NO ES POSIBLE HACER EL RENDER DIRECTAMENTE
-root.render(<Firstapp></Firstapp>) //REACT 18
+root.render(<Firstapp name="rinel" edad={27}></Firstapp>) //REACT 18
 
