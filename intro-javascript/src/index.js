@@ -6,3 +6,7 @@ const findhero = (id) => {
 
 const datos = findhero(5);
 console.log(datos)
+
+const findowners = () =>{
+    
+}
