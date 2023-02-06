@@ -15,7 +15,8 @@ promesa
 const getheroebyid = () =>{
     return new Promise((resolve, reject) => { 
         setTimeout(() => {
-            
+            const myhero = findhero(4);
+            resolve(myhero)
         }, 2000);
     })
 }
