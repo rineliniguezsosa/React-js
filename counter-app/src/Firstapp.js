@@ -14,3 +14,7 @@ export function Firstapp({name,edad}) {
     </>
   )
 }
+
+Firstapp.propTypes = {
+    
+}
