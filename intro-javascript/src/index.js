@@ -6,3 +6,8 @@ const promesa = new Promise((resolve,reject)=>{
         resolve(myhero)
     },2000);
 })
+
+promesa
+    .then(dato =>{
+        console.log(dato);
+    })
