@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 
 export function Firstapp({name,edad}) {
 //   const obj = {
