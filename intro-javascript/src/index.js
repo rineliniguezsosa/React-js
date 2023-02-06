@@ -20,3 +20,5 @@ const getheroebyid = () =>{
         }, 2000);
     })
 }
+
+getheroebyid(4)
