@@ -11,3 +11,7 @@ promesa
     .then(dato =>{
         console.log(dato);
     })
+
+const getheroebyid = () =>{
+    
+}
