@@ -13,5 +13,7 @@ promesa
     })
 
 const getheroebyid = () =>{
-    
+    return new Promise((resolve, reject) => { 
+
+    })
 }
