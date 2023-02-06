@@ -5,6 +5,6 @@ import { Firstapp } from './Firstapp';
 
 
 
-ReactDOM.render(<Firstapp></Firstapp>,document.getElementById('root'))
-
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<Firstapp></Firstapp>)
 
