@@ -7,6 +7,8 @@ const findhero = (id) => {
 const datos = findhero(5);
 console.log(datos)
 
-const findowners = () =>{
-    
+const findowners = (name) =>{
+    return heroes.filter((owner)=> owner.owner === name)
 }
+
+console.log(findowners('DC'))
