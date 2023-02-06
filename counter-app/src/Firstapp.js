@@ -16,5 +16,6 @@ export function Firstapp({name,edad}) {
 }
 
 Firstapp.propTypes = {
-    
+    name:PropTypes.string,
+    edad:PropTypes.number
 }
