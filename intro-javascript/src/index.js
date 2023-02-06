@@ -12,10 +12,10 @@ promesa
         console.log(dato);
     })
 
-const getheroebyid = () =>{
+const getheroebyid = (id) =>{
     return new Promise((resolve, reject) => { 
         setTimeout(() => {
-            const myhero = findhero(4);
+            const myhero = findhero(id);
             resolve(myhero)
         }, 2000);
     })
