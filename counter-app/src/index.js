@@ -5,6 +5,6 @@ import { Firstapp } from './Firstapp';
 
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<Firstapp></Firstapp>)
+const root = ReactDOM.createRoot(document.getElementById('root')) //REACT 18 YA  NO ES POSIBLE HACER EL RENDER DIRECTAMENTE
+root.render(<Firstapp></Firstapp>) //REACT 18
 
