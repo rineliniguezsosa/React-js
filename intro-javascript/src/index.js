@@ -15,11 +15,14 @@ promesa
 const getheroebyid = (id) =>{
     return new Promise((resolve, reject) => { 
         setTimeout(() => {
+            
             const myhero = findhero(id);
-            resolve(myhero)
+            myhero ? resolve(myhero) : reject('No existe el id')
+            
         }, 2000);
     })
 }
 
-getheroebyid(4)
+getheroebyid(7)
     .then(hero => console.log(hero))
+    .catch(error => console.log(error))
