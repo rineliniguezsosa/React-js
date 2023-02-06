@@ -5,6 +5,6 @@ import { Firstapp } from './Firstapp';
 
 
 
-ReactDOM.render(<App></App>,document.getElementById('root'))
+ReactDOM.render(<Firstapp></Firstapp>,document.getElementById('root'))
 
 
