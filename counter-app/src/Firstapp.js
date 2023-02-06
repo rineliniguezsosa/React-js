@@ -19,3 +19,8 @@ Firstapp.propTypes = {
     name:PropTypes.string,
     edad:PropTypes.number
 }
+
+Firstapp.defaultProps = {
+    name:'rinel iñiguez sosa',
+    edad:23,
+}
