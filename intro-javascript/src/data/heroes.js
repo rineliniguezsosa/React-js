@@ -4,7 +4,7 @@
 //     owner:string,
 // }
 
-// export const heroes:Heroe = [
+// export const heroes:Heroe[] = [
 //     {
 //         id: 1,
 //         name: 'Batman',
