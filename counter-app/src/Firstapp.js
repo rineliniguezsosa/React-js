@@ -8,7 +8,7 @@ export function Firstapp() {
   return (
     <>
         <h1>Rinel</h1>
-        <p>{JSON.stringify(obj)}</p>
+        {/* <p>{JSON.stringify(obj)}</p> */}
     </>
   )
 }
