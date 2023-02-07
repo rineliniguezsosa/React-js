@@ -7,7 +7,7 @@ describe('pruebas en el archivo 05-funciones.js', () => {
             uid:'123',
             username:nombre
         }
-
+        const nombre = 'rinel';
         const result = getusuario()
     })
 });
