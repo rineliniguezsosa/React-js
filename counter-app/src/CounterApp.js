@@ -6,7 +6,7 @@ export function CounterApp({value}) {
         <h1>CounterApp</h1>
         <h2>{value}</h2>   
 
-        <button>+1</button> 
+        <button onClick={HandleAdd}>+1</button> 
     </>
   )
 }
