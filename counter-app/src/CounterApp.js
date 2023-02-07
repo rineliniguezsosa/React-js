@@ -15,7 +15,7 @@ export function CounterApp({value}) {
   }
 
   const handlereset = () =>{
-    
+    setValue(()=> value)
   }
   return (
     <>
