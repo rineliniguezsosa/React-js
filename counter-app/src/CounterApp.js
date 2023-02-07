@@ -15,7 +15,7 @@ export function CounterApp({value}) {
         <h2>{myvalue}</h2>   
 
         <button onClick={HandleAdd}>+1</button> 
-        <button>-1</button>
+        <button onClick={handlesubstract}>-1</button>
         <button>reset</button>
     </>
   )
