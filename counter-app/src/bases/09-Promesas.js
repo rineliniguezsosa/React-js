@@ -12,7 +12,7 @@ promesa
         console.log(dato);
     })
 
-const getheroebyid = (id) =>{
+export const getheroebyid = (id) =>{
     return new Promise((resolve, reject) => { 
         setTimeout(() => {
             
