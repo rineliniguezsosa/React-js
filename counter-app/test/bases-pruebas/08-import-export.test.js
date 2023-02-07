@@ -24,4 +24,8 @@ describe('aplicando pruebas al archivo 08-import-export.js', () => {
         ])
     })
     
+    test('el metodo findowners debe de retornar una longitud igual a 3',()=>{
+        const myheroesdc = findowners('DC')
+        expect(myheroesdc.length).toBeGreaterThanOrEqual(3);
+    })
  })
