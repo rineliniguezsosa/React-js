@@ -3,8 +3,11 @@ import React, { useState } from 'react';
 
 
 export function CounterApp({value}) {
-  const HandleAdd = () =>{
 
+  const [myvalue, setValue] = useState(value)
+
+  const HandleAdd = () =>{
+    
   }
   return (
     <>
