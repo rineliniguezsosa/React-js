@@ -10,7 +10,7 @@ const datos = findhero(5);
 // const findowners = (name:string):Heroe[] =>{
 //     return heroes.filter((owner)=> owner.owner === name)
 // }
-const findowners = (name) =>{
+export const findowners = (name) =>{
     return heroes.filter((owner)=> owner.owner === name)
 }
 
