@@ -1,4 +1,4 @@
-const getusuario = (nombre) =>{
+export const getusuario = (nombre) =>{
     return {
         uid:'123',
         username:nombre
