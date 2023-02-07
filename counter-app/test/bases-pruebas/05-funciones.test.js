@@ -8,6 +8,6 @@ describe('pruebas en el archivo 05-funciones.js', () => {
             username:nombre
         }
         const nombre = 'rinel';
-        const result = getusuario()
+        const result = getusuario(nombre)
     })
 });
