@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types'
 
 export function CounterApp({value}) {
+  const HandleAdd = () =>{
+    
+  }
   return (
     <>
         <h1>CounterApp</h1>
