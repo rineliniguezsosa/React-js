@@ -7,7 +7,7 @@ export function CounterApp({value}) {
   const [myvalue, setValue] = useState(value)
 
   const HandleAdd = () =>{
-
+    setValue(myvalue+1)
   }
   return (
     <>
