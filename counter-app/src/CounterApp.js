@@ -9,6 +9,10 @@ export function CounterApp({value}) {
   const HandleAdd = () =>{
     setValue(myvalue+1)
   }
+
+  const handlesubstract = () =>{
+    
+  }
   return (
     <>
         <h1>CounterApp</h1>
