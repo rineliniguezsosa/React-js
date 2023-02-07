@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 
 export function CounterApp() {
   return (
