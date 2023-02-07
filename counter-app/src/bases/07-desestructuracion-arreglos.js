@@ -5,7 +5,7 @@ const [uno] = arr
 
 console.log(uno)
 
-const returnarr = () =>{
+export const returnarr = () =>{
     return ['133',true]
 }
 
