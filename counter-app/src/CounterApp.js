@@ -11,7 +11,7 @@ export function CounterApp({value}) {
   }
 
   const handlesubstract = () =>{
-    
+    setValue(myvalue-1)
   }
   return (
     <>
