@@ -13,4 +13,8 @@ describe('aplicando pruebas al archivo 08-import-export.js', () => {
         const result2 = findhero(num2)
         expect(result2).toBeUndefined()
     })
+
+    test('el metodo findowners debe de retornar un arreglo con los heroes de DC',()=>{
+
+    })
  })
