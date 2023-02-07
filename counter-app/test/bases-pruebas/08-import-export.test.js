@@ -7,4 +7,7 @@ describe('aplicando pruebas al archivo 08-import-export.js', () => {
         const result = findhero(num)
         expect(result).toEqual({ id: 5, name: 'Wolverine', owner: 'Marvel' })
      })
+     test('el metodo findhero debe de retornar undefined si no existe', () => { 
+
+      })
  })
