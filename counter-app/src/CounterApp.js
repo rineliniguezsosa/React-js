@@ -13,6 +13,10 @@ export function CounterApp({value}) {
   const handlesubstract = () =>{
     setValue(myvalue-1)
   }
+
+  const handlereset = () =>{
+    
+  }
   return (
     <>
         <h1>CounterApp</h1>
