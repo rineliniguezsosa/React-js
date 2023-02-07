@@ -1,4 +1,4 @@
-import { findhero } from "../../src/bases/08-import-export"
+import { findhero, findowners } from "../../src/bases/08-import-export"
 
 
 describe('aplicando pruebas al archivo 08-import-export.js', () => { 
@@ -15,6 +15,6 @@ describe('aplicando pruebas al archivo 08-import-export.js', () => {
     })
 
     test('el metodo findowners debe de retornar un arreglo con los heroes de DC',()=>{
-
+        
     })
  })
