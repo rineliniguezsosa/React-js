@@ -10,4 +10,4 @@ export const getsaludo = (nombre) =>{
 //     return `Hola ${nombre}`
 // }
 
-console.log(`hey ${getsaludo(nombre)}`)
+console.log(`${getsaludo(nombre)}`)
