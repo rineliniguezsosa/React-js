@@ -2,6 +2,9 @@
 
 export function CounterApp() {
   return (
-    <div>CounterApp</div>
+    <>
+        <h1>CounterApp</h1>
+        <h2>{value}</h2>    
+    </>
   )
 }
