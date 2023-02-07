@@ -4,7 +4,9 @@ export function CounterApp({value}) {
   return (
     <>
         <h1>CounterApp</h1>
-        <h2>{value}</h2>    
+        <h2>{value}</h2>   
+
+        <button>+1</button> 
     </>
   )
 }
