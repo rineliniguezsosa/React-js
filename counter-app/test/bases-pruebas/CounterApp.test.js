@@ -23,4 +23,12 @@ describe('pruebas en el componente <CounterApp/>', () => {
       fireEvent.click(screen.getByText('-1'))
       expect(screen.getByText(12)).toBeTruthy();
     });
+
+    test('Debe de resetar con el boton reset', () => {
+      render(<CounterApp value={13}></CounterApp>)
+      fireEvent.click(screen.getByText('+1'))
+      fireEvent.click(screen.getByText('+1'))
+      fireEvent.click(screen.getByText('reset'))
+      expect(screen.getByText(13)).toBeTruthy();
+    });
 })
