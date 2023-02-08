@@ -4,7 +4,7 @@ export const findhero = (id) => {
     return heroes.find((heroid) => heroid.id === id)
 }
 
-const datos = findhero(5);
+//const datos = findhero(5);
 //console.log(datos)
 
 // const findowners = (name:string):Heroe[] =>{
