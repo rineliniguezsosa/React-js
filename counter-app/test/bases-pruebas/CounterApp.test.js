@@ -3,7 +3,7 @@ import { CounterApp } from "../../src/CounterApp"
 
 describe('pruebas en el componente <CounterApp/>', () => { 
     test('Debe de hacer match con el snapshot',()=>{
-     const { container } = render(<CounterApp></CounterApp>)
+     const { container } = render(<CounterApp value={100}></CounterApp>)
      expect(container).toMatchSnapshot();
     })
 })
