@@ -8,6 +8,6 @@ describe('pruebas en el componente <CounterApp/>', () => {
     })
 
     test('Debe mostrar un valor inicial de 100', () => {
-      
+      render(<CounterApp value={100}></CounterApp>)
     });
 })
