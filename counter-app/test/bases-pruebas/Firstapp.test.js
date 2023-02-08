@@ -3,6 +3,8 @@ import { Firstapp } from '../../src/Firstapp'
 
 describe('Pruebas en el componente <Firstapp>', () => { 
   test('Deberia de coincidir con el snapshot', () => { 
-      render(<Firstapp name="rinel" edad={27}/>)
+      const { container } = render(<Firstapp name="rinel" edad={27}/>)
+
+      expect(container).toMatchSnapshot();
    })
  })
