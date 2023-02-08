@@ -13,6 +13,6 @@ describe('pruebas en el componente <CounterApp/>', () => {
     });
 
     test('Debe de aumentar con el boton +1', () => {
-      
+      render(<CounterApp value={13}></CounterApp>)
     });
 })
