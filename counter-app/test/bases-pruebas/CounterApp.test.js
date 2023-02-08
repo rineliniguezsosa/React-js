@@ -17,4 +17,10 @@ describe('pruebas en el componente <CounterApp/>', () => {
       fireEvent.click(screen.getByText('+1'))
       expect(screen.getByText(14)).toBeTruthy();
     });
+
+    test('Debe de decrementar con el boton -1', () => {
+      render(<CounterApp value={13}></CounterApp>)
+      fireEvent.click(screen.getByText('-1'))
+      expect(screen.getByText(12)).toBeTruthy();
+    });
 })
