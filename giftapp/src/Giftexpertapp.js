@@ -4,7 +4,7 @@ export function Giftexpertapp() {
   const [categorias, setCategorias] = useState(['Gon'])
 
   const addcategory = () =>{
-    
+    setCategorias([...categorias,'one punch man'])
   }
   return (
     <>
