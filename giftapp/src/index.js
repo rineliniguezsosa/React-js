@@ -4,6 +4,6 @@ import { Giftexpertapp } from './Giftexpertapp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-
+        <Giftexpertapp></Giftexpertapp>
     </React.StrictMode>
 )
