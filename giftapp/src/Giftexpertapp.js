@@ -5,6 +5,8 @@ export function Giftexpertapp() {
   return (
     <>
         <h1>Giftexpertapp</h1>
+
+        {/* LISTAMOS LOS GIFS */}
     </>
   )
 }
