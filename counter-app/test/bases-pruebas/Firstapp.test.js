@@ -7,7 +7,7 @@ describe('Pruebas en el componente <Firstapp>', () => {
 
       expect(container).toMatchSnapshot();
    })
-   test('debe  de mostrar el titulo h1', () => {
+   test('debe  de mostrar el titulo span', () => {
      render(<Firstapp name="rinel" edad={27}/>)
      expect(screen.getByText('rinel')).toBeTruthy()
    });
