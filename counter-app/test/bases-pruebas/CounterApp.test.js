@@ -11,4 +11,8 @@ describe('pruebas en el componente <CounterApp/>', () => {
       render(<CounterApp value={100}></CounterApp>)
       expect(screen.getByText(100)).toBeTruthy();
     });
+
+    test('Debe de aumentar con el boton +1', () => {
+      
+    });
 })
