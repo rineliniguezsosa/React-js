@@ -7,6 +7,9 @@ export function Giftexpertapp() {
         <h1>Giftexpertapp</h1>
 
         {/* LISTAMOS LOS GIFS */}
+        <ol>
+            <li></li>
+        </ol>
     </>
   )
 }
