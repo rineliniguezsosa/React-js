@@ -10,5 +10,7 @@ describe('Pruebas en el componente <Firstapp>', () => {
    test('debe  de mostrar el titulo span', () => {
      render(<Firstapp name="rinel" edad={27}/>)
      expect(screen.getByText('rinel')).toBeTruthy()
+
+     //expect(screen.getByTestId('prueba').innerHTML).toBe('rinel');
    });
  })
