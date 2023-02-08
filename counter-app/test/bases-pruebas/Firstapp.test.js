@@ -7,4 +7,7 @@ describe('Pruebas en el componente <Firstapp>', () => {
 
       expect(container).toMatchSnapshot();
    })
+   test('debe  de mostrar el titulo h1', () => {
+    
+   });
  })
