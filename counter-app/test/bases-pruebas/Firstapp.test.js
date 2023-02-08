@@ -9,5 +9,6 @@ describe('Pruebas en el componente <Firstapp>', () => {
    })
    test('debe  de mostrar el titulo h1', () => {
      const { container } = render(<Firstapp name="rinel" edad={27}/>)
+     expect(screen.getByText('rinel')).toBeTruthy()
    });
  })
