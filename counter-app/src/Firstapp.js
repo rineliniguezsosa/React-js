@@ -7,7 +7,7 @@ export function Firstapp({name,edad}) {
 //   }
   return (
     <>
-        <h1>Rinel</h1>
+        {/* <h1>Rinel</h1> */}
         <span>{name}:</span>
         <span>{edad}</span>
         {/* <p>{JSON.stringify(obj)}</p> */}
