@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react'
+import { render,screen } from '@testing-library/react'
 import { Firstapp } from '../../src/Firstapp'
 
 describe('Pruebas en el componente <Firstapp>', () => { 
