@@ -8,6 +8,6 @@ describe('Pruebas en el componente <Firstapp>', () => {
       expect(container).toMatchSnapshot();
    })
    test('debe  de mostrar el titulo h1', () => {
-     const { container } = render(<Firstapp name="rinel" edad={27}/>)
+     const { container,getByText } = render(<Firstapp name="rinel" edad={27}/>)
    });
  })
