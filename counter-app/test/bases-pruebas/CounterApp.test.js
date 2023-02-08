@@ -6,4 +6,8 @@ describe('pruebas en el componente <CounterApp/>', () => {
      const { container } = render(<CounterApp value={100}></CounterApp>)
      expect(container).toMatchSnapshot();
     })
+
+    test('Debe mostrar un valor inicial de 100', () => {
+      
+    });
 })
