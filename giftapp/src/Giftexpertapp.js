@@ -8,7 +8,9 @@ export function Giftexpertapp() {
 
         {/* LISTAMOS LOS GIFS */}
         <ol>
-            <li></li>
+            {categorias.map(usercategory => (
+                <li key={usercategory}>{usercategory}</li>
+            ))}
         </ol>
     </>
   )
