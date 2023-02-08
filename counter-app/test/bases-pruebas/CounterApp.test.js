@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react"
+import { render,screen } from "@testing-library/react"
 import { CounterApp } from "../../src/CounterApp"
 
 describe('pruebas en el componente <CounterApp/>', () => { 
