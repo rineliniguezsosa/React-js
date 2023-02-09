@@ -5,6 +5,8 @@ export function Giftexpertapp() {
   const [categorias, setCategorias] = useState(['Gon'])
 
   const addcategory = (value) =>{
+    const cleanCategory = value.toLowerCase();
+    if(categorias.includes(cleanCategory)) return;//validando que las key sean unicas
     setCategorias([value,...categorias])
   }
   return (
