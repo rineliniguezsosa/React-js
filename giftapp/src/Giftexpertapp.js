@@ -10,7 +10,7 @@ export function Giftexpertapp() {
   return (
     <>
         <h1>Giftexpertapp</h1>
-
+        <Addcategoria/>
         <button onClick={addcategory}>Agregar una categoria</button>
         {/* LISTAMOS LOS GIFS */}
         <ol>
