@@ -2,7 +2,7 @@ import { useState } from "react"
 
 
 
-export function Addcategoria({setCategorias}) {
+export function Addcategoria({onNewCategorias}) {
   const [inputvalue, setInputvalue] = useState('Gon')
 
   const inputchange = (event) =>{
@@ -11,7 +11,8 @@ export function Addcategoria({setCategorias}) {
   
   const submitform = (event) =>{
     event.preventDefault()
-    setCategorias((categorias)=> [inputvalue,...categorias])
+    //setCategorias((categorias)=> [inputvalue,...categorias])
+    onNewCategorias(inputvalue)
     setInputvalue('')
   }
    return (
