@@ -11,6 +11,7 @@ export function Addcategoria({setCategorias}) {
   
   const submitform = (event) =>{
     event.preventDefault()
+    setCategorias((categorias)=> [inputvalue,...categorias])
   }
    return (
     <form onSubmit={(event) => submitform(event)}>
