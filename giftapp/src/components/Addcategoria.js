@@ -12,7 +12,7 @@ export function Addcategoria({onNewCategorias}) {
   const submitform = (event) =>{
     event.preventDefault()
     //setCategorias((categorias)=> [inputvalue,...categorias])
-    onNewCategorias(inputvalue)
+    onNewCategorias(inputvalue.trim())
     setInputvalue('')
   }
    return (
