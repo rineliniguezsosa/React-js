@@ -5,10 +5,12 @@ import { useState } from "react"
 export function Addcategoria() {
   const [inputvalue, setInputvalue] = useState('Gon')
 
-  const inputchange = () =>{
-    
+  const inputchange = (event) =>{
+    setInputvalue(event.target.value)
   }
   return (
-    <input type="text" placeholder="Buscar" value={inputvalue} onChange={inputchange}>Addcategoria</input>
+    <form>
+        <input type="text" placeholder="Buscar" value={inputvalue} onChange={(event)=>inputchange(event)}></input>
+    </form>
   )
 }
