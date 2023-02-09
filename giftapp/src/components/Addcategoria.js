@@ -8,7 +8,11 @@ export function Addcategoria() {
   const inputchange = (event) =>{
     setInputvalue(event.target.value)
   }
-  return (
+  
+  const submitform = () =>{
+
+  }
+   return (
     <form onSubmit={(event) => submitform(event)}>
         <input type="text" placeholder="Buscar" value={inputvalue} onChange={(event)=>inputchange(event)}></input>
     </form>
