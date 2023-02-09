@@ -9,8 +9,8 @@ export function Addcategoria() {
     setInputvalue(event.target.value)
   }
   
-  const submitform = () =>{
-
+  const submitform = (event) =>{
+    event.preventDefault()
   }
    return (
     <form onSubmit={(event) => submitform(event)}>
