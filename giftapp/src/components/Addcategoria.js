@@ -3,7 +3,7 @@ import { useState } from "react"
 
 
 export function Addcategoria({onNewCategorias}) {
-  const [inputvalue, setInputvalue] = useState('Gon')
+  const [inputvalue, setInputvalue] = useState('')
 
   const inputchange = (event) =>{
     setInputvalue(event.target.value)
