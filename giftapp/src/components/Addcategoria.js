@@ -2,6 +2,6 @@
 
 export function Addcategoria() {
   return (
-    <div>Addcategoria</div>
+    <input type="text" placeholder="Buscar">Addcategoria</input>
   )
 }
