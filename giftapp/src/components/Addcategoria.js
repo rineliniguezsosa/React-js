@@ -2,7 +2,7 @@ import { useState } from "react"
 
 
 
-export function Addcategoria() {
+export function Addcategoria({setCategorias}) {
   const [inputvalue, setInputvalue] = useState('Gon')
 
   const inputchange = (event) =>{
