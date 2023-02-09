@@ -4,13 +4,13 @@ import { Addcategoria } from './components/Addcategoria';
 export function Giftexpertapp() {
   const [categorias, setCategorias] = useState(['Gon'])
 
-  const addcategory = () =>{
-    setCategorias([...categorias,'one punch man'])
+  const addcategory = (value) =>{
+    setCategorias([value,...categorias])
   }
   return (
     <>
         <h1>Giftexpertapp</h1>
-        <Addcategoria setCategorias={ setCategorias }/>
+        <Addcategoria onNewCategorias={(value)=> addcategory(value)}/>
         <button onClick={addcategory}>Agregar una categoria</button>
         {/* LISTAMOS LOS GIFS */}
         <ol>
