@@ -1,5 +1,6 @@
 import { getgift } from "../helpers/Getgifs"
 import React, { useState,useEffect } from 'react';
+import { Griditem } from "./Griditem";
 
 
 export function Gifgrid({usercategory}) {
