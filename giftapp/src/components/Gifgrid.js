@@ -2,7 +2,7 @@
 
 export function Gifgrid({usercategory}) {
   
-  getgift()
+  getgift(usercategory)
   return (
     <>
         <h1>{usercategory}</h1>
