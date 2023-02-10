@@ -4,10 +4,13 @@ import { getgift } from '../helpers/Getgifs';
 export function useFetchgifs(usercategory) {
   
   const [images, setImages] = useState([])
+  const [cargando, setCargando] = useState(true)
+
   const getImages = async(usercategory) => {
     const img = await getgift(usercategory)
     setImages(img)
   }
+  
   useEffect(() => {
     //getgift(usercategory)
     getImages(usercategory)
