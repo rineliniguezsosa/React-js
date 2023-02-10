@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 
 
-export function useFetchgifs() {
+export function useFetchgifs(usercategory) {
   
   const [images, setImages] = useState([])
   const getImages = async(usercategory) => {
