@@ -20,7 +20,7 @@ export function Gifgrid({usercategory}) {
         <span>Hola mundo</span>
         <ol>
           {images.map(({id,titulo,url}) => (
-              <li key={id}>{titulo}</li>
+              <Griditem></Griditem>
           ))
           }
         </ol>
