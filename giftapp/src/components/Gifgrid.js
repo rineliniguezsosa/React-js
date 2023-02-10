@@ -6,7 +6,7 @@ import { useFetchgifs } from "../hooks/useFetchgifs";
 
 export function Gifgrid({usercategory}) {
 
-  const {images,cargando} = useFetchgifs()
+  const {images,cargando} = useFetchgifs(usercategory)
   // const [images, setImages] = useState([])
   // const getImages = async(usercategory) => {
   //   const img = await getgift(usercategory)
