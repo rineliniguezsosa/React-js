@@ -9,6 +9,7 @@ export function useFetchgifs(usercategory) {
   const getImages = async(usercategory) => {
     const img = await getgift(usercategory)
     setImages(img)
+    setCargando(false)
   }
 
   useEffect(() => {
