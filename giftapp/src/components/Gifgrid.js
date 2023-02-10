@@ -1,6 +1,6 @@
 
 
-export function Gifgrid() {
+export function Gifgrid({usercategory}) {
   return (
     <div>Gifgrid</div>
   )
