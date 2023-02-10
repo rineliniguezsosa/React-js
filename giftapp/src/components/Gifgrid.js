@@ -4,10 +4,9 @@ import React, { useEffect } from 'react';
 
 export function Gifgrid({usercategory}) {
   useEffect(() => {
-   
+    getgift(usercategory)
   }, [])
   
-  getgift(usercategory)
   return (
     <>
         <h1>{usercategory}</h1>
