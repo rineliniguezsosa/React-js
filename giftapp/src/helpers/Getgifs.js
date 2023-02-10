@@ -6,5 +6,6 @@ export const getgift =  async(usercategory) =>{
         titulo:img.title,
         url:img.images.downsized.url,
     }))
+    console.log(gifs)
     return gifs;
 }
