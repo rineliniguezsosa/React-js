@@ -18,12 +18,12 @@ export function Gifgrid({usercategory}) {
     <>
         <h1>{usercategory}</h1>
         <span>Hola mundo</span>
-        <ol>
+        <div className="card-grid">
           {images.map(({id,titulo,url}) => (
               <Griditem></Griditem>
           ))
           }
-        </ol>
+        </div>
     </>
   )
 }
