@@ -12,4 +12,8 @@ export function useFetchgifs(usercategory) {
     //getgift(usercategory)
     getImages(usercategory)
   }, [usercategory])
+
+  return {
+    images
+  }
 }
