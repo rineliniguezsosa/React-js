@@ -16,11 +16,11 @@ export function Giftexpertapp() {
         <Addcategoria onNewCategorias={(value)=> addcategory(value)}/>
         <button onClick={addcategory}>Agregar una categoria</button>
         {/* LISTAMOS LOS GIFS */}
-        <ol>
+        {/* <ol> */}
             {categorias.map(usercategory => (
                 <Gifgrid key={usercategory} usercategory={usercategory}></Gifgrid>
             ))}
-        </ol>
+        {/* </ol> */}
     </>
   )
 }
