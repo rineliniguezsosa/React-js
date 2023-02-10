@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Addcategoria } from './components/Addcategoria';
+import { Gifgrid } from './components/Gifgrid';
 
 export function Giftexpertapp() {
   const [categorias, setCategorias] = useState(['Gon'])
