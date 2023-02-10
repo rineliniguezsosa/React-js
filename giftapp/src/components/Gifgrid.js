@@ -3,6 +3,7 @@ import React, { useState,useEffect } from 'react';
 
 
 export function Gifgrid({usercategory}) {
+  const [images, setImages] = useState([])
   const getImages = async() => {
     const img = await getgift()
   }
