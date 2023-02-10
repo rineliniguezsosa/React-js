@@ -2,6 +2,9 @@
 
 export function Gifgrid({usercategory}) {
   return (
-    <div>Gifgrid</div>
+    <>
+        <h1>{usercategory}</h1>
+        <span>Hola mundo</span>
+    </>
   )
 }
