@@ -17,6 +17,12 @@ export function Gifgrid({usercategory}) {
     <>
         <h1>{usercategory}</h1>
         <span>Hola mundo</span>
+        <ol>
+          {images.map(({id,titulo,url}) => (
+              <li key={id}>{titulo}</li>
+          ))
+          }
+        </ol>
     </>
   )
 }
