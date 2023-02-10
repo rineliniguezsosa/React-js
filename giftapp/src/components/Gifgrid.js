@@ -21,6 +21,9 @@ export function Gifgrid({usercategory}) {
     <>
         <h1>{usercategory}</h1>
         {/* <span>Hola mundo</span> */}
+        {
+          cargando ? <p>Cargando ...</p> : ''
+        }
         <div className="card-grid">
           {images.map(({id,titulo,url}) => (
               <Griditem key={id} titulo={titulo} url={url}></Griditem>
