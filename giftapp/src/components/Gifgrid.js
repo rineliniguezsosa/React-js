@@ -3,8 +3,12 @@ import React, { useEffect } from 'react';
 
 
 export function Gifgrid({usercategory}) {
+  const getImages = async() => {
+
+  }
   useEffect(() => {
-    getgift(usercategory)
+    //getgift(usercategory)
+    getImages()
   }, [])
   
   return (
