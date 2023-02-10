@@ -10,13 +10,14 @@ export function useFetchgifs(usercategory) {
     const img = await getgift(usercategory)
     setImages(img)
   }
-  
+
   useEffect(() => {
     //getgift(usercategory)
     getImages(usercategory)
   }, [usercategory])
 
   return {
-    images
+    images,
+    cargando
   }
 }
