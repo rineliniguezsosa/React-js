@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 
 export function Gifgrid({usercategory}) {
   const getImages = async() => {
-
+    const img = await getgift()
   }
   useEffect(() => {
     //getgift(usercategory)
