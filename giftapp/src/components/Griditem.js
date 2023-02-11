@@ -9,3 +9,7 @@ export function Griditem({titulo,url}) {
     </div>
   )
 }
+
+Griditem.propTypes = {
+  
+}
