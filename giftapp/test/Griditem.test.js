@@ -20,6 +20,8 @@ describe('Pruebas en el componente <Griditem/>', () => {
     });
 
     test('Debe de mostrar el titulo en el componente',()=>{
-      
+      render(<Griditem url={url} titulo={titulo}/>)
+
+      expect(screen.getByText(titulo)).toBeTruthy();
     })
  })
