@@ -14,5 +14,8 @@ describe('Pruebas en el componente <Griditem/>', () => {
 
     test('Debe de mostrar el url y al alt indicado', () => {
       render(<Griditem url={url} titulo={titulo}/>)
+      //screen.debug()
+      expect(screen.getByRole('img').alt).toBe(titulo)
+      expect(screen.getByRole('img').src).toBe(url)
     });
  })
