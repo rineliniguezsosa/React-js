@@ -7,4 +7,8 @@ describe('Pruebas en el componente <Griditem/>', () => {
 
       expect(container).toMatchSnapshot();
     });
+
+    test('Debe de mostrar el url y al alt indicado', () => {
+      
+    });
  })
