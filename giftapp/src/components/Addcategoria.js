@@ -24,5 +24,5 @@ export function Addcategoria({onNewCategorias}) {
 }
 
 Addcategoria.propTypes = {
-  
+  onNewCategorias:PropTypes.func.isRequired
 }
