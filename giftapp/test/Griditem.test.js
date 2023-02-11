@@ -9,6 +9,6 @@ describe('Pruebas en el componente <Griditem/>', () => {
     });
 
     test('Debe de mostrar el url y al alt indicado', () => {
-      
+      render(<Griditem url="https://giphy.com/gifs/gon-u4dQ8BMugUYp2" titulo="gon GIF"/>)
     });
  })
