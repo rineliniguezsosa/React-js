@@ -11,5 +11,6 @@ export function Griditem({titulo,url}) {
 }
 
 Griditem.propTypes = {
-  
+  titulo:PropTypes.string.isRequired,
+  url:PropTypes.string.isRequired
 }
