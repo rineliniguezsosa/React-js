@@ -1,5 +1,5 @@
 describe('Pruebas en la funcion asincrona getgift()', () => {
-    test('Debe de retornar un arreglo de gifs', () => {
+    test('Debe de retornar un arreglo de gifs',async () => {
         
     });
 });
