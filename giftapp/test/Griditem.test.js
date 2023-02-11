@@ -17,6 +17,7 @@ describe('Pruebas en el componente <Griditem/>', () => {
       //screen.debug()
       expect(screen.getByRole('img').alt).toBe(titulo)
       expect(screen.getByRole('img').src).toBe(url)
+      //expect(screen.getByRole('img').getAttribute('src')).toBe(url)
     });
 
     test('Debe de mostrar el titulo en el componente',()=>{
