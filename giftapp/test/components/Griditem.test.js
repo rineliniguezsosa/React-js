@@ -1,4 +1,4 @@
-import { Griditem } from '../src/components/Griditem'
+import { Griditem } from '../../src/components/Griditem'
 import { render,screen } from '@testing-library/react'
 
 describe('Pruebas en el componente <Griditem/>', () => { 
