@@ -17,5 +17,7 @@ describe('Pruebas en el componente <Addcategoria/>', () => {
       const input = screen.getByRole('textbox')
       fireEvent.input(input,{target:{value:'pikachu'}})
       fireEvent.submit(form) //EVENTO SUBMIT
+      expect(input.value).toBe('');
+      screen.debug()
   });
 });
