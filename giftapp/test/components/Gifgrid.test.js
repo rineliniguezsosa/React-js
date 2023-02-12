@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react'
+import { render,screen } from '@testing-library/react'
 import { Gifgrid } from '../../src/components/Gifgrid';
 
 describe('Prueba en el componente <Gifgrid/>', () => {
