@@ -12,7 +12,7 @@ describe('Pruebas en el componente <Addcategoria/>', () => {
 
   test('debe de llamar onnewcategoria si el input tiene un valor', () => {
       const onNewCategorias = jest.fn();
-      render(<Addcategoria onNewCategorias={()=> {}}></Addcategoria>)
+      render(<Addcategoria onNewCategorias={onNewCategorias}></Addcategoria>)
 
       const form = screen.getByRole('form')
       const input = screen.getByRole('textbox')
