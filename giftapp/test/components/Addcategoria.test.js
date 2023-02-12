@@ -7,5 +7,6 @@ describe('Pruebas en el componente <Addcategoria/>', () => {
       render(<Addcategoria onNewCategorias={()=> {}}></Addcategoria>)
       const input = screen.getByRole('textbox') //textbox --> html input 
       fireEvent.input(input,{target:{value:'Saitama'}}) //input --> metodo onchange
+      expect(input.value).toBe('Saitama');
   });
 });
