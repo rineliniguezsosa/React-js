@@ -27,7 +27,7 @@ describe('Pruebas en el componente <Addcategoria/>', () => {
       screen.debug()
   });
 
-  test('no debe de llmar a onnewcategoria si el input esta vacio ', () => {
+  test('no debe de llamar a onnewcategoria si el input esta vacio ', () => {
     
   });
 });
