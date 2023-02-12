@@ -12,5 +12,7 @@ describe('Pruebas en el componente <Addcategoria/>', () => {
 
   test('debe de llamar onnewcategoria si el input tiene un valor', () => {
       render(<Addcategoria onNewCategorias={()=> {}}></Addcategoria>)
+
+      const form = screen.getByRole('form')
   });
 });
