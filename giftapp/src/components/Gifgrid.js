@@ -36,5 +36,5 @@ export function Gifgrid({usercategory}) {
 }
 
 Gifgrid.propTypes = {
-  
+  usercategory:PropTypes.string.isRequired,
 }
