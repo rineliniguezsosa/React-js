@@ -13,6 +13,7 @@ export function Addcategoria({onNewCategorias}) {
   const submitform = (event) =>{
     event.preventDefault()
     //setCategorias((categorias)=> [inputvalue,...categorias])
+    if(inputvalue.trim().length <= 1) return; //valida que ingresen campos vacios
     onNewCategorias(inputvalue.trim())
     setInputvalue('')
   }
