@@ -14,5 +14,6 @@ describe('Pruebas en el componente <Addcategoria/>', () => {
       render(<Addcategoria onNewCategorias={()=> {}}></Addcategoria>)
 
       const form = screen.getByRole('form')
+      const input = screen.getByRole('text-box')
   });
 });
