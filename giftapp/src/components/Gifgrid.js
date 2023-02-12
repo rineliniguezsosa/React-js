@@ -34,3 +34,7 @@ export function Gifgrid({usercategory}) {
     </>
   )
 }
+
+Gifgrid.propTypes = {
+  
+}
