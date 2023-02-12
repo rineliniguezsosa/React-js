@@ -24,7 +24,7 @@ describe('Pruebas en el componente <Addcategoria/>', () => {
       expect(onNewCategorias).toHaveBeenCalled(); //la funcion a sido llamada
       expect(onNewCategorias).toHaveBeenCalledTimes(1); //la funcion a sido llamadas cuantas veces ?
       expect(onNewCategorias).toHaveBeenLastCalledWith('pikachu');
-      screen.debug()
+      //screen.debug()
   });
 
   test('no debe de llamar a onnewcategoria si el input esta vacio ', () => {
