@@ -9,4 +9,8 @@ describe('Pruebas en el componente <Addcategoria/>', () => {
       fireEvent.input(input,{target:{value:'Saitama'}}) //input --> metodo onchange
       expect(input.value).toBe('Saitama');
   });
+
+  test('debe de llamar onnewcategoria si el input tiene un valor', () => {
+    
+  });
 });
