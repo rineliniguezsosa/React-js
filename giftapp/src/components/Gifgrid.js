@@ -2,6 +2,7 @@
 //import React, { useState,useEffect } from 'react';
 import { Griditem } from "./Griditem";
 import { useFetchgifs } from "../hooks/useFetchgifs";
+import PropTypes from 'prop-types'
 
 
 export function Gifgrid({usercategory}) {
