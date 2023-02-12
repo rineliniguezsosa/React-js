@@ -17,7 +17,7 @@ export function Addcategoria({onNewCategorias}) {
     setInputvalue('')
   }
    return (
-    <form onSubmit={(event) => submitform(event)} arial-label="form">
+    <form onSubmit={(event) => submitform(event)} aria-label="form">
         <input type="text" placeholder="Buscar" value={inputvalue} onChange={(event)=>inputchange(event)}></input>
     </form>
   )
