@@ -28,6 +28,11 @@ describe('Pruebas en el componente <Addcategoria/>', () => {
   });
 
   test('no debe de llamar a onnewcategoria si el input esta vacio ', () => {
-    
+      const onNewCategorias = jest.fn();
+      render(<Addcategoria onNewCategorias={onNewCategorias}></Addcategoria>)
+      const form = screen.getByRole('form')
+      fireEvent.submit(form) //EVENTO SUBMIT
+
+      expect(onNewCategorias).toHaveBeenCalledTimes(0);
   });
 });
