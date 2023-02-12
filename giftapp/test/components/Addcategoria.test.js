@@ -18,7 +18,16 @@ describe('Pruebas en el componente <Addcategoria/>', () => {
       const input = screen.getByRole('textbox')
       fireEvent.input(input,{target:{value:'pikachu'}})
       fireEvent.submit(form) //EVENTO SUBMIT
+
       expect(input.value).toBe('');
+
+      expect(onNewCategorias).toHaveBeenCalled(); //la funcion a sido llamada
+      expect(onNewCategorias).toHaveBeenCalledTimes(1); //la funcion a sido llamadas cuantas veces ?
+      expect(onNewCategorias).toHaveBeenLastCalledWith('pikachu');
       screen.debug()
+  });
+
+  test('no debe de llmar a onnewcategoria si el input esta vacio ', () => {
+    
   });
 });
