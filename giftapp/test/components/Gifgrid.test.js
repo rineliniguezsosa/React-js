@@ -1,5 +1,6 @@
 import { render,screen } from '@testing-library/react'
 import { Gifgrid } from '../../src/components/Gifgrid';
+import { useFetchgifs } from '../../src/hooks/useFetchgifs'
 
 describe('Prueba en el componente <Gifgrid/>', () => {
   const usercategory = 'goku'
