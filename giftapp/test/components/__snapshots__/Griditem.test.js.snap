@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <Griditem/> Debe de coincidir con el snap shot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="gon GIF"
+      src="https://giphy.com/gifs/gon-u4dQ8BMugUYp2"
+    />
+    <span>
+      gon GIF
+    </span>
+  </div>
+</div>
+`;
