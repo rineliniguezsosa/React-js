@@ -4,6 +4,7 @@ export const Counterapp = () => {
   return (
     <>
     <span>Counterapp</span>
+    <span>Cuenta</span>
     </>
   )
 }
