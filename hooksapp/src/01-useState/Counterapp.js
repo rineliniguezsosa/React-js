@@ -5,7 +5,7 @@ export const Counterapp = () => {
   return (
     <>
     <span>Counterapp</span>
-    <span>Cuenta</span>
+    <span>Cuenta: {cuenta}</span>
     <button>+1</button>
     </>
   )
