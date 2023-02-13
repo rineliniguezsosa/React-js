@@ -9,4 +9,8 @@ describe('Prueba en el componente <Gifgrid/>', () => {
     expect(screen.getByText('Cargando ...')).toBeTruthy();
     //screen.debug()
   });
+
+  test('Debe de mostrar items cuando se cargan las imagenes useFetchgifs', () => {
+    
+  });
 });
