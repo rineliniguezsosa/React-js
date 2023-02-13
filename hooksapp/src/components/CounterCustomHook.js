@@ -4,7 +4,7 @@ import { useCounter } from "../hooks/useCounter"
 export const CounterCustomHook = () => {
   const {value,actions} = useCounter(0)
 
-  const [ increment ] = actions
+  const [ increment,reset,decrement ] = actions
   return (
     <>
         <span>contador con hook</span>
