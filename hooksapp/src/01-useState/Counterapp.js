@@ -5,6 +5,7 @@ export const Counterapp = () => {
     <>
     <span>Counterapp</span>
     <span>Cuenta</span>
+    <button>+1</button>
     </>
   )
 }
