@@ -16,6 +16,6 @@ export const useCounter = (valorinicial) => {
   }
   return {
     value,
-    actions:[increment]
+    actions:[increment,decrement,reset]
   }
 }
