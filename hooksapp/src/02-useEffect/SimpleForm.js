@@ -1,6 +1,10 @@
 
 export const SimpleForm = () => {
   return (
-    <div>SimpleForm</div>
+    <>
+    <span>SimpleForm</span>
+    <hr></hr>
+    <input type="text" placeholder="username" name="username" className="form-control"></input>
+    </>
   )
 }
