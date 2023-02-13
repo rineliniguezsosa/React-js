@@ -10,7 +10,7 @@ export const CounterCustomHook = () => {
         <span>contador con hook</span>
         <hr></hr>
         <span>{value}</span>
-        <button className="btn btn-primary">+1</button>
+        <button onClick={()=> increment()} className="btn btn-primary">+1</button>
         <button className="btn btn-primary">reset</button>
         <button className="btn btn-primary">-1</button>
     </>
