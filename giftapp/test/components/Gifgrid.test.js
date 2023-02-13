@@ -21,6 +21,7 @@ describe('Prueba en el componente <Gifgrid/>', () => {
   });
 
   test('Debe de mostrar items cuando se cargan las imagenes useFetchgifs', () => {
-    
+  
+    render(<Gifgrid usercategory={usercategory}></Gifgrid>)
   });
 });
