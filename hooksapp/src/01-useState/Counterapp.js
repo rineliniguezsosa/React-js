@@ -6,7 +6,7 @@ export const Counterapp = () => {
     <>
     <span>Counterapp</span>
     <span>Cuenta: {cuenta}</span>
-    <button>+1</button>
+    <button onClick={ ()=> setCuenta(cuenta+1)}>+1</button>
     </>
   )
 }
