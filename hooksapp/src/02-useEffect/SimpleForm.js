@@ -1,6 +1,10 @@
 import { useState } from 'react';
 
 export const SimpleForm = () => {
+    const [form, setForm] = useState({
+        username:'rinel',
+        email:'rineliniguezsosa@gmail.com'
+    })
   return (
     <>
     <span>SimpleForm</span>
