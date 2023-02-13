@@ -17,5 +17,7 @@ describe('Pruebas en el custom Hook useFetchgifs', () => {
     })
 
     const {images,cargando} = result.current
+    expect(images.length).toBeGreaterThan(0);
+    expect(cargando).toBeFalsy();
   });
 });
