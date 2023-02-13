@@ -12,5 +12,8 @@ describe('Pruebas en el custom Hook useFetchgifs', () => {
 
   test('Debe de retornar las imagenes y cargando debera ser falso', async() => {
     const { result } = renderHook(()=> useFetchgifs('transformers'))
+    await waitFor(()=>{
+      
+    })
   });
 });
