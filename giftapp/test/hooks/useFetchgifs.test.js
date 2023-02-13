@@ -9,4 +9,8 @@ describe('Pruebas en el custom Hook useFetchgifs', () => {
       expect(images.length).toBe(0);
       expect(cargando).toBeTruthy();
   });
+
+  test('Debe de retornar las imagenes y cargando debera ser falso', () => {
+    
+  });
 });
