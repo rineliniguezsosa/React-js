@@ -21,11 +21,18 @@ describe('Prueba en el componente <Gifgrid/>', () => {
   });
 
   test('Debe de mostrar items cuando se cargan las imagenes useFetchgifs', () => {
-    const gifs = [{
+    const gifs = [
+      {
+        id:'kmdkmdd',
+        titulo:'one punch man',
+        url:'http://localhost/onepunchman'
+      },
+      {
         id:'ujdghd',
         titulo:'goku',
         url:'http://localhost/goku'
-    }]
+      }
+  ]
     render(<Gifgrid usercategory={usercategory}></Gifgrid>)
   });
 });
