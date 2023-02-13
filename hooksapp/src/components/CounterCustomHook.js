@@ -2,6 +2,12 @@
 
 export const CounterCustomHook = () => {
   return (
-    <div>CounterCustomHook</div>
+    <>
+        <span>contador con hook</span>
+        <hr></hr>
+        <button className="btn btn-primary">+1</button>
+        <button className="btn btn-primary">reset</button>
+        <button className="btn btn-primary">-1</button>
+    </>
   )
 }
