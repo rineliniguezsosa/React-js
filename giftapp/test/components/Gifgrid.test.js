@@ -39,5 +39,8 @@ describe('Prueba en el componente <Gifgrid/>', () => {
     })
 
     render(<Gifgrid usercategory={usercategory}></Gifgrid>)
+
+    expect(screen.getAllByRole('img').length).toBeGreaterThanOrEqual(2);
+    screen.debug()
   });
 });
