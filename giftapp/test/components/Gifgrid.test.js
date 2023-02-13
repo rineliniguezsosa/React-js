@@ -33,6 +33,11 @@ describe('Prueba en el componente <Gifgrid/>', () => {
         url:'http://localhost/goku'
       }
   ]
+    useFetchgifs.mockReturnValue({ // simulamos la devolucion del mock o de la funcion ahora con datos
+      images:gifs,
+      cargando:false,
+    })
+
     render(<Gifgrid usercategory={usercategory}></Gifgrid>)
   });
 });
