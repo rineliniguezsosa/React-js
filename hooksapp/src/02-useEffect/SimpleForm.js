@@ -5,6 +5,8 @@ export const SimpleForm = () => {
         username:'rinel',
         email:'rineliniguezsosa@gmail.com'
     })
+
+    const {username,email} = form
   return (
     <>
     <span>SimpleForm</span>
