@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <Giftexpertapp/> Debe de coincidir con el snapshot 1`] = `
+<div>
+  <h1>
+    Giftexpertapp
+  </h1>
+  <form
+    aria-label="form"
+  >
+    <input
+      placeholder="Buscar"
+      type="text"
+      value=""
+    />
+  </form>
+  <button>
+    Agregar una categoria
+  </button>
+  <h1>
+    Gon
+  </h1>
+  <p>
+    Cargando ...
+  </p>
+  <div
+    class="card-grid"
+  />
+</div>
+`;
