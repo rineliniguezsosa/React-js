@@ -6,6 +6,10 @@ export const useCounter = (valorinicial) => {
   const increment = () =>{
     setValue(value+1)
   }
+
+  const decrement = () =>{
+    setValue(value-1)
+  }
   return {
     value,
     actions:[increment]
