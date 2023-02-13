@@ -1,6 +1,9 @@
 import { render,screen } from '@testing-library/react'
 import { Gifgrid } from '../../src/components/Gifgrid';
-import { useFetchgifs } from '../../src/hooks/useFetchgifs'
+import { useFetchgifs } from '../../src/hooks/useFetchgifs' //1
+
+jest.mock('../../src/hooks/useFetchgifs') //jest.mock simula un modulo en esta caso simula claro el 
+//hook useFetchgifs //2
 
 describe('Prueba en el componente <Gifgrid/>', () => {
   const usercategory = 'goku'
