@@ -7,6 +7,10 @@ export const SimpleForm = () => {
     })
 
     const {username,email} = form
+
+    const inputchange = () =>{
+        
+    }
   return (
     <>
     <span>SimpleForm</span>
