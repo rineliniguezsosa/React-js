@@ -17,5 +17,7 @@ describe('Pruebas en el componente <Giftexpertapp/>', () => {
     render(<Giftexpertapp/>)
     const input = screen.getByRole('textbox')
     fireEvent.input(input,{target:{value:'pac man'}})
+    expect(input.value).toBeTruthy();
+    screen.debug()
   });
 });
