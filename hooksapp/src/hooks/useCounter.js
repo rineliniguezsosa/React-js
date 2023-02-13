@@ -16,6 +16,6 @@ export const useCounter = (valorinicial) => {
   }
   return {
     value,
-    actions:[increment,decrement,reset]
+    actions:[increment,decrement,reset] //EXPONER METODOS
   }
 }
