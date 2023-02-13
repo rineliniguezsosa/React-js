@@ -15,4 +15,6 @@ describe('Pruebas en el componente <Giftexpertapp/>', () => {
 
   test('Cambiando el valor de la caja de texto y debe de coincidir', () => {
     render(<Giftexpertapp/>)
+    const input = screen.getByRole('textbox')
+  });
 });
