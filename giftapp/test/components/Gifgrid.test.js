@@ -22,7 +22,9 @@ describe('Prueba en el componente <Gifgrid/>', () => {
 
   test('Debe de mostrar items cuando se cargan las imagenes useFetchgifs', () => {
     const gifs = [{
-
+        id:'ujdghd',
+        titulo:'goku',
+        url:'http://localhost/goku'
     }]
     render(<Gifgrid usercategory={usercategory}></Gifgrid>)
   });
