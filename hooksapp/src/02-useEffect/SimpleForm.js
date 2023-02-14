@@ -9,7 +9,7 @@ export const SimpleForm = () => {
     const {username,email} = form
     
     const inputchange = (event) =>{
-      
+        const {name,value} = event.target
     }
   return (
     <>
