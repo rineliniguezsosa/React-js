@@ -8,6 +8,6 @@ export const useForm = () =>{
     })
     const {username,email,password} = form
     return {
-
+        form
     }
 }
