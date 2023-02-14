@@ -8,7 +8,7 @@ export const FormCustomHook = () => {
     //     email:'',
     //     password:''
     // })
-
+    const { form } = useForm()
     const {username,email,password} = form
     
     const inputchange = (event) =>{
