@@ -14,6 +14,10 @@ export const useForm = () =>{
           [name]:value //PROPIEDAS COMPUTADAS DE OBJETOS
       })
     }
+
+    const resetform = () =>{
+        
+    }
     return {
         form,
         inputchange
