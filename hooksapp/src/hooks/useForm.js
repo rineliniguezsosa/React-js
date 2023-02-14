@@ -6,6 +6,7 @@ export const useForm = () =>{
         email:'',
         password:''
     })
+    const {username,email,password} = form
     return {
 
     }
