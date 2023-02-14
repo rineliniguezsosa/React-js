@@ -1,6 +1,6 @@
 import { useState,useEffect } from 'react';
 
-export const SimpleForm = () => {
+export const FormCustomHook = () => {
     const [form, setForm] = useState({
         username:'rinel',
         email:'rineliniguezsosa@gmail.com'
