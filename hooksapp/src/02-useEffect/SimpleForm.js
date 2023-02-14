@@ -10,6 +10,10 @@ export const SimpleForm = () => {
     
     const inputchange = (event) =>{
         const {name,value} = event.target
+        setForm({
+          ...form,
+          [name]:value //PROPIEDAS COMPUTADAS DE OBJETOS
+      })
     }
   return (
     <>
