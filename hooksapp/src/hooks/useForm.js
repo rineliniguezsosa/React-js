@@ -15,6 +15,7 @@ export const useForm = () =>{
       })
     }
     return {
-        form
+        form,
+        inputchange
     }
 }
