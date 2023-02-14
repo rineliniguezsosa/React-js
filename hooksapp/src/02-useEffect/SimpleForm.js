@@ -15,6 +15,10 @@ export const SimpleForm = () => {
           [name]:value //PROPIEDAS COMPUTADAS DE OBJETOS
       })
     }
+
+    useEffect(()=>{
+      console.log('Me ejecute')
+    },[email])
   return (
     <>
     <span>SimpleForm</span>
