@@ -2,8 +2,9 @@ import { useState,useEffect } from 'react';
 
 export const FormCustomHook = () => {
     const [form, setForm] = useState({
-        username:'rinel',
-        email:'rineliniguezsosa@gmail.com'
+        username:'',
+        email:'',
+        password:''
     })
 
     const {username,email} = form
