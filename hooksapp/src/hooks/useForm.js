@@ -7,6 +7,13 @@ export const useForm = () =>{
         password:''
     })
     // const {username,email,password} = form
+    const inputchange = (event) =>{
+        const {name,value} = event.target
+        setform({
+          ...form,
+          [name]:value //PROPIEDAS COMPUTADAS DE OBJETOS
+      })
+    }
     return {
         form
     }
