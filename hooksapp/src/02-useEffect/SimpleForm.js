@@ -7,9 +7,9 @@ export const SimpleForm = () => {
     })
 
     const {username,email} = form
-
-    const inputchange = () =>{
-        
+    
+    const inputchange = (event) =>{
+      
     }
   return (
     <>
