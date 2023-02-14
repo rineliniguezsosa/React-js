@@ -16,10 +16,16 @@ export const useForm = () =>{
     }
 
     const resetform = () =>{
-        
+        setform({
+            ...form,
+            username:'',
+            email:'',
+            password:''
+        })
     }
     return {
         form,
-        inputchange
+        inputchange,
+        resetform
     }
 }
