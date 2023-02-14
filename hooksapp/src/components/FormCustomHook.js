@@ -3,11 +3,11 @@ import { useForm } from '../hooks/useForm';
 
 
 export const FormCustomHook = () => {
-    const [form, setForm] = useState({
-        username:'',
-        email:'',
-        password:''
-    })
+    // const [form, setForm] = useState({
+    //     username:'',
+    //     email:'',
+    //     password:''
+    // })
 
     const {username,email,password} = form
     
