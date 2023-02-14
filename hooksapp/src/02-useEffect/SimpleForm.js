@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 export const SimpleForm = () => {
     const [form, setForm] = useState({
