@@ -7,7 +7,7 @@ export const FormCustomHook = () => {
         password:''
     })
 
-    const {username,email} = form
+    const {username,email,password} = form
     
     const inputchange = (event) =>{
         const {name,value} = event.target
