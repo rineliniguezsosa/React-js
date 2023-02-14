@@ -11,13 +11,13 @@ export const FormCustomHook = () => {
     const { form } = useForm()
     const {username,email,password} = form
     
-    const inputchange = (event) =>{
-        const {name,value} = event.target
-        setForm({
-          ...form,
-          [name]:value //PROPIEDAS COMPUTADAS DE OBJETOS
-      })
-    }
+    // const inputchange = (event) =>{
+    //     const {name,value} = event.target
+    //     setForm({
+    //       ...form,
+    //       [name]:value //PROPIEDAS COMPUTADAS DE OBJETOS
+    //   })
+    // }
 
     useEffect(()=>{
       console.log('Me ejecute')
