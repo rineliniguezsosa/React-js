@@ -8,6 +8,7 @@ export const MultipleCustomHook = () => {
   console.log(datos)
   const {data,cargando} = datos
   const {author,quote} = !!data && data[0]
+  const [increment] = actions
   console.log(author,quote);
   return (
     <>
