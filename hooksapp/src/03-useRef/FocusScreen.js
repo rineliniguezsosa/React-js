@@ -1,6 +1,8 @@
 
 export function FocusScreen() {
   return (
-    <div>FocusScreen</div>
+    <>
+    <h1>FocusScreen</h1>
+    </>
   )
 }
