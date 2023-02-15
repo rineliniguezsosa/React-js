@@ -4,7 +4,7 @@ export const useFetch = () => {
 
   useEffect(() => {
     
-  }, [])
+  }, [url])
   
   return {}
 }
