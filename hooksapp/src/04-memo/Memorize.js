@@ -19,6 +19,7 @@ export const Memorize = () => {
         entonces por lo cual react no deberia de renderizarse de nueva cuenta el componente 
         <Small/>
     */}
+     <button onClick={()=> setShow(!show)} className="btn btn-primary">Muestra</button>
     </>
   )
 }
