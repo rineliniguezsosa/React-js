@@ -1,3 +1,4 @@
+import { useCounter } from "../hooks/useCounter"
 
 
 export const Memorize = () => {
