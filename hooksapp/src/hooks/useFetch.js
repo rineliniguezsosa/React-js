@@ -20,5 +20,7 @@ export const useFetch = (url) => {
     getBreakinbadapi(url)
   }, [url])
   
-  return {}
+  return {
+    datos
+  }
 }
