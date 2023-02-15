@@ -4,7 +4,7 @@ import { useFetch } from "../hooks/useFetch"
 
 export const MultipleCustomHook = () => {
   const {value,actions} = useCounter()
-  const {datos} = useFetch("https://api.breakingbadquotes.xyz/v1/quotes/5")
+  const {datos} = useFetch(`https://api.breakingbadquotes.xyz/v1/quotes/${value}`)
   console.log(datos)
   const {data,cargando} = datos
   const {author,quote} = !!data && data[0]
