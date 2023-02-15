@@ -2,6 +2,10 @@
 
 export const Memorize = () => {
   return (
-    <div>Memorize</div>
+    <>
+    <h1>Memorize</h1>
+    <hr></hr>
+    <button className="btn btn-primary">+1</button>
+    </>
   )
 }
