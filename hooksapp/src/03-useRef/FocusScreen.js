@@ -1,8 +1,9 @@
 import { useRef } from 'react'
 
 export function FocusScreen() {
+   const inputRef = useRef()
    const Enfocar = () =>{
-    
+
    }
   return (
     <>
