@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 
 export function FocusScreen() {
    const Enfocar = () =>{
