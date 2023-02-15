@@ -11,6 +11,6 @@ import './estilos.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     // <React.StrictMode>
-        <MultipleCustomHook></MultipleCustomHook>
+        <FocusScreen></FocusScreen>
     // </React.StrictMode>
 )
