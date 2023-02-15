@@ -9,6 +9,18 @@ export const MultipleCustomHook = () => {
     <>
     <h1>MultipleCustomHook</h1>
     <hr></hr>
+    {
+      cargando ?
+      (
+        <div className="alert alert-info text-center">
+          <span>Cargando ...</span>
+        </div>
+      )
+      :
+      (
+        <blockquote></blockquote>
+      )
+    }
     </>
   )
 }
