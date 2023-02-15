@@ -13,6 +13,7 @@ export function FocusScreen() {
     type="text"
     placeholder="Ingrese el valor"
     className="form-control"
+    ref={inputRef}
     />
 
     <button onClick={()=> Enfocar()} className="btn btn-primary mt-2">Enfocar</button>
