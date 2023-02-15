@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 
 export const useFetch = () => {
 
- const getBreakinbadapi = async () =>{
-    
+ const getBreakinbadapi = async (url) =>{
+
  }
 
   useEffect(() => {
