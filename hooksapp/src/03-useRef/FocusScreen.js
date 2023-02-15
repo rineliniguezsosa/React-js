@@ -1,5 +1,8 @@
 
 export function FocusScreen() {
+   const Enfocar = () =>{
+    
+   }
   return (
     <>
     <h1>FocusScreen</h1>
