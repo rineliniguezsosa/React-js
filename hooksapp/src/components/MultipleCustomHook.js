@@ -26,6 +26,9 @@ export const MultipleCustomHook = () => {
         </blockquote>
       )
     }
+    <button className="btn btn-primary">
+      Next quote
+    </button>
     </>
   )
 }
