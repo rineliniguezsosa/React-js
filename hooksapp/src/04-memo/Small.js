@@ -1,7 +1,7 @@
 
 
-export const Small = () => {
+export const Small = ({value}) => {
   return (
-    <div>Small</div>
+    <div>{value}</div>
   )
 }
