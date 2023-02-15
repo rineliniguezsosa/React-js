@@ -5,6 +5,7 @@ import { useState } from 'react';
 export const Memorize = () => {
   const {value,actions} = useCounter(1)
   const [increment] = actions
+  const [show, setShow] = useState(true)
   return (
     <>
     <h1>Memorize <Small value={value}></Small></h1>
