@@ -3,6 +3,7 @@ import { useFetch } from "../hooks/useFetch"
 
 
 export const MultipleCustomHook = () => {
+  const {value,actions} = useCounter()
   const {datos} = useFetch("https://api.breakingbadquotes.xyz/v1/quotes/5")
   console.log(datos)
   const {data,cargando} = datos
