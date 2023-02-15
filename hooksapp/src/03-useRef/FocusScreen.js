@@ -9,6 +9,8 @@ export function FocusScreen() {
     placeholder="Ingrese el valor"
     className="form-control"
     />
+
+    <button className="btn btn-primary mt-2">Enfocar</button>
     </>
   )
 }
