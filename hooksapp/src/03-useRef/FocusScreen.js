@@ -10,7 +10,7 @@ export function FocusScreen() {
     className="form-control"
     />
 
-    <button onClick={()=> Enfocar} className="btn btn-primary mt-2">Enfocar</button>
+    <button onClick={()=> Enfocar()} className="btn btn-primary mt-2">Enfocar</button>
     </>
   )
 }
