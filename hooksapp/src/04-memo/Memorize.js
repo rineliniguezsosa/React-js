@@ -2,13 +2,13 @@ import { useCounter } from "../hooks/useCounter"
 
 
 export const Memorize = () => {
-  const {value,actions} = useCounter()
+  const {value,actions} = useCounter(1)
   const [increment] = actions
   return (
     <>
     <h1>Memorize</h1>
     <hr></hr>
-    <button className="btn btn-primary">+1</button>
+    <button onClick={increment} className="btn btn-primary">+1</button>
     </>
   )
 }
