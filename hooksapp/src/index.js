@@ -10,6 +10,6 @@ import './estilos.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     // <React.StrictMode>
-        <FormCustomHook></FormCustomHook>
+        <MultipleCustomHook></MultipleCustomHook>
     // </React.StrictMode>
 )
