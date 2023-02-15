@@ -6,7 +6,7 @@ export const Memorize = () => {
   const [increment] = actions
   return (
     <>
-    <h1>Memorize {}</h1>
+    <h1>Memorize {value}</h1>
     <hr></hr>
     <button onClick={increment} className="btn btn-primary">+1</button>
     </>
