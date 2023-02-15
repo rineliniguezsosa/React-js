@@ -2,6 +2,7 @@ import { useCounter } from "../hooks/useCounter"
 
 
 export const Memorize = () => {
+  const {value,actions} = useCounter()
   return (
     <>
     <h1>Memorize</h1>
