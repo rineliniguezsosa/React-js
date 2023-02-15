@@ -4,6 +4,11 @@ export function FocusScreen() {
     <>
     <h1>FocusScreen</h1>
     <hr></hr>
+    <input
+    type="text"
+    placeholder="Ingrese el valor"
+    className="form-control"
+    />
     </>
   )
 }
