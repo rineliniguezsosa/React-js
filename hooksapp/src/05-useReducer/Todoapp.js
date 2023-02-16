@@ -1,6 +1,8 @@
 
 export function Todoapp() {
   return (
-    <div>Todoapp</div>
+    <>
+    <span>Todoapp</span>
+    </>
   )
 }
