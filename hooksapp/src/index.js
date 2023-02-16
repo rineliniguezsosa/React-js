@@ -11,9 +11,11 @@ import { CallbackHook } from './04-memo/CallbackHook';
 //import { Hookapp } from './components/Hookapp';
 // import { FormCustomHook } from './components/FormCustomHook'
 import './estilos.css'
+//import './05-useReducer/Usereducer'
+import { Todoapp } from './05-useReducer/Todoapp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     // <React.StrictMode>
-        <CallbackHook></CallbackHook>
+        <Todoapp></Todoapp>
     // </React.StrictMode>
 )
