@@ -25,6 +25,8 @@ export function Todoapp() {
           <hr></hr>
           <form>
             <input type="text" placeholder="Agregar tarea" className="btn btn-primary"></input>
+
+            <button type="submit">Agregar</button>
           </form>
       </div>
     </div>
