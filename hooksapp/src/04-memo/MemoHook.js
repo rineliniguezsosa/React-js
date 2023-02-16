@@ -9,14 +9,14 @@ const Heavyprocess = (numero) =>{
 }
 
 export const MemoHook= () => {
-  const {value,actions} = useCounter(1)
+  const {value,actions} = useCounter(4000)
   const [increment] = actions
   const [show, setShow] = useState(true)
   return (
     <>
     <h1>Memorize {value}</h1>
     <hr></hr>
-    <h2>{Heavyprocess(400)}</h2>
+    <h2>{Heavyprocess(value)}</h2>
     <button onClick={increment} className="btn btn-primary">+1</button>
     {/* 
         contexto: por cada cambio en el state react actualiza el dom 
