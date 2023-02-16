@@ -9,7 +9,7 @@ export const CallbackHook = () => {
   }
   return (
     <>
-    <span>CallbackHook</span>
+    <span>CallbackHook {counter}</span>
     <hr></hr>
     <Showincrement incrementar={incrementar}></Showincrement>
     </>
