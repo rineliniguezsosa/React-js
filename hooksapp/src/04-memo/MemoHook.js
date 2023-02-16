@@ -1,8 +1,11 @@
 import { useCounter } from "../hooks/useCounter"
 import { useState } from 'react';
 
-const Heavyprocess = () =>{
-    
+const Heavyprocess = (numero) =>{
+    for (let index = 0; index < numero; index++) {
+        console.log(numero) 
+    }
+    return `${numero} iteraciones`;
 }
 
 export const MemoHook= () => {
