@@ -23,6 +23,9 @@ export function Todoapp() {
       <div className='col-5'>
           <h4>Agregar todo</h4>
           <hr></hr>
+          <form>
+            
+          </form>
       </div>
     </div>
     </>
