@@ -8,7 +8,7 @@ export const CallbackHook = () => {
 //     setCounter(counter+1)
 //   }
 
-  const incrementarFather = useCallback(() => {
+  const incrementarFather = useCallback((value) => {
       //useCallback memoriza una funcion
       setCounter(counter+1)
   },[counter],)
