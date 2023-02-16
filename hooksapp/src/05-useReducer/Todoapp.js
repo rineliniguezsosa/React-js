@@ -17,7 +17,7 @@ export function Todoapp() {
     <div className='row'>
       <div className='col-7'>
         <ul className="list-group">
-            <li></li>
+            <li className="list-group-item"></li>
         </ul>
       </div>
       <div className='col-5'>
