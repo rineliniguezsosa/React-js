@@ -1,6 +1,10 @@
 import { useCounter } from "../hooks/useCounter"
 import { useState } from 'react';
 
+const Heavyprocess = () =>{
+    
+}
+
 export const MemoHook= () => {
   const {value,actions} = useCounter(1)
   const [increment] = actions
