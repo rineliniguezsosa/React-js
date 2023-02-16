@@ -13,7 +13,7 @@ export const MemoHook= () => {
   const [increment] = actions
   const [show, setShow] = useState(true)
 
-  useMemo(() => {
+  const valormemorizado = useMemo(() => {
     //useMemo devuelve un valor memorizado,que vamos a memorizar
     //vamos a memorizar siempre y cuando las dependencias cambien
     Heavyprocess(value)
@@ -22,7 +22,7 @@ export const MemoHook= () => {
     <>
     <h1>Memorize {value}</h1>
     <hr></hr>
-    <h2>{Heavyprocess(value)}</h2>
+    <h2>{valormemorizado}</h2>
     <button onClick={increment} className="btn btn-primary">+1</button>
     {/* 
         contexto: por cada cambio en el state react actualiza el dom 
