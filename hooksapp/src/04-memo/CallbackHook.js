@@ -4,9 +4,9 @@ import { Showincrement } from './Showincrement';
 export const CallbackHook = () => {
   const [counter, setCounter] = useState(10)
 
-  const incrementar = () =>{
-    setCounter(counter+1)
-  }
+//   const incrementar = () =>{
+//     setCounter(counter+1)
+//   }
 
   const incrementarFather = useCallback(() => {
       //useCallback memoriza una funcion
