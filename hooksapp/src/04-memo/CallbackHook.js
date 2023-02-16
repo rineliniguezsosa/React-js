@@ -5,6 +5,7 @@ export const CallbackHook = () => {
   return (
     <>
     <span>CallbackHook</span>
+    <hr></hr>
     </>
   )
 }
