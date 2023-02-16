@@ -8,7 +8,7 @@ export function Todoapp() {
     realizado:true
     }
 ] 
-  const [state, dispatch] = useReducer(reducer,initialState, third)
+  const [state, dispatch] = useReducer(reducer,initialState)
   return (
     <>
     <span>Todoapp</span>
