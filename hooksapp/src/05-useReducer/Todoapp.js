@@ -1,7 +1,7 @@
 import { useReducer } from 'react';
 
 export function Todoapp() {
-  const [state, dispatch] = useReducer(first, second, third)
+  const [state, dispatch] = useReducer(reducer, second, third)
   return (
     <>
     <span>Todoapp</span>
