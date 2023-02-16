@@ -1,4 +1,4 @@
 
-export const reducer = () =>{
-    
+export const reducer = (inicialState,action) =>{
+
 }
