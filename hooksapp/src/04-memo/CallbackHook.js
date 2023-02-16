@@ -7,6 +7,11 @@ export const CallbackHook = () => {
   const incrementar = () =>{
     setCounter(counter+1)
   }
+
+  useCallback(() => {
+      //useCallback memoriza una funcion
+  },[],)
+  
   return (
     <>
     <span>CallbackHook {counter}</span>
