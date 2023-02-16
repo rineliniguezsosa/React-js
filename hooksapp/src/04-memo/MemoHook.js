@@ -12,6 +12,12 @@ export const MemoHook= () => {
   const {value,actions} = useCounter(4000)
   const [increment] = actions
   const [show, setShow] = useState(true)
+
+  useMemo(() => {
+    //useMemo devuelve un valor memorizado,que vamos a memorizar
+    //vamos a memorizar siempre y cuando las dependencias cambien
+    Heavyprocess(value)
+  }, [value])    
   return (
     <>
     <h1>Memorize {value}</h1>
