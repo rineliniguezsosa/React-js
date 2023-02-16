@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { MemoHook } from './04-memo/MemoHook';
 //import { FocusScreen } from './03-useRef/FocusScreen';
 import { Memorize } from './04-memo/Memorize';
 //import { MultipleCustomHook } from './components/MultipleCustomHook';
