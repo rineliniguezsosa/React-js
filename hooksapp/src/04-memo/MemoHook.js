@@ -1,5 +1,5 @@
 import { useCounter } from "../hooks/useCounter"
-import { useState } from 'react';
+import { useState,useMemo } from 'react';
 
 const Heavyprocess = (numero) =>{
     for (let index = 0; index < numero; index++) {
