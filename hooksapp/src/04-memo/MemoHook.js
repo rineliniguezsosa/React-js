@@ -16,6 +16,7 @@ export const MemoHook= () => {
     <>
     <h1>Memorize {value}</h1>
     <hr></hr>
+    <h2>{Heavyprocess(400)}</h2>
     <button onClick={increment} className="btn btn-primary">+1</button>
     {/* 
         contexto: por cada cambio en el state react actualiza el dom 
