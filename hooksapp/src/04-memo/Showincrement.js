@@ -2,6 +2,6 @@
 
 export const Showincrement = () => {
   return (
-    <div>Showincrement</div>
+    <button onClick={()=> incrementar()} className="btn btn-primary">increment</button>
   )
 }
