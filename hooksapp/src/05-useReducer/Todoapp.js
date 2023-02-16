@@ -21,7 +21,7 @@ export function Todoapp() {
         </ul>
       </div>
       <div className='col-5'>
-
+          <h4>Agregar todo</h4>
       </div>
     </div>
     </>
