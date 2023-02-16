@@ -19,7 +19,7 @@ export const CallbackHook = () => {
     <>
     <span>CallbackHook {counter}</span>
     <hr></hr>
-    <Showincrement incrementar={incrementar}></Showincrement>
+    <Showincrement incrementar={incrementarFather}></Showincrement>
     </>
   )
 }
