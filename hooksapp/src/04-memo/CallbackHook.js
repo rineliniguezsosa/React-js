@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 
 export const CallbackHook = () => {
   return (
-    <>CallbackHook</>
+    <>
+    <span>CallbackHook</span>
+    </>
   )
 }
