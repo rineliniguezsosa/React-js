@@ -20,6 +20,9 @@ export function Todoapp() {
             <li></li>
         </ul>
       </div>
+      <div className='col-5'>
+
+      </div>
     </div>
     </>
   )
