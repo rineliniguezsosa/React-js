@@ -4,6 +4,9 @@ export function Todoapp() {
     <>
     <span>Todoapp</span>
     <hr></hr>
+    <ul>
+        <li></li>
+    </ul>
     </>
   )
 }
