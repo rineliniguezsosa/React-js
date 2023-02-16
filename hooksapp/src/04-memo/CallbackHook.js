@@ -13,6 +13,8 @@ export const CallbackHook = () => {
       setCounter(counter+1)
   },[counter],)
   
+   useEffect(() => {
+  }, [incrementarFather])
   return (
     <>
     <span>CallbackHook {counter}</span>
