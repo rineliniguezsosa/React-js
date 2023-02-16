@@ -22,6 +22,7 @@ export function Todoapp() {
       </div>
       <div className='col-5'>
           <h4>Agregar todo</h4>
+          <hr></hr>
       </div>
     </div>
     </>
