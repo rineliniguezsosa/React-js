@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { CallbackHook } from './04-memo/CallbackHook';
-import { MemoHook } from './04-memo/MemoHook';
+//import { MemoHook } from './04-memo/MemoHook';
 //import { FocusScreen } from './03-useRef/FocusScreen';
 //import { Memorize } from './04-memo/Memorize';
 //import { MultipleCustomHook } from './components/MultipleCustomHook';
@@ -14,6 +14,6 @@ import './estilos.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     // <React.StrictMode>
-        <MemoHook></MemoHook>
+        <CallbackHook></CallbackHook>
     // </React.StrictMode>
 )
