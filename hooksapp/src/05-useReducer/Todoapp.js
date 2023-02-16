@@ -14,9 +14,11 @@ export function Todoapp() {
     <>
     <span>Todoapp</span>
     <hr></hr>
+    <div className='row'>
     <ul>
         <li></li>
     </ul>
+    </div>
     </>
   )
 }
