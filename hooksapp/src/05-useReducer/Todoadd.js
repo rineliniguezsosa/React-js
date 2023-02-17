@@ -12,7 +12,7 @@ export const Todoadd = ({onNewTodo}) => {
         if(descripcion.lenght <= 1) return
 
         const newTodo = {
-            id: new Date().getTime(),
+            id:new Date().getTime(),
             descripcion:descripcion,
             realizado:false
         }
