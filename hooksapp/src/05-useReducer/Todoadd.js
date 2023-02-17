@@ -18,6 +18,7 @@ export const Todoadd = ({onNewTodo}) => {
         }
 
         onNewTodo(newTodo)
+        resetform()
     }
   return (
     <form onSubmit={SubmitForm}>
