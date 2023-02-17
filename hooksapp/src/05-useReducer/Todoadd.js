@@ -5,6 +5,11 @@ export const Todoadd = () => {
         descripcion:''
     })
     const { descripcion } = form
+    console.log(resetform);
+    const SubmitForm = (event) =>{
+        event.preventDefault()
+        
+    }
   return (
     <form>
             <input type="text" name="descripcion" value={descripcion} onChange={inputchange} className='form-control' placeholder="Agregar tarea"></input>
