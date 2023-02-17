@@ -11,13 +11,18 @@ export function Todoapp() {
     }
 ] 
   const [state, dispatch] = useReducer(reducer,initialState)
+  console.log(dispatch)
   return (
     <>
     <span>Todoapp</span>
     <hr></hr>
     <div className='row'>
       <div className='col-7'>
-        <TodoList/>
+        {
+        state.map(datos => (
+          <TodoList id={datos.id} descripcion={datos.descripcion} />
+        ))
+        }
       </div>
       <div className='col-5'>
           <h4>Agregar todo</h4>
