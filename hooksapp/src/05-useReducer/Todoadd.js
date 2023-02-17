@@ -10,6 +10,12 @@ export const Todoadd = () => {
         event.preventDefault()
         
         if(descripcion.lenght <= 1) return
+        
+        const newTodo = {
+            id: new Date().getTime(),
+            descripcion:descripcion,
+            realizado:false
+        }
     }
   return (
     <form>
