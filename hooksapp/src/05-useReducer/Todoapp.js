@@ -1,4 +1,5 @@
 import { useReducer } from 'react';
+import { Todoadd } from './Todoadd';
 import { TodoList } from './TodoList';
 import { reducer } from './TodoReducer';
 
@@ -27,11 +28,7 @@ export function Todoapp() {
       <div className='col-5'>
           <h4>Agregar todo</h4>
           <hr></hr>
-          <form>
-            <input type="text" className='form-control' placeholder="Agregar tarea"></input>
-
-            <button className="btn btn-primary" type="submit">Agregar</button>
-          </form>
+          <Todoadd/>
       </div>
     </div>
     </>
