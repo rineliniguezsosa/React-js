@@ -1,8 +1,8 @@
 
-export const reducer = (inicialState,action) =>{
+export const reducer = (initialState,action) =>{
     switch (action.type) {
         case 'agregar':
-            
+
             break;
     
         default:
