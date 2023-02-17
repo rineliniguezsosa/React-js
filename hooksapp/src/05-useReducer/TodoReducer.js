@@ -1,7 +1,7 @@
 
 export const reducer = (inicialState,action) =>{
     switch (action.type) {
-        case value:
+        case 'agregar':
             
             break;
     
