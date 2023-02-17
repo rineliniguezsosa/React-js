@@ -6,7 +6,7 @@ import { reducer } from './TodoReducer';
 export function Todoapp() {
   const initialState = [
     {
-    id:new Date().getDate(),
+    id:new Date().getTime(),
     descripcion:'tomar el curso de js',
     realizado:true
     }
