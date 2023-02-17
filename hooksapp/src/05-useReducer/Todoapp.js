@@ -18,6 +18,7 @@ export function Todoapp() {
       type:'agregar',
       payload:state,
     }
+    dispatch(action)
   }
   console.log(dispatch)
   return (
