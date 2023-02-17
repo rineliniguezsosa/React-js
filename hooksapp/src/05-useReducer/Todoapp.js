@@ -14,7 +14,10 @@ export function Todoapp() {
   const [state, dispatch] = useReducer(reducer,initialState)
 
   const handleform = (todo) =>{
-    console.log(todo);
+    const action = {
+      type:'agregar',
+      payload:state,
+    }
   }
   console.log(dispatch)
   return (
@@ -25,14 +28,14 @@ export function Todoapp() {
       <div className='col-7'>
         {
         state.map(datos => (
-          <TodoList id={datos.id} descripcion={datos.descripcion} />
+          <TodoList descripcion={datos.descripcion} />
         ))
         }
       </div>
       <div className='col-5'>
           <h4>Agregar todo</h4>
           <hr></hr>
-          <Todoadd onNewTodo={(state)=> handleform(state)}/>
+          <Todoadd onNewTodo={handleform}/>
       </div>
     </div>
     </>
