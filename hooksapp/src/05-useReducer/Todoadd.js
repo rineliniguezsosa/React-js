@@ -9,6 +9,7 @@ export const Todoadd = () => {
     const SubmitForm = (event) =>{
         event.preventDefault()
         
+        if(descripcion.lenght <= 1) return
     }
   return (
     <form>
