@@ -2,8 +2,7 @@
 export const reducer = (initialState,action) =>{
     switch (action.type) {
         case 'agregar':
-
-            break;
+            return [...initialState,action.payload]
     
         default:
             break;
