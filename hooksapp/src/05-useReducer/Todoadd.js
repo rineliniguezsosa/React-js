@@ -16,6 +16,8 @@ export const Todoadd = () => {
             descripcion:descripcion,
             realizado:false
         }
+
+        onNewTodo(newTodo)
     }
   return (
     <form onSubmit={SubmitForm}>
