@@ -12,6 +12,10 @@ export function Todoapp() {
     }
 ] 
   const [state, dispatch] = useReducer(reducer,initialState)
+
+  const handleform = (todo) =>{
+    console.log(todo);
+  }
   console.log(dispatch)
   return (
     <>
@@ -28,7 +32,7 @@ export function Todoapp() {
       <div className='col-5'>
           <h4>Agregar todo</h4>
           <hr></hr>
-          <Todoadd/>
+          <Todoadd onNewTodo={(state)=> handleform(state)}/>
       </div>
     </div>
     </>
