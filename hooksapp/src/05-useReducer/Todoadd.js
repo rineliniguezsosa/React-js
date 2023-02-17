@@ -4,9 +4,10 @@ export const Todoadd = () => {
     const [form,inputchange,resetform] = useForm({
         descripcion:''
     })
+    const { descripcion } = form
   return (
     <form>
-            <input type="text" className='form-control' placeholder="Agregar tarea"></input>
+            <input type="text" name="descripcion" value={descripcion} onChange={inputchange} className='form-control' placeholder="Agregar tarea"></input>
 
             <button className="btn btn-primary" type="submit">Agregar</button>
     </form>
