@@ -16,7 +16,7 @@ export function Todoapp() {
   const handleform = (todo) =>{
     const action = {
       type:'agregar',
-      payload:state,
+      payload:todo,
     }
     dispatch(action)
   }
