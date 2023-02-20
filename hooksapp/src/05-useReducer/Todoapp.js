@@ -30,6 +30,10 @@ export function Todoapp() {
     dispatch(action)
   }
 
+  const removeItem = () =>{
+    
+  }
+
   return (
     <>
     <span>Todoapp</span>
