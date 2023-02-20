@@ -14,7 +14,7 @@ export function Todoapp() {
     }
 ] 
   const init = () =>{
-    
+    return JSON.parse(localStorage.getItem('tareas')) || [];
   }
   const [state, dispatch] = useReducer(reducer,initialState,init)
 
