@@ -31,7 +31,10 @@ export function Todoapp() {
   }
 
   const removeItem = () =>{
-    
+    const action = {
+      type:'eliminar',
+      payload:id,
+    }
   }
 
   return (
