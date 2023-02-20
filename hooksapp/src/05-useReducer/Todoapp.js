@@ -13,6 +13,9 @@ export function Todoapp() {
     realizado:true
     }
 ] 
+  const init = () =>{
+    
+  }
   const [state, dispatch] = useReducer(reducer,initialState,init)
 
   useEffect(() => {
