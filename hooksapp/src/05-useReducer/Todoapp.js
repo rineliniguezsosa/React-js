@@ -16,7 +16,7 @@ export function Todoapp() {
   const [state, dispatch] = useReducer(reducer,initialState)
 
   useEffect(() => {
-    
+    localStorage.setItem('tareas',JSON.stringify(state))
   }, [state])
   
   const handleform = (todo) =>{
