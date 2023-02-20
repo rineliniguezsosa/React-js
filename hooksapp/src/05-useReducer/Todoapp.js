@@ -35,6 +35,7 @@ export function Todoapp() {
       type:'eliminar',
       payload:id,
     }
+    dispatch(action)
   }
 
   return (
