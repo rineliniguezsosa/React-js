@@ -20,18 +20,14 @@ export function Todoapp() {
     }
     dispatch(action)
   }
-  console.log(dispatch)
+  
   return (
     <>
     <span>Todoapp</span>
     <hr></hr>
     <div className='row'>
       <div className='col-7'>
-        {
-        state.map(datos => (
-          <TodoList descripcion={datos.descripcion} />
-        ))
-        }
+          <TodoList state={state}/>
       </div>
       <div className='col-5'>
           <h4>Agregar todo</h4>
