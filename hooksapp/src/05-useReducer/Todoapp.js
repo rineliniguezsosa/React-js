@@ -15,6 +15,10 @@ export function Todoapp() {
 ] 
   const [state, dispatch] = useReducer(reducer,initialState)
 
+  useEffect(() => {
+    
+  }, [state])
+  
   const handleform = (todo) =>{
     const action = {
       type:'agregar',
