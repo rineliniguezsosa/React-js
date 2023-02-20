@@ -1,12 +1,18 @@
+import { Todoitem } from "./Todoitem"
 
 
-export const TodoList = ({id,descripcion}) => {
+
+export const TodoList = ({state = []}) => {
   return (
         <ul className="list-group">
-            <li key={id} className="list-group-item d-flex justify-content-between">
-              <span className="align-self-center">{descripcion}</span>
-              <button className="btn btn-danger">Eliminar</button>
-            </li>
+            {state.map(data => (
+            // <li key={data.id} className="list-group-item d-flex justify-content-between">
+            //   <span className="align-self-center">{data.descripcion}</span>
+            //   <button className="btn btn-danger">Eliminar</button>
+            // </li>
+            <Todoitem key={data.id} todo={data}></Todoitem>
+            ))
+            }
         </ul>
   )
 }
