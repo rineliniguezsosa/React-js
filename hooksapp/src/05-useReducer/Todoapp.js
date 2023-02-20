@@ -13,7 +13,7 @@ export function Todoapp() {
     realizado:true
     }
 ] 
-  const [state, dispatch] = useReducer(reducer,initialState)
+  const [state, dispatch] = useReducer(reducer,initialState,init)
 
   useEffect(() => {
     localStorage.setItem('tareas',JSON.stringify(state))
