@@ -30,7 +30,7 @@ export function Todoapp() {
     dispatch(action)
   }
 
-  const removeItem = () =>{
+  const removeItem = (id) =>{
     const action = {
       type:'eliminar',
       payload:id,
