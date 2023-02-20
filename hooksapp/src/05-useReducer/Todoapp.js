@@ -7,11 +7,11 @@ import { useEffect } from 'react';
 
 export function Todoapp() {
   const initialState = [
-    {
-    id:new Date().getTime(),
-    descripcion:'tomar el curso de js',
-    realizado:true
-    }
+    // {
+    // id:new Date().getTime(),
+    // descripcion:'tomar el curso de js',
+    // realizado:true
+    // }
 ] 
   const init = () =>{
     return JSON.parse(localStorage.getItem('tareas')) || [];
