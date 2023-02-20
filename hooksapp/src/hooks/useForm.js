@@ -12,12 +12,7 @@ export const useForm = (estadoinicial ={}) =>{
     }
 
     const resetform = () =>{
-        setform({
-            ...form,
-            username:'',
-            email:'',
-            password:''
-        })
+        setform(estadoinicial)
     }
     return {
         form,
