@@ -1,6 +1,6 @@
 
 
-export const Todoitem = ({todo,onremoveItem}) => {
+export const Todoitem = ({todo,onremoveItem,completado}) => {
   return (
     <li  className="list-group-item d-flex justify-content-between">
               <span className="align-self-center">{todo.descripcion}</span>
