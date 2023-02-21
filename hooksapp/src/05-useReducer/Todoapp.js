@@ -37,7 +37,7 @@ export function Todoapp() {
     dispatch(action)
   }
 
-  const tareacompletada = () =>{
+  const tareacompletada = (id) =>{
 
   }
 
