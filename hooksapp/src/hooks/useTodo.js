@@ -1,4 +1,4 @@
-import { useReducer } from "react"
+import { useReducer,useEffect } from "react"
 import { reducer } from '../05-useReducer/TodoReducer'
 
 export const useTodo = () =>{
@@ -13,7 +13,7 @@ export const useTodo = () =>{
     useEffect(() => {
         localStorage.setItem('tareas',JSON.stringify(state))
     }, [state])  
-    
+
     const [state, dispatch] = useReducer(reducer,initialState,init)
 
     const handleform = (todo) =>{
