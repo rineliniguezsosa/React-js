@@ -3,6 +3,8 @@ import { Todoadd } from './Todoadd';
 import { TodoList } from './TodoList';
 import { reducer } from './TodoReducer';
 import { useEffect } from 'react';
+import { useTodo } from '../hooks/useTodo';
+
 
 
 export function Todoapp() {
@@ -21,13 +23,6 @@ export function Todoapp() {
     localStorage.setItem('tareas',JSON.stringify(state))
   }, [state])
   
-  const handleform = (todo) =>{
-    const action = {
-      type:'agregar',
-      payload:todo,
-    }
-    dispatch(action)
-  }
 
   const removeItem = (id) =>{
     const action = {
