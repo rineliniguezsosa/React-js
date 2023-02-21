@@ -23,6 +23,15 @@ export const useTodo = () =>{
         }
         dispatch(action)
     }
+
+    const removeItem = (id) =>{
+        const action = {
+          type:'eliminar',
+          payload:id,
+        }
+        dispatch(action)
+      }
+      
     return {
         handleform
     }
