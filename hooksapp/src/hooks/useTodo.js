@@ -10,6 +10,10 @@ export const useTodo = () =>{
         return JSON.parse(localStorage.getItem('tareas')) || [];
       }
     
+    useEffect(() => {
+        localStorage.setItem('tareas',JSON.stringify(state))
+    }, [state])  
+    
     const [state, dispatch] = useReducer(reducer,initialState,init)
 
     const handleform = (todo) =>{
