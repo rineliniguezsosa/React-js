@@ -19,6 +19,8 @@ import { Main } from './06-useContext/Main';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     // <React.StrictMode>
-        <Main></Main>
+        <BrowserRouter>
+            <Main></Main>
+        </BrowserRouter>
     // </React.StrictMode>
 )
