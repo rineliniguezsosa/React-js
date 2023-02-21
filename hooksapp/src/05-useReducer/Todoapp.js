@@ -1,8 +1,5 @@
-import { useReducer } from 'react';
 import { Todoadd } from './Todoadd';
 import { TodoList } from './TodoList';
-import { reducer } from './TodoReducer';
-import { useEffect } from 'react';
 import { useTodo } from '../hooks/useTodo';
 
 
