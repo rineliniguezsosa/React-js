@@ -51,7 +51,7 @@ export function Todoapp() {
     <hr></hr>
     <div className='row'>
       <div className='col-7'>
-          <TodoList state={state} onremoveItem={removeItem}/>
+          <TodoList state={state} onremoveItem={removeItem} completado={tareacompletada}/>
       </div>
       <div className='col-5'>
           <h4>Agregar todo</h4>
