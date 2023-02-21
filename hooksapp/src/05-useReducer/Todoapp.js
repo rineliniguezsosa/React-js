@@ -23,6 +23,7 @@ export function Todoapp() {
     localStorage.setItem('tareas',JSON.stringify(state))
   }, [state])
   
+  const { handleform } = useTodo()
 
   const removeItem = (id) =>{
     const action = {
