@@ -6,7 +6,7 @@ export const Main = () => {
     <h1>Main</h1>
       <hr></hr>
     <Routes>
-      
+      <Route path="/"></Route>
     </Routes>
     </>
   )
