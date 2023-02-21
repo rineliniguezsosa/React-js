@@ -11,13 +11,6 @@ export function Todoapp() {
   
   const { handleform } = useTodo()
 
-  const removeItem = (id) =>{
-    const action = {
-      type:'eliminar',
-      payload:id,
-    }
-    dispatch(action)
-  }
 
   const tareacompletada = (id) =>{
     const action = {
