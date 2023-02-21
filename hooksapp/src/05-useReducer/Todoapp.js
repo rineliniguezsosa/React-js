@@ -38,7 +38,11 @@ export function Todoapp() {
   }
 
   const tareacompletada = (id) =>{
-
+    const action = {
+      type:'completado',
+      payload:id,
+    }
+    dispatch(action)
   }
 
   return (
