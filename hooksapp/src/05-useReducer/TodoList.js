@@ -2,7 +2,7 @@ import { Todoitem } from "./Todoitem"
 
 
 
-export const TodoList = ({state = [],onremoveItem}) => {
+export const TodoList = ({state = [],onremoveItem,completado}) => {
   return (
         <ul className="list-group">
             {state.map(data => (
