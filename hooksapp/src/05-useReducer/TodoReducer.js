@@ -16,6 +16,6 @@ export const reducer = (initialState,action) =>{
                 return elemento;
             })
         default:
-            break;
+            return initialState;
     }
 }
