@@ -17,7 +17,6 @@ export function Todoapp() {
     return JSON.parse(localStorage.getItem('tareas')) || [];
   }
   const [state, dispatch] = useReducer(reducer,initialState,init)
-
   useEffect(() => {
     localStorage.setItem('tareas',JSON.stringify(state))
   }, [state])
@@ -44,7 +43,7 @@ export function Todoapp() {
     <hr></hr>
     <div className='row'>
       <div className='col-7'>
-          <TodoList state={state}/>
+          <TodoList state={state} onremoveItem={removeItem}/>
       </div>
       <div className='col-5'>
           <h4>Agregar todo</h4>
