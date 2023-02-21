@@ -6,7 +6,7 @@ import { useTodo } from '../hooks/useTodo';
 
 export function Todoapp() {
   
-  const { handleform,removeItem,tareacompletada } = useTodo()
+  const { state,handleform,removeItem,tareacompletada } = useTodo()
 
   return (
     <>
