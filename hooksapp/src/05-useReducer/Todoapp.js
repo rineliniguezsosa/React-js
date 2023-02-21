@@ -11,9 +11,6 @@ export function Todoapp() {
   
 
   
-  useEffect(() => {
-    localStorage.setItem('tareas',JSON.stringify(state))
-  }, [state])
   
   const { handleform } = useTodo()
 
