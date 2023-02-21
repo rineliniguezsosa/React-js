@@ -12,10 +12,12 @@ import ReactDOM from 'react-dom/client';
 // import { FormCustomHook } from './components/FormCustomHook'
 import './estilos.css'
 //import './05-useReducer/Usereducer'
-import { Todoapp } from './05-useReducer/Todoapp';
+//import { Todoapp } from './05-useReducer/Todoapp';
+import { Main } from './06-useContext/Main';
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     // <React.StrictMode>
-        <Todoapp></Todoapp>
+        <Main></Main>
     // </React.StrictMode>
 )
