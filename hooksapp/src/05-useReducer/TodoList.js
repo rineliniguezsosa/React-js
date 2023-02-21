@@ -2,7 +2,7 @@ import { Todoitem } from "./Todoitem"
 
 
 
-export const TodoList = ({state = []}) => {
+export const TodoList = ({state = [],onremoveItem}) => {
   return (
         <ul className="list-group">
             {state.map(data => (
@@ -10,7 +10,7 @@ export const TodoList = ({state = []}) => {
             //   <span className="align-self-center">{data.descripcion}</span>
             //   <button className="btn btn-danger">Eliminar</button>
             // </li>
-            <Todoitem key={data.id} todo={data}></Todoitem>
+            <Todoitem onremoveItem={onremoveItem} key={data.id} todo={data}></Todoitem>
             ))
             }
         </ul>
