@@ -2,6 +2,11 @@ import { Routes } from 'react-router-dom'
 
 export const Main = () => {
   return (
-    <div>Main</div>
+    <>
+    <Routes>
+      <h1>Main</h1>
+      <hr></hr>
+    </Routes>
+    </>
   )
 }
