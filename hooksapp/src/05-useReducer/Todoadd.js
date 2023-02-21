@@ -5,7 +5,7 @@ export const Todoadd = ({onNewTodo}) => {
         descripcion:''
     })
     const { descripcion } = form
-    console.log(resetform);
+    //console.log(resetform);
     const SubmitForm = (event) =>{
         event.preventDefault()
         
