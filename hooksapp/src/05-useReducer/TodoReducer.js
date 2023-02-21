@@ -5,6 +5,8 @@ export const reducer = (initialState,action) =>{
             return [...initialState,action.payload]
         case 'eliminar':
             return initialState.filter(removeitem => removeitem.id !== action.payload)
+        case 'completado':
+            
         default:
             break;
     }
