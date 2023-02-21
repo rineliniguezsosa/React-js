@@ -41,6 +41,7 @@ export const useTodo = () =>{
     } 
 
     return {
+        state,
         handleform,
         removeItem,
         tareacompletada
