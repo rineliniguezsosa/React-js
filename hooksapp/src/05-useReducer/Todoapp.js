@@ -9,9 +9,7 @@ import { useTodo } from '../hooks/useTodo';
 
 export function Todoapp() {
   
-  const init = () =>{
-    return JSON.parse(localStorage.getItem('tareas')) || [];
-  }
+
   
   useEffect(() => {
     localStorage.setItem('tareas',JSON.stringify(state))
