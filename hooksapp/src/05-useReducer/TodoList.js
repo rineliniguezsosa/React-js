@@ -10,7 +10,7 @@ export const TodoList = ({state = [],onremoveItem,completado}) => {
             //   <span className="align-self-center">{data.descripcion}</span>
             //   <button className="btn btn-danger">Eliminar</button>
             // </li>
-            <Todoitem onremoveItem={onremoveItem} key={data.id} todo={data}></Todoitem>
+            <Todoitem onremoveItem={onremoveItem} key={data.id} todo={data} completado={completado}></Todoitem>
             ))
             }
         </ul>
