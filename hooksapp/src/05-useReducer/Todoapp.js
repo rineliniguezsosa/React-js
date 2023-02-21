@@ -6,19 +6,7 @@ import { useTodo } from '../hooks/useTodo';
 
 export function Todoapp() {
   
-
-  
-  
   const { handleform } = useTodo()
-
-
-  const tareacompletada = (id) =>{
-    const action = {
-      type:'completado',
-      payload:id,
-    }
-    dispatch(action)
-  }
 
   return (
     <>
