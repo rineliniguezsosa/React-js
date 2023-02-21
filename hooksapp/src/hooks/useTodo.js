@@ -31,9 +31,10 @@ export const useTodo = () =>{
         }
         dispatch(action)
       }
-      
+
     return {
-        handleform
+        handleform,
+        removeItem
     }
 
 }
