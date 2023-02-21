@@ -37,6 +37,10 @@ export function Todoapp() {
     dispatch(action)
   }
 
+  const tareacompletada = () =>{
+
+  }
+
   return (
     <>
     <span>Todoapp</span>
