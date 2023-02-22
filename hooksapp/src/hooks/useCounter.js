@@ -3,7 +3,7 @@ import { useState } from 'react';
 export const useCounter = (valorinicial) => {
   const [value, setValue] = useState(valorinicial) 
   
-  const increment = (valor) =>{
+  const increment = (valor = 1) =>{
     setValue((cuenta)=> cuenta+valor)
   }
 
