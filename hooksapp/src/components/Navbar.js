@@ -14,10 +14,10 @@ export const Navbar = () => {
                     <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/about">About</Link>
+                    <NavLink className="nav-link" to="/about">About</NavLink>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/login">Login</Link>
+                    <NavLink className="nav-link" to="/login">Login</NavLink>
                     </li>
                 </ul>
                 </div>
