@@ -13,6 +13,8 @@ export const Main = () => {
       <Route path="/" element={<Homepage></Homepage>}></Route>
       <Route path="/about" element={<Aboutpage></Aboutpage>}></Route>
       <Route path="/login" element={<Loginpage></Loginpage>}></Route>
+       {/* ruta que no existe */}
+      <Route path="/*" element={<Navigate to="/about"></Navigate>}></Route>
     </Routes>
     </>
   )
