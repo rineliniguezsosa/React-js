@@ -9,4 +9,8 @@ describe('Pruebas en el hook personalizado useCounter', () => {
     console.log(result)
     expect(value).toBe(10);
   });
+
+  test('debe de incrementar el contador', () => {
+    
+  });
 });
