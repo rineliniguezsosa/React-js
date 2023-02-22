@@ -42,5 +42,7 @@ describe('Pruebas en el hook personalizado useCounter', () => {
       reset()
     })
     
+    console.log(result.current.value)
+    expect(result.current.value).toBe(50);
   });
 });
