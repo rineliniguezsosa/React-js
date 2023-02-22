@@ -13,6 +13,10 @@ describe('Pruebas en el hook personalizado useCounter', () => {
   test('debe de incrementar el contador', () => {
     const {result} = renderHook(()=> useCounter(20));
     const [incrementar] = result.current.actions
-  
+    
+    act(()=>{
+      incrementar()
+      incrementar(2)
+    })
   });
 });
