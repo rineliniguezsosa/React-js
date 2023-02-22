@@ -18,5 +18,7 @@ describe('Pruebas en el hook personalizado useCounter', () => {
       incrementar()
       incrementar(2)
     })
+
+    expect(result.current.value).toBe(23);
   });
 });
