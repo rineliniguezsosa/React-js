@@ -23,6 +23,7 @@ describe('Pruebas en el hook personalizado useCounter', () => {
   });
 
   test('debe de decrementar el contador', () => {
-    
+    const {result} = renderHook(()=> useCounter(20));
+    const [decrement] = result.current.actions
   });
 });
