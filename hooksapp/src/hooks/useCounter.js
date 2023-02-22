@@ -4,7 +4,7 @@ export const useCounter = (valorinicial) => {
   const [value, setValue] = useState(valorinicial) 
   
   const increment = () =>{
-    setValue(value+1)
+    setValue((cuenta)=> cuenta+1)
   }
 
   const decrement = () =>{
