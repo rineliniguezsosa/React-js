@@ -3,14 +3,14 @@ import { renderHook,act } from '@testing-library/react'
 
 
 describe('Pruebas en el hook personalizado useCounter', () => {
-  test.skip('debe de retonar los valores por defecto', () => {
+  test('debe de retonar los valores por defecto', () => {
     const {result} = renderHook(()=> useCounter(10));
     const {value} = result.current
     console.log(result)
     expect(value).toBe(10);
   });
 
-  test.skip('debe de incrementar el contador', () => {
+  test('debe de incrementar el contador', () => {
     const {result} = renderHook(()=> useCounter(20));
     const [incrementar] = result.current.actions
     
@@ -34,6 +34,7 @@ describe('Pruebas en el hook personalizado useCounter', () => {
   });
 
   test('debe de realizar el reset', () => {
+    const {result} = renderHook(()=> useCounter(50));
     
   });
 });
