@@ -9,6 +9,9 @@ export const Main = () => {
     <>
     <h1>Main</h1>
       <hr></hr>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/login">Login</Link>
     <Routes>
       <Route path="/" element={<Homepage></Homepage>}></Route>
       <Route path="/about" element={<Aboutpage></Aboutpage>}></Route>
