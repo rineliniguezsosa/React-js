@@ -35,6 +35,6 @@ describe('Pruebas en el hook personalizado useCounter', () => {
 
   test('debe de realizar el reset', () => {
     const {result} = renderHook(()=> useCounter(50));
-    
+    const [incrementar,,reset] = result.current.actions
   });
 });
