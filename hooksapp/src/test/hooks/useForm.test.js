@@ -10,6 +10,15 @@ describe('pruebas en el customhook useForm', () => {
     }
     test('debe de retornar la informacion por defecto', () => {
         const { result } = renderHook(()=>useForm(initialState))
-        console.log(result)
+        console.log(result.current)
+        expect(result.current).toEqual({
+            form: {
+              username: 'rinel',
+              email: 'rineliniguezsosa@gmail.com',
+              password: 'password'
+            },
+            inputchange: expect.any(Function),
+            resetform: expect.any(Function)
+          });    
     });
 });
