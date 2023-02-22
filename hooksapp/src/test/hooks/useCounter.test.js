@@ -32,4 +32,8 @@ describe('Pruebas en el hook personalizado useCounter', () => {
     console.log(result.current.value)
     expect(result.current.value).toBe(99);
   });
+
+  test('debe de realizar el reset', () => {
+    
+  });
 });
