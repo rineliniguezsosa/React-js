@@ -7,7 +7,7 @@ import { UserProvider } from './Context/UserProvider'
 
 export const Main = () => {
   return (
-    <>
+    <UserProvider>
     <h1>Main</h1>
       <hr></hr>
       <Navbar></Navbar>
@@ -18,6 +18,6 @@ export const Main = () => {
        {/* ruta que no existe */}
       <Route path="/*" element={<Navigate to="/about"></Navigate>}></Route>
     </Routes>
-    </>
+    </UserProvider>
   )
 }
