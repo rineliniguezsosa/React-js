@@ -3,7 +3,7 @@ import { Homepage } from '../06-useContext/Homepage'
 import { Aboutpage } from '../06-useContext/Aboutpage'
 import { Loginpage } from '../06-useContext/Loginpage'
 import { Navbar } from '../components/Navbar'
-
+import { UserProvider } from './Context/UserProvider'
 
 export const Main = () => {
   return (
