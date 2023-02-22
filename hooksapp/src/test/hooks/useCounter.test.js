@@ -29,6 +29,7 @@ describe('Pruebas en el hook personalizado useCounter', () => {
     act(()=>{
       decrement()
     })
-
+    console.log(result.current.value)
+    expect(result.current.value).toBe(99);
   });
 });
