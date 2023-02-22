@@ -10,6 +10,7 @@ export const Main = () => {
       <hr></hr>
     <Routes>
       <Route path="/" element={<Homepage></Homepage>}></Route>
+      <Route path="/about" element={<Aboutpage></Aboutpage>}></Route>
     </Routes>
     </>
   )
