@@ -3,6 +3,8 @@ import { UserContext } from "./UserContext"
 
 export const UserProvider = () => {
   return (
-    <div>UserProvider</div>
+    <UserContext.Provider value={{nombre:'rinel iñiguez'}}>
+
+    </UserContext.Provider>
   )
 }
