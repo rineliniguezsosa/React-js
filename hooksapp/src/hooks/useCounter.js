@@ -3,8 +3,8 @@ import { useState } from 'react';
 export const useCounter = (valorinicial) => {
   const [value, setValue] = useState(valorinicial) 
   
-  const increment = () =>{
-    setValue((cuenta)=> cuenta+1)
+  const increment = (valor) =>{
+    setValue((cuenta)=> cuenta+valor)
   }
 
   const decrement = () =>{
