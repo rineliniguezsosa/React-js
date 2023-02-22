@@ -9,6 +9,8 @@ export const Loginpage = () => {
     <h1>Loginpage</h1>
     <hr></hr>
     {JSON.stringify(usuario)}
+
+    <button className="btn btn-primary">Agregar</button>
     </>
   )
 }
