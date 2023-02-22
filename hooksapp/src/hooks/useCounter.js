@@ -7,8 +7,8 @@ export const useCounter = (valorinicial) => {
     setValue((cuenta)=> cuenta+valor)
   }
 
-  const decrement = () =>{
-    setValue((cuenta)=>cuenta-1)
+  const decrement = (valor = 1) =>{
+    setValue((cuenta)=>cuenta-valor)
   }
 
   const reset = () =>{
