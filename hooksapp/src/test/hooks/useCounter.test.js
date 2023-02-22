@@ -21,4 +21,8 @@ describe('Pruebas en el hook personalizado useCounter', () => {
 
     expect(result.current.value).toBe(23);
   });
+
+  test('debe de decrementar el contador', () => {
+    
+  });
 });
