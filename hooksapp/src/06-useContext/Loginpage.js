@@ -5,6 +5,10 @@ export const Loginpage = () => {
   const { usuario } = useContext(UserContext)
   console.log(usuario)
   return (
-    <div>Loginpage</div>
+    <>
+    <h1>Loginpage</h1>
+    <hr></hr>
+    {JSON.stringify(usuario)}
+    </>
   )
 }
