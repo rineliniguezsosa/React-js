@@ -26,5 +26,9 @@ describe('Pruebas en el hook personalizado useCounter', () => {
     const {result} = renderHook(()=> useCounter(100));
     const [,decrement,] = result.current.actions
 
+    act(()=>{
+      decrement()
+    })
+
   });
 });
