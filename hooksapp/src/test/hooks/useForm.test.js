@@ -26,5 +26,10 @@ describe('pruebas en el customhook useForm', () => {
         const nuevovalor = "eloy"
 
         const { result,inputchange } = renderHook(()=>useForm(initialState))
+
+        act(()=>{
+
+        })
+        
     });
 });
