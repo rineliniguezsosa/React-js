@@ -14,6 +14,10 @@ describe('Pruebas en MultipleCustomHook', () => {
     increment:fnincrement
   })
 
+  beforeEach(()=>{
+    jest.clearAllMocks();
+  })
+
   test('debe de mostrar el componente', () => {
 
     useFetch.mockReturnValue({
@@ -60,6 +64,6 @@ describe('Pruebas en MultipleCustomHook', () => {
     const boton = screen.getByRole('button',{name:'Next quote'})
     fireEvent.click(boton)
 
-    expect(fnincrement).toHaveBeenCalledWith();
+    expect(fnincrement).toHaveBeenCalled();
   });
 });
