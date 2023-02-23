@@ -29,7 +29,7 @@ export const MultipleCustomHook = () => {
         </blockquote>
       )
     }
-    <button className="btn btn-primary"onClick={increment}>
+    <button disabled={cargando} className="btn btn-primary"onClick={increment}>
       Next quote
     </button>
     </>
