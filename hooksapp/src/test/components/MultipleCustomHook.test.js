@@ -4,6 +4,7 @@ import { useCounter } from '../../hooks/useCounter';
 import { useFetch } from '../../hooks/useFetch';
 
 jest.mock('../../hooks/useFetch')
+jest.mock('../../hooks/useCounter')
 
 describe('Pruebas en MultipleCustomHook', () => {
   test('debe de mostrar el componente', () => {
