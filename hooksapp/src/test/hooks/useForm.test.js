@@ -25,8 +25,9 @@ describe('pruebas en el customhook useForm', () => {
     test('debe de cambiar el nombre del formulario', () => {
         const nuevovalor = "eloy"
 
-        const { result,inputchange } = renderHook(()=>useForm(initialState))
-        console.log(result.current)
+        const { result } = renderHook(()=>useForm(initialState))
+        const { inputchange } = result.current
+        console.log(result)
         act(()=>{
             inputchange({target:{name:'username',value:nuevovalor}})
         })
