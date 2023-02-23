@@ -18,7 +18,7 @@ describe('Pruebas en MultipleCustomHook', () => {
     const elemento = screen.getByRole('button',{name:'Next quote'})
     
     console.log(elemento.disabled)
-    
+
     expect(elemento.disabled).toBeTruthy();
     screen.debug();
   });
@@ -32,5 +32,10 @@ describe('Pruebas en MultipleCustomHook', () => {
     })
 
     render(<MultipleCustomHook></MultipleCustomHook>)
+
+    expect(screen.getByText('Rinel iñiguez')).toBeTruthy();
+    expect(screen.getByText('Los modales hace al hombre')).toBeTruthy();
+    
+    screen.debug()
   });
 });
