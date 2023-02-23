@@ -2,6 +2,8 @@ import {render,screen} from '@testing-library/react'
 import { MultipleCustomHook } from '../../components/MultipleCustomHook';
 import { useFetch } from '../../hooks/useFetch';
 
+jest.mock('../../hooks/useFetch')
+
 describe('Pruebas en MultipleCustomHook', () => {
   test('debe de mostrar el componente', () => {
     render(<MultipleCustomHook></MultipleCustomHook>)
