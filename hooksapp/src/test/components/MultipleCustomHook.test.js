@@ -35,7 +35,11 @@ describe('Pruebas en MultipleCustomHook', () => {
 
     expect(screen.getByText('Rinel iñiguez')).toBeTruthy();
     expect(screen.getByText('Los modales hace al hombre')).toBeTruthy();
-    
+
     screen.debug()
+  });
+
+  test('debe de llamar a la funcion incrementar', () => {
+    
   });
 });
