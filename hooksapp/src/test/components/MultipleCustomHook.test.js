@@ -7,5 +7,9 @@ describe('Pruebas en MultipleCustomHook', () => {
 
     const elemento = screen.getByRole('button',{name:'Next quote'})
     
+    console.log(elemento.disabled)
+    // expect(container).toMatchSnapshot();
+    screen.debug();
+    expect(elemento.disabled).toBeTruthy();
   });
 });
