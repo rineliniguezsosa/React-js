@@ -1,4 +1,4 @@
-import {render} from '@testing-library/react'
+import {render,screen} from '@testing-library/react'
 import { MultipleCustomHook } from '../../components/MultipleCustomHook';
 
 describe('Pruebas en MultipleCustomHook', () => {
