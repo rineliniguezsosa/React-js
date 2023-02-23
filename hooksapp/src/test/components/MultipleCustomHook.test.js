@@ -1,5 +1,6 @@
 import {render,screen,fireEvent} from '@testing-library/react'
 import { MultipleCustomHook } from '../../components/MultipleCustomHook';
+import { useCounter } from '../../hooks/useCounter';
 import { useFetch } from '../../hooks/useFetch';
 
 jest.mock('../../hooks/useFetch')
