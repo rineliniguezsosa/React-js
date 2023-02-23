@@ -7,6 +7,13 @@ jest.mock('../../hooks/useFetch')
 jest.mock('../../hooks/useCounter')
 
 describe('Pruebas en MultipleCustomHook', () => {
+  const fnincrement = jest.fn()
+
+  useCounter.mockReturnValue({
+    value:1,
+    increment:fnincrement
+  })
+
   test('debe de mostrar el componente', () => {
 
     useFetch.mockReturnValue({
@@ -52,5 +59,7 @@ describe('Pruebas en MultipleCustomHook', () => {
 
     const boton = screen.getByRole('button',{name:'Next quote'})
     fireEvent.click(boton)
+
+    expect(fnincrement).toHaveBeenCalledWith();
   });
 });
