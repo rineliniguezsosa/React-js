@@ -4,9 +4,8 @@ import { useFetch } from "../hooks/useFetch"
 
 export const MultipleCustomHook = () => {
   const {value,actions} = useCounter(1)
-  const {datos} = useFetch(`https://api.breakingbadquotes.xyz/v1/quotes/${value}`)
-  console.log(datos)
-  const {data,cargando} = datos
+  const {data,cargando,errores} = useFetch(`https://api.breakingbadquotes.xyz/v1/quotes/${value}`)
+  //console.log(datos)
   const {author,quote} = !!data && data[0]
   const [increment] = actions
   console.log(author,quote);
