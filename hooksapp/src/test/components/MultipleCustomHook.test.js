@@ -15,6 +15,6 @@ describe('Pruebas en MultipleCustomHook', () => {
   });
 
   test('debe de retonar un quote', () => {
-    
+    render(<MultipleCustomHook></MultipleCustomHook>)
   });
 });
