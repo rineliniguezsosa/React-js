@@ -12,4 +12,8 @@ describe('Pruebas en MultipleCustomHook', () => {
     screen.debug();
     expect(elemento.disabled).toBeTruthy();
   });
+
+  test('debe de retonar un quote', () => {
+    
+  });
 });
