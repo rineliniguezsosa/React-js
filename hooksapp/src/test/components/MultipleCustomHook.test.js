@@ -24,6 +24,13 @@ describe('Pruebas en MultipleCustomHook', () => {
   });
 
   test('debe de retonar un quote', () => {
+
+    useFetch.mockReturnValue({
+      data:[{author:'Rinel iñiguez',quote:'Los modales hace al hombre'}],
+      cargando:false,
+      errores:null
+    })
+
     render(<MultipleCustomHook></MultipleCustomHook>)
   });
 });
