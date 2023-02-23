@@ -40,6 +40,10 @@ describe('Pruebas en MultipleCustomHook', () => {
   });
 
   test('debe de llamar a la funcion incrementar', () => {
-    
+    useFetch.mockReturnValue({
+      data:[{author:'Rinel iñiguez',quote:'Los modales hace al hombre'}],
+      cargando:false,
+      errores:null
+    })
   });
 });
