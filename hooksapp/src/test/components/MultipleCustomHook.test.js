@@ -6,6 +6,13 @@ jest.mock('../../hooks/useFetch')
 
 describe('Pruebas en MultipleCustomHook', () => {
   test('debe de mostrar el componente', () => {
+
+    useFetch.mockReturnValue({
+      data:null,
+      cargando:true,
+      errores:null
+    })
+
     render(<MultipleCustomHook></MultipleCustomHook>)
 
     const elemento = screen.getByRole('button',{name:'Next quote'})
