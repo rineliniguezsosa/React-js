@@ -26,9 +26,9 @@ describe('pruebas en el customhook useForm', () => {
         const nuevovalor = "eloy"
 
         const { result,inputchange } = renderHook(()=>useForm(initialState))
-
+        console.log(result.current)
         act(()=>{
-
+            inputchange({target:{name:'username',value:nuevovalor}})
         })
         
     });
