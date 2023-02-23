@@ -45,5 +45,7 @@ describe('Pruebas en MultipleCustomHook', () => {
       cargando:false,
       errores:null
     })
+
+    render(<MultipleCustomHook></MultipleCustomHook>)
   });
 });
