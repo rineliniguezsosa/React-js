@@ -49,5 +49,6 @@ describe('Pruebas en MultipleCustomHook', () => {
     render(<MultipleCustomHook></MultipleCustomHook>)
 
     const boton = screen.getByRole('button',{name:'Next quote'})
+    fireEvent.click(boton)
   });
 });
