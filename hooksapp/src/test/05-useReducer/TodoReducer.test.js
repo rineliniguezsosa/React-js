@@ -17,6 +17,13 @@ describe('pruebas en TodoReducer', () => {
 
     
     test('debe de agregar un todo', () => {
-        
+        const action = {
+            type:'agregar',
+            payload: {
+                id:2,
+                descripcion:'recolectar la piedra filosofal de harry pother',
+                realizado:false,
+            }
+        }
     });
 });
