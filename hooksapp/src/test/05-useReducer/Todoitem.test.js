@@ -50,4 +50,8 @@ describe('pruebas en el componente <Todoitem/>', () => {
         expect(completado).toHaveBeenCalledWith(todo.id);
        
     });
+
+    test('el boton debe de llamar al onremoveitem', () => {
+        
+    });
 });
