@@ -14,4 +14,8 @@ describe('pruebas en TodoReducer', () => {
 
         expect(fnreducer).toBe(initialState);
     });
+
+    test('debe de agregar un todo', () => {
+        
+    });
 });
