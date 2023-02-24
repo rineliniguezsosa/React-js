@@ -1,3 +1,6 @@
+import {render} from '@testing-library/react'
+
+
 describe('pruebas en el componente <Todoitem/>', () => {
 
     const todo = {
@@ -14,6 +17,6 @@ describe('pruebas en el componente <Todoitem/>', () => {
     })
 
     test('debe de mostrar pendiente por completar', () => {
-        
+
     });
 });
