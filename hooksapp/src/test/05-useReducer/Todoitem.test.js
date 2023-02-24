@@ -18,6 +18,6 @@ describe('pruebas en el componente <Todoitem/>', () => {
     })
 
     test('debe de mostrar pendiente por completar', () => {
-        render(<Todoitem todo={todo}/>)
+        render(<Todoitem todo={todo} onremoveItem={onremoveItem} />)
     });
 });
