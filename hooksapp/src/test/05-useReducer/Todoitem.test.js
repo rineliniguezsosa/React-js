@@ -26,5 +26,7 @@ describe('pruebas en el componente <Todoitem/>', () => {
 
         const span = screen.getByLabelText('span')
         
+        expect(span.className).toBe('align-self-center ');
+        
     });
 });
