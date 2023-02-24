@@ -53,5 +53,8 @@ describe('pruebas en el componente <Todoitem/>', () => {
 
     test('el boton debe de llamar al onremoveitem', () => {
         render(<Todoitem todo={todo} onremoveItem={onremoveItem} completado={completado} />)
+
+        const botoneliminar = screen.getByRole('button',{name:'Eliminar'})
+      
     });
 });
