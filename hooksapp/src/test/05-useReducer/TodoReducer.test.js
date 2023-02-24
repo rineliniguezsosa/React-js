@@ -40,4 +40,8 @@ describe('pruebas en TodoReducer', () => {
 
         expect(fnreducer.length).toBe(0);
     });
+   
+    test('debe de realizar el completado', () => {
+        
+    });
 });
