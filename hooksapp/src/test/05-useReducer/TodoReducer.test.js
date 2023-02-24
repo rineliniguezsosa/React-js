@@ -5,8 +5,8 @@ describe('pruebas en TodoReducer', () => {
 
     const initialState = [{
         id:1,
-        todo:'terminar curso react fh',
-        done:false
+        descripcion:'terminar curso react fh',
+        realizado:false
     }]
 
     test('debe de retornar el state inicial', () => {
@@ -15,6 +15,7 @@ describe('pruebas en TodoReducer', () => {
         expect(fnreducer).toBe(initialState);
     });
 
+    
     test('debe de agregar un todo', () => {
         
     });
