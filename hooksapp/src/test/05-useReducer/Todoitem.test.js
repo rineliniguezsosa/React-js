@@ -34,5 +34,7 @@ describe('pruebas en el componente <Todoitem/>', () => {
         todo.realizado = false;
 
         render(<Todoitem todo={todo} onremoveItem={onremoveItem} completado={completado} />)
+
+        const span = screen.getByLabelText('span')
     });
 });
