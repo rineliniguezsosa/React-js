@@ -42,6 +42,9 @@ describe('pruebas en TodoReducer', () => {
     });
    
     test('debe de realizar el completado', () => {
-        
+        const action = {
+            type:'completado',
+            payload:1
+        }
     });
 });
