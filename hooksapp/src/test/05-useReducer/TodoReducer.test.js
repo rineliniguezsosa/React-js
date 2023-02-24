@@ -46,5 +46,8 @@ describe('pruebas en TodoReducer', () => {
             type:'completado',
             payload:1
         }
+
+        const fnreducer = reducer(initialState,action)
+        
     });
 });
