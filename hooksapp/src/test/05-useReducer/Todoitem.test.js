@@ -23,6 +23,8 @@ describe('pruebas en el componente <Todoitem/>', () => {
         const elementli = screen.getByRole('listitem')
 
         expect(elementli.className).toBe('list-group-item d-flex justify-content-between');
-     
+
+        const span = screen.getByLabelText('span')
+        
     });
 });
