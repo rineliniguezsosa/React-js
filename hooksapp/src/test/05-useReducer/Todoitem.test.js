@@ -29,4 +29,8 @@ describe('pruebas en el componente <Todoitem/>', () => {
         expect(span.className).toBe('align-self-center ');
         
     });
+
+    test('debe de mostrar el todo completado o marcado', () => {
+        
+    });
 });
