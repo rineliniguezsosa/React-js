@@ -15,6 +15,7 @@ describe('pruebas en el componente Todoapp', () => {
 
   test('debe de mostrar el componente correctamente', () => {
     render(<Todoapp/>)
-    screen.debug()
+    
+    expect(screen.getByText('tomar el curso react')).toBeTruthy();
   });
 });
