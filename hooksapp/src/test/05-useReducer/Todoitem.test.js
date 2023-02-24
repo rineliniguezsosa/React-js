@@ -31,6 +31,6 @@ describe('pruebas en el componente <Todoitem/>', () => {
     });
 
     test('debe de mostrar el todo completado o marcado', () => {
-        
+        todo.realizado = false;
     });
 });
