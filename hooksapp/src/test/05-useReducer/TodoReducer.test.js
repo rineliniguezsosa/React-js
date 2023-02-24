@@ -49,5 +49,6 @@ describe('pruebas en TodoReducer', () => {
 
         const fnreducer = reducer(initialState,action)
         
+        expect(fnreducer[0].realizado).toBeTruthy();
     });
 });
