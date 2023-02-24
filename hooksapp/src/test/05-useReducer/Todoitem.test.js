@@ -56,6 +56,8 @@ describe('pruebas en el componente <Todoitem/>', () => {
 
         const botoneliminar = screen.getByRole('button',{name:'Eliminar'})
         fireEvent.click(botoneliminar)
-      
+
+        expect(onremoveItem).toHaveBeenCalledWith(todo.id);
+
     });
 });
