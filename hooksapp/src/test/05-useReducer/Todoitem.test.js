@@ -36,5 +36,7 @@ describe('pruebas en el componente <Todoitem/>', () => {
         render(<Todoitem todo={todo} onremoveItem={onremoveItem} completado={completado} />)
 
         const span = screen.getByLabelText('span')
+
+        expect(span.className).toBe('align-self-center text-decoration-line-through');
     });
 });
