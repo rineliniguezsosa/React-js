@@ -46,6 +46,8 @@ describe('pruebas en el componente <Todoitem/>', () => {
 
         const boton = screen.getByRole('button',{name:'completado'})
         fireEvent.click(boton)
+
+        expect(completado).toHaveBeenCalledWith(todo.id);
        
     });
 });
