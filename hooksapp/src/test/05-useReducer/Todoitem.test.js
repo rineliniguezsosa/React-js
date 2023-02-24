@@ -1,4 +1,5 @@
 import {render} from '@testing-library/react'
+import { Todoitem } from '../../05-useReducer/Todoitem';
 
 
 describe('pruebas en el componente <Todoitem/>', () => {
