@@ -43,5 +43,8 @@ describe('pruebas en el componente <Todoitem/>', () => {
     test('debe de llamar al completado cuando se hace click', () => {
         
         render(<Todoitem todo={todo} onremoveItem={onremoveItem} completado={completado} />)
+
+        const boton = screen.getByRole('button',{name:'completado'})
+       
     });
 });
