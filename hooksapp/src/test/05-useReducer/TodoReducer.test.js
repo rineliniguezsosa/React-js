@@ -31,6 +31,10 @@ describe('pruebas en TodoReducer', () => {
     });
 
     test('debe de remover un item', () => {
-        
+        const action = {
+            type:'eliminar',
+            payload:1
+        }
+
     });
 });
