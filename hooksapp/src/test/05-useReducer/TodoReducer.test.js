@@ -37,5 +37,7 @@ describe('pruebas en TodoReducer', () => {
         }
 
         const fnreducer = reducer(initialState,action)
+
+        expect(fnreducer.length).toBe(0);
     });
 });
