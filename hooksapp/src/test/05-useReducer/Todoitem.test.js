@@ -55,6 +55,7 @@ describe('pruebas en el componente <Todoitem/>', () => {
         render(<Todoitem todo={todo} onremoveItem={onremoveItem} completado={completado} />)
 
         const botoneliminar = screen.getByRole('button',{name:'Eliminar'})
+        fireEvent.click(botoneliminar)
       
     });
 });
