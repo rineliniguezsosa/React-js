@@ -9,6 +9,10 @@ describe('pruebas en el componente <Todoitem/>', () => {
     const onremoveItem = jest.fn()
     const completado = jest.fn()
 
+    beforeEach(()=>{
+        jest.clearAllMocks()
+    })
+
     test('debe de mostrar pendiente por completar', () => {
         
     });
