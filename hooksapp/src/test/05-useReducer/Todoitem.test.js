@@ -21,6 +21,8 @@ describe('pruebas en el componente <Todoitem/>', () => {
         render(<Todoitem todo={todo} onremoveItem={onremoveItem} completado={completado} />)
 
         const elementli = screen.getByRole('listitem')
+
+        expect(elementli.className).toBe('list-group-item d-flex justify-content-between');
      
     });
 });
