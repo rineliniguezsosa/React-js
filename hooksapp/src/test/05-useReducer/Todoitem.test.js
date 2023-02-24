@@ -39,4 +39,8 @@ describe('pruebas en el componente <Todoitem/>', () => {
 
         expect(span.className).toBe('align-self-center text-decoration-line-through');
     });
+
+    test('debe de llamar al completado cuando se hace click', () => {
+        
+    });
 });
