@@ -29,4 +29,8 @@ describe('pruebas en TodoReducer', () => {
         
          expect(fnreducer).toContain(action.payload);
     });
+
+    test('debe de remover un item', () => {
+        
+    });
 });
