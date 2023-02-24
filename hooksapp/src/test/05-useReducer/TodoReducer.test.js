@@ -25,5 +25,7 @@ describe('pruebas en TodoReducer', () => {
                 realizado:false,
             }
         }
+        const fnreducer = reducer(initialState,action)
+       
     });
 });
