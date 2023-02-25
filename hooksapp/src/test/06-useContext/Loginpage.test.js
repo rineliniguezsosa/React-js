@@ -10,8 +10,11 @@ describe('pruebas en el componente Loginpage', () => {
         expect(pre.innerHTML).toBe('null');
         screen.debug()
     });
-
-    test('debe de llamar al setUser al llamar al boton', () => {
-        
-    });
+    const user = [
+        {
+            id:123,
+            nombre:"rinel iñiguez sosa"
+        },
+    ]
+    
 });
