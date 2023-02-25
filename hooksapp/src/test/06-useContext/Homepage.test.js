@@ -13,7 +13,7 @@ describe('pruebas en el componente Homepage', () => {
 
         expect(pre.innerHTML).toBe('null');
 
-        screen.debug()
+        //screen.debug()
     });
 
 });
