@@ -10,11 +10,5 @@ describe('pruebas en el componente Loginpage', () => {
         expect(pre.innerHTML).toBe('null');
         screen.debug()
     });
-    const user = [
-        {
-            id:123,
-            nombre:"rinel iñiguez sosa"
-        },
-    ]
-    
+
 });
