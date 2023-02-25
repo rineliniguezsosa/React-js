@@ -11,5 +11,6 @@ describe('pruebas en Main.js react router', () => {
             <Main></Main>
         </MemoryRouter>
       )
+     expect(screen.getByText('Homepage:')).toBeTruthy();
     });
 });
