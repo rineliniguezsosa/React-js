@@ -6,6 +6,6 @@ import {render} from '@testing-library/react'
 
 describe('pruebas en el componente Homepage', () => {
     test('debe de mostrar el componente sin el usuario', () => {
-        
+        render(<Homepage/>)
     });
 });
