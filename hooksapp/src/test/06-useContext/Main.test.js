@@ -20,5 +20,9 @@ describe('pruebas en Main.js react router', () => {
                 <Main></Main>
             </MemoryRouter>
           )
+        
+          expect(screen.getByText('Loginpage')).toBeTruthy();
+
+          //screen.debug()
     });
 });
