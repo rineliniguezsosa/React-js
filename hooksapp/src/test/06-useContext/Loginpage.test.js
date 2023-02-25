@@ -10,4 +10,8 @@ describe('pruebas en el componente Loginpage', () => {
         expect(pre.innerHTML).toBe('null');
         screen.debug()
     });
+
+    test('debe de llamar al setUser al llamar al boton', () => {
+        
+    });
 });
