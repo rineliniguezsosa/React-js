@@ -1,5 +1,6 @@
 import { UserContext } from '../../06-useContext/Context/UserContext';
 import { Loginpage } from '../../06-useContext/Loginpage'
+import {render} from '@testing-library/react'
 
 
 describe('pruebas en el componente Loginpage', () => {
