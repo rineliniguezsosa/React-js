@@ -8,7 +8,7 @@ describe('pruebas en el componente Loginpage', () => {
         render(<UserContext.Provider value={{user:null}}><Loginpage></Loginpage></UserContext.Provider>)
         const pre = screen.getByLabelText('nombre')
         expect(pre.innerHTML).toBe('null');
-        screen.debug()
+        //screen.debug()
     });
 
 });
