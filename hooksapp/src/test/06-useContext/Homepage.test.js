@@ -14,4 +14,9 @@ describe('pruebas en el componente Homepage', () => {
 
         screen.debug()
     });
+
+    test('debe de mostrar el componente con el usuario', () => {
+        
+
+    });
 });
