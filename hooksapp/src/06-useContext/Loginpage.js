@@ -8,7 +8,7 @@ export const Loginpage = () => {
     <>
     <h1>Loginpage</h1>
     <hr></hr>
-    {JSON.stringify(user)}
+    <pre>{JSON.stringify(user)}</pre>
 
     <button onClick={()=> setUser([...user,{id:124,
         nombre:"juan pablo"}])} className="btn btn-primary">Agregar</button>
