@@ -15,6 +15,10 @@ describe('pruebas en Main.js react router', () => {
     });
 
     test('debe de mostrar el Loginpage', () => {
-        
+        render(
+            <MemoryRouter>
+                <Main></Main>
+            </MemoryRouter>
+          )
     });
 });
