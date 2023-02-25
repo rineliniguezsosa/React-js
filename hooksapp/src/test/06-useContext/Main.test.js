@@ -13,4 +13,8 @@ describe('pruebas en Main.js react router', () => {
       )
      expect(screen.getByText('Homepage:')).toBeTruthy();
     });
+
+    test('debe de mostrar el Loginpage', () => {
+        
+    });
 });
