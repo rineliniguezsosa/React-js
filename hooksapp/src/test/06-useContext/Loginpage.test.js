@@ -5,6 +5,7 @@ import {render,screen} from '@testing-library/react'
 
 describe('pruebas en el componente Loginpage', () => {
     test('debe de mostrar el componente sin el usuario', () => {
-        render(<UserContext.Provider><Loginpage></Loginpage></UserContext.Provider>)
+        render(<UserContext.Provider value={{user:null}}><Loginpage></Loginpage></UserContext.Provider>)
+        
     });
 });
