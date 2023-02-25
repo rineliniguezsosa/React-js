@@ -4,5 +4,7 @@ import {render} from '@testing-library/react'
 
 
 describe('pruebas en el componente Loginpage', () => {
-    
+    test('debe de mostrar el componente sin el usuario', () => {
+        
+    });
 });
