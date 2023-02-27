@@ -2,7 +2,7 @@ import { Routes,Route,Navigate } from "react-router-dom"
 import { Loginpage } from "../auth/pages/Loginpage"
 import { DCpages } from "../heroes/pages/DCpages"
 import { Marvelpages } from "../heroes/pages/Marvelpages"
-
+import { Navbar } from "../ui"
 
 export const AppRouter = () => {
   return (
