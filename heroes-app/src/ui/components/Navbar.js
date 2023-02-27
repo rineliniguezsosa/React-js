@@ -33,6 +33,7 @@ export const Navbar = () => {
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto">
+                    <span className="nav-item nav-link text-primary">Rinel</span>
                     <NavLink 
                         className="nav-item nav-link" 
                         to="/login"
