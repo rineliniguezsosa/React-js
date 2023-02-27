@@ -1,5 +1,5 @@
 import { Routes,Route,Navigate } from "react-router-dom"
-import { Loginpage } from "../auth/pages/Loginpage"
+import { Loginpage } from "../auth"
 import { DCpages,Marvelpages } from "../heroes"
 import { Navbar } from "../ui"
 
