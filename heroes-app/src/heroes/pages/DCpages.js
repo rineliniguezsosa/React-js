@@ -2,6 +2,9 @@
 
 export const DCpages = () => {
   return (
-    <div>DCpages</div>
+    <>
+    <h1>DC comics</h1>
+    <hr></hr>
+    </>
   )
 }
