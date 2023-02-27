@@ -6,4 +6,6 @@ export const getHeroByPublisher = (publisher) =>{
     if(!mypublishers.includes(publisher)){
         throw new Error(`No es un ${publisher} valido,tal vez quisiste escribir DC Comics ó Marvel Comics`)
     }
+
+    return heroes.filter(herobypublisher => herobypublisher.publisher === publisher)
 }
