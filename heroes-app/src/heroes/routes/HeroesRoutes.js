@@ -1,6 +1,11 @@
+import { Navbar } from "../../ui"
+
+
 
 export const HeroesRoutes = () => {
   return (
-    <div>HeroesRoutes</div>
+    <>
+        <Navbar></Navbar>
+    </>
   )
 }
