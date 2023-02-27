@@ -23,7 +23,7 @@ export const Navbar = () => {
                     </NavLink>
 
                     <NavLink 
-                        className="nav-item nav-link" 
+                        className={({isActive})=>`${isActive ? 'active' : ''} nav-item nav-link `} 
                         to="/dc"
                     >
                         DC
