@@ -8,6 +8,7 @@ export const AppRouter = () => {
   return (
     <Routes>
         <Route path="marvel" element={<Marvelpages></Marvelpages>}></Route>
+        <Route path="dc" element={<DCpages></DCpages>}></Route>
     </Routes>
   )
 }
