@@ -6,6 +6,8 @@ import { Marvelpages } from "../heroes/pages/Marvelpages"
 
 export const AppRouter = () => {
   return (
-    <div>AppRouter</div>
+    <Routes>
+        <Route path="marvel" element={<Marvelpages></Marvelpages>}></Route>
+    </Routes>
   )
 }
