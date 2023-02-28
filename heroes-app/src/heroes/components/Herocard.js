@@ -13,6 +13,11 @@ export const Herocard = ({superhero,publisher,alter_ego,first_appearance,charact
                     <div className="card-body">
                         <h5 className="card-title">{superhero}</h5>
                         <p className="card-text">{alter_ego}</p>
+
+                        <p>{characters}</p>
+                        <p className="card-text">
+
+                        </p>
                     </div>
                 </div>
             </div>
