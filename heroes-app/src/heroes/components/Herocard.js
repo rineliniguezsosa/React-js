@@ -1,6 +1,6 @@
 
 
-export const Herocard = ({superhero,publisher,alter,first,characters}) => {
+export const Herocard = ({superhero,publisher,alter_ego,first_appearance,characters}) => {
   return (
     <div className="col">
         <div className="card">
@@ -12,6 +12,7 @@ export const Herocard = ({superhero,publisher,alter,first,characters}) => {
                 <div className="col-8">
                     <div className="card-body">
                         <h5 className="card-title">{superhero}</h5>
+                        <p className="card-text">{alter_ego}</p>
                     </div>
                 </div>
             </div>
