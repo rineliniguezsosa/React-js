@@ -11,6 +11,8 @@ export const Hero = () => {
     return <Navigate to="/marvel"/>
   }
   return (
-    <div>Hero</div>
+    <div className="row mt-5">
+
+    </div>
   )
 }
