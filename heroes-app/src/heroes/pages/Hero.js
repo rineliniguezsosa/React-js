@@ -10,6 +10,10 @@ export const Hero = () => {
   if(!heroe){
     return <Navigate to="/marvel"/>
   }
+
+  const regresar = () =>{
+    
+  }
   return (
     <div className="row mt-5">
         <div className="col-4">
