@@ -11,7 +11,7 @@ export const Herocard = ({superhero,publisher,alter,first,characters}) => {
 
                 <div className="col-8">
                     <div className="card-body">
-
+                        <h5 className="card-title">{superhero}</h5>
                     </div>
                 </div>
             </div>
