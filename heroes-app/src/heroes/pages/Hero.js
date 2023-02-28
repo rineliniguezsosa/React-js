@@ -1,4 +1,4 @@
-import { useParams,Navigate } from "react-router-dom"
+import { useParams,Navigate,useNavigate } from "react-router-dom"
 import { getHeroById } from "../helpers"
 
 
