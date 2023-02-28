@@ -5,6 +5,14 @@ export const HeroList = ({publisher}) => {
     const data = getHeroByPublisher(publisher)
     console.log(data)
   return (
-    <div>HeroList</div>
+    <>
+        <ul>
+            {
+            data.map(datos =>(
+                <li key={datos.id}>{datos.superhero}</li>
+            ))
+            }
+        </ul>
+    </>
   )
 }
