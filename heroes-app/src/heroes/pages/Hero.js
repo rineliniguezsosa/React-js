@@ -6,7 +6,9 @@ export const Hero = () => {
   const { heroid } = useParams()
   const navigate = useNavigate()
 
-  const heroe = getHeroById(heroid)
+  const heroe = useMemo(()=>{
+    getHeroById(heroid)
+  },[heroid])
 
   if(!heroe){
     return <Navigate to="/marvel"/>
