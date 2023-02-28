@@ -5,7 +5,7 @@ import { getHeroById } from "../helpers"
 export const Hero = () => {
   const { heroid } = useParams()
   const navigate = useNavigate()
-  
+
   const heroe = getHeroById(heroid)
 
   if(!heroe){
@@ -13,7 +13,7 @@ export const Hero = () => {
   }
 
   const regresar = () =>{
-
+    navigate(-1)
   }
   return (
     <div className="row mt-5">
