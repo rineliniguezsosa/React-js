@@ -6,7 +6,7 @@ export const Herocard = ({superhero,publisher,alter,first,characters}) => {
         <div className="card">
             <div className="row no-gutters">
                 <div className="col-4">
-
+                    <img src="" alt={superhero}></img>
                 </div>
             </div>
         </div>
