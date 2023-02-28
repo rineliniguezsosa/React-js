@@ -19,9 +19,9 @@ export const Hero = () => {
         <div className="col-8">
           <h3>{heroe.superhero}</h3>
           <ul className="list-group list-group-flush">
-              <li className="list-group-item"></li>
-              <li className="list-group-item"></li>
-              <li className="list-group-item"></li>
+              <li className="list-group-item">alter ego:{heroe.alter_ego}</li>
+              <li className="list-group-item">publisher:{heroe.publisher}</li>
+              <li className="list-group-item">Appearance:{heroe.first_appearance}</li>
           </ul>
         </div>
     </div>
