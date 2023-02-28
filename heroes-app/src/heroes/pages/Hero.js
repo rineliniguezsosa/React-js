@@ -12,7 +12,9 @@ export const Hero = () => {
   }
   return (
     <div className="row mt-5">
+        <div className="col-4">
 
+        </div>
     </div>
   )
 }
