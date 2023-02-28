@@ -1,6 +1,6 @@
+import {Link} from 'react-router-dom'
 
-
-export const Herocard = ({superhero,publisher,alter_ego,first_appearance,characters}) => {
+export const Herocard = ({id,superhero,publisher,alter_ego,first_appearance,characters}) => {
   return (
     <div className="col">
         <div className="card">
@@ -18,6 +18,8 @@ export const Herocard = ({superhero,publisher,alter_ego,first_appearance,charact
                         <p className="card-text">
                             <small className="text-muted">{first_appearance}</small>
                         </p>
+
+                        <Link to={`/hero/${id}`}>...Mas</Link>
                     </div>
                 </div>
             </div>
