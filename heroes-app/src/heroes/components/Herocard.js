@@ -8,6 +8,10 @@ export const Herocard = ({superhero,publisher,alter,first,characters}) => {
                 <div className="col-4">
                     <img src="" alt={superhero}></img>
                 </div>
+
+                <div className="col-8">
+
+                </div>
             </div>
         </div>
     </div>
