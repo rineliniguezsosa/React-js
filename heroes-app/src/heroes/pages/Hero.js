@@ -32,7 +32,7 @@ export const Hero = () => {
           <h5 className="mt-3">caracteres</h5>
           <p>{heroe.characters}</p>
 
-          <button className="btn btn-outline-primary">
+          <button onClick={regresar} className="btn btn-outline-primary">
             regresar
           </button>
         </div>
