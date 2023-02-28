@@ -17,7 +17,7 @@ export const Hero = () => {
         </div>
 
         <div className="col-8">
-
+          <h3>{heroe.superhero}</h3>
         </div>
     </div>
   )
