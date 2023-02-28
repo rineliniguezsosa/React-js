@@ -16,7 +16,7 @@ export const Herocard = ({superhero,publisher,alter_ego,first_appearance,charact
 
                         <p>{characters}</p>
                         <p className="card-text">
-
+                            <small className="text-muted">{first_appearance}</small>
                         </p>
                     </div>
                 </div>
