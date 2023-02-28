@@ -15,6 +15,10 @@ export const Hero = () => {
         <div className="col-4">
           <img className="img-thumbnail" src={`../../assets/heroes/${heroid}.jpg`} alt={heroe.superhero} />
         </div>
+
+        <div className="col-8">
+
+        </div>
     </div>
   )
 }
