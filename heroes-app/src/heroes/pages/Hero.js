@@ -23,6 +23,8 @@ export const Hero = () => {
               <li className="list-group-item">publisher:{heroe.publisher}</li>
               <li className="list-group-item">Appearance:{heroe.first_appearance}</li>
           </ul>
+
+          <h5 className="mt-3">caracteres</h5>
         </div>
     </div>
   )
