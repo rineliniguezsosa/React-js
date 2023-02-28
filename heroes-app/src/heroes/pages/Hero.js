@@ -25,6 +25,7 @@ export const Hero = () => {
           </ul>
 
           <h5 className="mt-3">caracteres</h5>
+          <p>{heroe.characters}</p>
         </div>
     </div>
   )
