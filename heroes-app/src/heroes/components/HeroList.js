@@ -6,13 +6,13 @@ export const HeroList = ({publisher}) => {
     console.log(data)
   return (
     <>
-        <ul>
+        <div className="row rows-cols-1 rows-cols-md-3 g-3">
             {
             data.map(datos =>(
                 <li key={datos.id}>{datos.superhero}</li>
             ))
             }
-        </ul>
+        </div>
     </>
   )
 }
