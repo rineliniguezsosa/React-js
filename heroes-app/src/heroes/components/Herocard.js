@@ -10,7 +10,9 @@ export const Herocard = ({superhero,publisher,alter,first,characters}) => {
                 </div>
 
                 <div className="col-8">
+                    <div className="card-body">
 
+                    </div>
                 </div>
             </div>
         </div>
