@@ -1,8 +1,10 @@
 import { AuthContext } from "./AuthContext";
 
 
-export const AuthProvider = () => {
+export const AuthProvider = ({children}) => {
   return (
-    <div>AuthProvider</div>
+    <AuthContext.Provider>
+        {children}
+    </AuthContext.Provider>
   )
 }
