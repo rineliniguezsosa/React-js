@@ -2,6 +2,9 @@
 
 export const Search = () => {
   return (
-    <div>Search</div>
+    <>
+    <span>Search</span>
+    <hr></hr>
+    </>
   )
 }
