@@ -17,7 +17,8 @@ export const AuthProvider = ({children}) => {
             type:type.login,
             payload:user //2) localstorage
         }
-
+        localStorage.setItem('user',JSON.stringify(user)) //3 LocalStorage
+        
         dispatch(action)
     }
   return (
