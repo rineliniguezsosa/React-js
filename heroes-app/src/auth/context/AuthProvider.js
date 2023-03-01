@@ -10,6 +10,11 @@ export const AuthProvider = ({children}) => {
 
     const init = () =>{
         const user = JSON.parse(localStorage.getItem('user'))
+        
+        return {
+            logged:!!user, //retornamos el state
+            user:user
+        }
     }
 
     const [state, dispatch] = useReducer(reducer,initialState,init)
