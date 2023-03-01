@@ -5,13 +5,14 @@ import { getHeroByName } from "../helpers";
 import { Herocard } from "../components";
 
 export const Search = () => {
-  const {search,onInputChange} = useForm({search:''})
   const navigate = useNavigate()
   const location = useLocation() //useLocation simplemente nos devolvera informacion de la ubicación actual
   
   const {q = ''} = queryString.parse(location.search)
 
   const heroe = getHeroByName(q)
+
+  const {search,onInputChange} = useForm({search:q})
 
   const Sendform = (event)=>{
     event.preventDefault()
@@ -47,13 +48,18 @@ export const Search = () => {
       <h4>Resultados..</h4>
       <hr></hr>
       <div className="alert alert-primary">
-          Busca un heroe {q}
+          Busca un heroe
       </div>
 
       <div className="alert alert-danger">
-          no hay resultados :/
+          no hay resultados con {q} :/
       </div>
     </div>
+    {
+      heroe.map(heroe =>(
+        <Herocard key={heroe.id} {...heroe}></Herocard>
+      ))
+    }
     </div>
     </>
   )
