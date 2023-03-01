@@ -17,6 +17,8 @@ export const Search = () => {
         className="form-control"
         >
         </input>
+
+        <button className="btn btn-outline-primary">Enviar</button>
       </form>
     </div>
 
