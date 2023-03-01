@@ -10,12 +10,12 @@ export const AuthProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer,initialState)
 
     const Login = (name = '') =>{
+
+        const user = {id:'124',name} //1) localstorage
+
         const action = {
             type:type.login,
-            payload:{
-                id:'146',
-                name:name
-            }
+            payload:user //2) localstorage
         }
 
         dispatch(action)
