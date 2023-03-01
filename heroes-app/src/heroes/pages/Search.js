@@ -5,6 +5,7 @@ export const Search = () => {
     <>
     <span>Search</span>
     <hr></hr>
+    <div className="row">
     <div className="col-5">
       <h4>Busqueda.</h4>
       <hr></hr>
@@ -32,6 +33,7 @@ export const Search = () => {
       <div className="alert alert-danger">
           no hay resultados :/
       </div>
+    </div>
     </div>
     </>
   )
