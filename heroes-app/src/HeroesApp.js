@@ -4,6 +4,8 @@ import { AuthProvider } from './auth'
 
 export const HeroesApp = () => {
   return (
-      <AppRouter></AppRouter>
+      <AuthProvider>
+        <AppRouter></AppRouter>
+      </AuthProvider>
   )
 }
