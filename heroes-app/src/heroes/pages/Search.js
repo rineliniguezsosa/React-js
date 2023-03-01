@@ -10,6 +10,8 @@ export const Search = () => {
   
   const {q = ''} = queryString.parse(location.search)
 
+  const heroe = getHeroByName(q)
+
   const Sendform = (event)=>{
     event.preventDefault()
     if(search.trim().length <= 1) return;
