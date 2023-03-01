@@ -11,7 +11,7 @@ export const Search = () => {
     <div className="col-5">
       <h4>Busqueda.</h4>
       <hr></hr>
-      <form>
+      <form onSubmit={Sendform}>
         <input 
         type="text" 
         placeholder="busqueda" 
