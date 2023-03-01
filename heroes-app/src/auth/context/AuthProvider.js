@@ -6,7 +6,7 @@ export const AuthProvider = ({children}) => {
     const initialState = {
         logged:false
     }
-    const [state, dispatch] = useReducer(initialState, reducer)
+    const [state, dispatch] = useReducer(reducer,initialState)
   return (
     <AuthContext.Provider>
         {children}
