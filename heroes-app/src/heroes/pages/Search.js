@@ -15,11 +15,13 @@ export const Search = () => {
   const {search,onInputChange} = useForm({search:q})
 
   const validatealert = q.length === 0;
-  console.log(validatealert);
+  const validatealertdgr = (q.length > 0 && heroe.length === 0)
+  // console.log(validatealertdgr);
+  // console.log(validatealert);
 
   const Sendform = (event)=>{
     event.preventDefault()
-    if(search.trim().length <= 1) return;
+    //if(search.trim().length <= 1) return;
    
     navigate(`?q=${search}`) //query param
   }
@@ -54,7 +56,7 @@ export const Search = () => {
           Busca un heroe
       </div>
 
-      <div className="alert alert-danger">
+      <div className="alert alert-danger" style={{display:validatealertdgr?'':'none'}}>
           no hay resultados con {q} :/
       </div>
     </div>
