@@ -1,5 +1,5 @@
+import { useNavigate } from "react-router-dom"
 import { useForm } from "../hooks/useForm"
-
 
 export const Search = () => {
   const {search,onInputChange} = useForm({search:''})
