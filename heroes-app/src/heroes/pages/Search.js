@@ -2,6 +2,7 @@ import { useForm } from "../hooks/useForm"
 
 
 export const Search = () => {
+  const {search,onInputChange} = useForm({search:''})
   return (
     <>
     <span>Search</span>
@@ -17,6 +18,7 @@ export const Search = () => {
         name="search"
         autoComplete="off"
         className="form-control"
+        onChange={onInputChange}
         >
         </input>
 
