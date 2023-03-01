@@ -6,6 +6,8 @@ export const Search = () => {
 
   const Sendform = (event)=>{
     event.preventDefault()
+    if(search.trim().length <= 1) return;
+    console.log(search)
   }
   return (
     <>
