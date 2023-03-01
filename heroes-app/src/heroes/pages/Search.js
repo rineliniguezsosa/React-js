@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate,useLocation } from "react-router-dom"
 import { useForm } from "../hooks/useForm"
 
 export const Search = () => {
