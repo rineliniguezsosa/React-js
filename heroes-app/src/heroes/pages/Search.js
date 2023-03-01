@@ -28,6 +28,10 @@ export const Search = () => {
       <div className="alert alert-primary">
           Busca un heroe
       </div>
+
+      <div className="alert alert-danger">
+          no hay resultados :/
+      </div>
     </div>
     </>
   )
