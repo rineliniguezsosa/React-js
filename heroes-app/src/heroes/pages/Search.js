@@ -50,7 +50,7 @@ export const Search = () => {
     <div className="col-7">
       <h4>Resultados..</h4>
       <hr></hr>
-      <div className="alert alert-primary">
+      <div className="alert alert-primary" style={{display:validatealert?'':'none'}}>
           Busca un heroe
       </div>
 
