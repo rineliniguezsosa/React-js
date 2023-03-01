@@ -14,6 +14,9 @@ export const Search = () => {
 
   const {search,onInputChange} = useForm({search:q})
 
+  const validatealert = q.length === 0;
+  console.log(validatealert);
+
   const Sendform = (event)=>{
     event.preventDefault()
     if(search.trim().length <= 1) return;
