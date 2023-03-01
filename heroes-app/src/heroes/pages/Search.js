@@ -9,6 +9,7 @@ export const Search = () => {
     event.preventDefault()
     if(search.trim().length <= 1) return;
     console.log(search)
+    navigate(`?q=${search}`) //query param
   }
   return (
     <>
