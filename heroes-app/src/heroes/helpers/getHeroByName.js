@@ -1,5 +1,5 @@
 
 
-export const getHeroByName = () =>{
-    
+export const getHeroByName = (name = '') =>{
+
 }
