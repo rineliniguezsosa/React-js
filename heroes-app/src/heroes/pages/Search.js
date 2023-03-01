@@ -1,6 +1,7 @@
 import { useNavigate,useLocation } from "react-router-dom"
 import queryString from 'query-string';
 import { useForm } from "../hooks/useForm"
+import { getHeroByName } from "../helpers";
 
 export const Search = () => {
   const {search,onInputChange} = useForm({search:''})
@@ -43,7 +44,7 @@ export const Search = () => {
       <h4>Resultados..</h4>
       <hr></hr>
       <div className="alert alert-primary">
-          Busca un heroe
+          Busca un heroe {q}
       </div>
 
       <div className="alert alert-danger">
