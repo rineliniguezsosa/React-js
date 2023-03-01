@@ -19,6 +19,7 @@ export const Search = () => {
         autoComplete="off"
         className="form-control"
         onChange={onInputChange}
+        value={search}
         >
         </input>
 
