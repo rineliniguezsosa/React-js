@@ -5,7 +5,12 @@ import { AuthContext } from '../context'
 
 export const Loginpage = () => {
   const navigate = useNavigate()
+  const {login} = useContext(AuthContext)
+  
   const onLogin = () =>{
+
+    login('rinel iñiguez')
+
     navigate('/',{
       replace:true
     })
