@@ -3,6 +3,10 @@ import { useForm } from "../hooks/useForm"
 
 export const Search = () => {
   const {search,onInputChange} = useForm({search:''})
+
+  const Sendform = ()=>{
+    
+  }
   return (
     <>
     <span>Search</span>
