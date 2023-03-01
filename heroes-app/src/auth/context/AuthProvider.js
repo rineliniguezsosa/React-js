@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useReducer } from "react";
 import { AuthContext } from "./AuthContext";
 
 export const AuthProvider = ({children}) => {
