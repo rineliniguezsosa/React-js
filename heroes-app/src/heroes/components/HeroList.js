@@ -3,9 +3,7 @@ import { getHeroByPublisher } from "../helpers"
 import { Herocard } from "./Herocard"
 
 export const HeroList = ({publisher}) => {
-    const data = useMemo(()=>{
-      getHeroByPublisher(publisher)
-    },[publisher])
+    const data = useMemo(()=> getHeroByPublisher(publisher),[publisher])
     console.log(data)
   return (
     <>
