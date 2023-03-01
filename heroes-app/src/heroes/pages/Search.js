@@ -23,7 +23,11 @@ export const Search = () => {
     </div>
 
     <div className="col-7">
-
+      <h4>Resultados..</h4>
+      <hr></hr>
+      <div className="alert alert-primary">
+          Busca un heroe
+      </div>
     </div>
     </>
   )
