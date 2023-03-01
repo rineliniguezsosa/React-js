@@ -6,11 +6,13 @@ export const Search = () => {
   const {search,onInputChange} = useForm({search:''})
   const navigate = useNavigate()
   const location = useLocation() //useLocation simplemente nos devolvera informacion de la ubicación actual
-  console.log(location)
+  
+  const {q = ''} = queryString.parse(location.search)
+
   const Sendform = (event)=>{
     event.preventDefault()
     if(search.trim().length <= 1) return;
-    console.log(search)
+   
     navigate(`?q=${search}`) //query param
   }
   return (
