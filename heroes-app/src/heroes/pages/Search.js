@@ -3,6 +3,7 @@ import { useForm } from "../hooks/useForm"
 
 export const Search = () => {
   const {search,onInputChange} = useForm({search:''})
+  const navigate = useNavigate()
 
   const Sendform = (event)=>{
     event.preventDefault()
