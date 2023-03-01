@@ -1,10 +1,12 @@
 import { useNavigate,useLocation } from "react-router-dom"
+import queryString from 'query-string';
 import { useForm } from "../hooks/useForm"
 
 export const Search = () => {
   const {search,onInputChange} = useForm({search:''})
   const navigate = useNavigate()
-
+  const location = useLocation() //useLocation simplemente nos devolvera informacion de la ubicación actual
+  console.log(location)
   const Sendform = (event)=>{
     event.preventDefault()
     if(search.trim().length <= 1) return;
