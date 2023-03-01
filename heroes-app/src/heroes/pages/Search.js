@@ -2,6 +2,7 @@ import { useNavigate,useLocation } from "react-router-dom"
 import queryString from 'query-string';
 import { useForm } from "../hooks/useForm"
 import { getHeroByName } from "../helpers";
+import { Herocard } from "../components";
 
 export const Search = () => {
   const {search,onInputChange} = useForm({search:''})
