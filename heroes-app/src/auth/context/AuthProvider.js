@@ -7,7 +7,12 @@ export const AuthProvider = ({children}) => {
     const initialState = {
         logged:false
     }
-    const [state, dispatch] = useReducer(reducer,initialState)
+    
+    const init = () =>{
+
+    }
+
+    const [state, dispatch] = useReducer(reducer,initialState,init)
 
     const Login = (name = '') =>{
 
@@ -18,7 +23,7 @@ export const AuthProvider = ({children}) => {
             payload:user //2) localstorage
         }
         localStorage.setItem('user',JSON.stringify(user)) //3 LocalStorage
-        
+
         dispatch(action)
     }
   return (
