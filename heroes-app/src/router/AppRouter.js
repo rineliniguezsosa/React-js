@@ -1,6 +1,7 @@
 import { Routes,Route } from "react-router-dom"
 import { Loginpage } from "../auth"
 import { HeroesRoutes } from "../heroes"
+import { PrivateRoute } from "./PrivateRoute"
 
 export const AppRouter = () => {
   return (
