@@ -4,10 +4,7 @@ import { AuthContext } from "./AuthContext";
 import { reducer } from "./AuthReducer";
 
 export const AuthProvider = ({children}) => {
-    const initialState = {
-        logged:false
-    }
-
+   
     const init = () =>{
         const user = JSON.parse(localStorage.getItem('user')) //4 Localstorage
         
@@ -17,7 +14,7 @@ export const AuthProvider = ({children}) => {
         }
     }
 
-    const [state, dispatch] = useReducer(reducer,initialState,init)
+    const [state, dispatch] = useReducer(reducer,{},init)
 
     const Login = (name = '') =>{
 
