@@ -1,3 +1,4 @@
+import { AuthContext } from "../auth"
 
 
 export const PublicRoute = () => {
