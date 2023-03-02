@@ -29,7 +29,7 @@ export const AuthProvider = ({children}) => {
         dispatch(action)
     }
 
-    const Logout = () =>{
+    const Logoutlogin = () =>{
 
         const action = {
             type:type.logout,
@@ -40,7 +40,7 @@ export const AuthProvider = ({children}) => {
         dispatch(action)
     }
   return (
-    <AuthContext.Provider value={{...state,Login,Logout}}>
+    <AuthContext.Provider value={{...state,Login,Logoutlogin}}>
         {children}
     </AuthContext.Provider>
   )
