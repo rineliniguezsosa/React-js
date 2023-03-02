@@ -8,10 +8,11 @@ export const Loginpage = () => {
   const {Login} = useContext(AuthContext)
   
   const onLogin = () =>{
+    const ultimapagina = localStorage.getItem('ultimapagina')
 
     Login('rinel iñiguez')
 
-    navigate('/',{
+    navigate(ultimapagina,{
       replace:true
     })
   }
