@@ -40,7 +40,7 @@ export const AuthProvider = ({children}) => {
         dispatch(action)
     }
   return (
-    <AuthContext.Provider value={{...state,login:Login,logout:Logout}}>
+    <AuthContext.Provider value={{...state,Login,Logout}}>
         {children}
     </AuthContext.Provider>
   )
