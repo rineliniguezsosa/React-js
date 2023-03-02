@@ -5,11 +5,11 @@ import { AuthContext } from '../context'
 
 export const Loginpage = () => {
   const navigate = useNavigate()
-  const {login} = useContext(AuthContext)
+  const {Login} = useContext(AuthContext)
   
   const onLogin = () =>{
 
-    login('rinel iñiguez')
+    Login('rinel iñiguez')
 
     navigate('/',{
       replace:true
