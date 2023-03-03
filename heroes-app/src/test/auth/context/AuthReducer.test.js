@@ -23,6 +23,9 @@ describe('pruebas en AuthReducer', () => {
             type:'auth login',
             payload:{id:'124',name:'Rinel iñiguez'}
         }
+
+        const { user } = reducer(state,action)
+
     });
 
 });
