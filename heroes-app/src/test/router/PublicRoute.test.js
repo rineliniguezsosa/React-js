@@ -22,6 +22,16 @@ describe('pruebas en PublicRoute.js', () => {
     });
 
     test('debe de mostrar si esta autenticado', () => {
-        
+        const initialState = {
+            logged:true,
+            user:{id:'124',name:'rinel chan'}
+        }
+        render(
+        <AuthContext.Provider value={ initialState }>
+            <PublicRoute>
+                <h1>ruta publica</h1>
+            </PublicRoute>
+        </AuthContext.Provider>
+        )
     });
 });
