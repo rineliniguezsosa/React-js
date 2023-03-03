@@ -29,7 +29,7 @@ describe('pruebas en PublicRoute.js', () => {
         }
         render(
         <AuthContext.Provider value={ initialState }>
-            <MemoryRouter initialEntries={['./login']}>
+            <MemoryRouter initialEntries={['/login']}>
                 <Routes>
                     <Route path='/login' element={<PublicRoute>
                                             <h1>ruta publica</h1>
@@ -41,5 +41,7 @@ describe('pruebas en PublicRoute.js', () => {
             </MemoryRouter>
         </AuthContext.Provider>
         )
+
+        screen.debug()
     });
 });
