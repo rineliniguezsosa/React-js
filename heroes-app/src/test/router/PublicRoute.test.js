@@ -11,7 +11,9 @@ describe('pruebas en PublicRoute.js', () => {
         }
         render(
         <AuthContext.Provider value={ initialState }>
-            <PublicRoute></PublicRoute>
+            <PublicRoute>
+                <h1>ruta publica</h1>
+            </PublicRoute>
         </AuthContext.Provider>
         )
         screen.debug()
