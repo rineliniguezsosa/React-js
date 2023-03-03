@@ -34,6 +34,10 @@ describe('pruebas en AuthReducer', () => {
         const state = {
             logged:true,
             payload:{id:'124',name:'eloy'}
-        }     
+        }   
+        
+        const action = {
+            type:'auth logout',
+        }
     });
 });
