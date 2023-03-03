@@ -31,6 +31,9 @@ describe('pruebas en AuthReducer', () => {
     });
 
     test('debe de borrar el name del usuario y logged en false', () => {
-                
+        const state = {
+            logged:true,
+            payload:{id:'124',name:'eloy'}
+        }     
     });
 });
