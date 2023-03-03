@@ -8,6 +8,8 @@ describe('pruebas en AuthReducer', () => {
         const state = {
             logged:false
         }
+
+        const fnreducer = reducer(state,{})
        
     });
 
