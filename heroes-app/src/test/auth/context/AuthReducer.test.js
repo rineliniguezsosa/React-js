@@ -14,4 +14,8 @@ describe('pruebas en AuthReducer', () => {
         expect(fnreducer).toEqual({logged:false});
     });
 
+    test('debe de llamar al login autenticar y establecer el user', () => {
+       
+    });
+
 });
