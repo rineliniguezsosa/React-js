@@ -10,7 +10,8 @@ describe('pruebas en AuthReducer', () => {
         }
 
         const fnreducer = reducer(state,{})
-       
+        console.log(fnreducer)
+        expect(fnreducer).toEqual({logged:false});
     });
 
 });
