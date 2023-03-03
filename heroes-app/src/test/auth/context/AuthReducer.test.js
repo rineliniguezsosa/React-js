@@ -15,7 +15,10 @@ describe('pruebas en AuthReducer', () => {
     });
 
     test('debe de llamar al login autenticar y establecer el user', () => {
-       
+        const state = {
+            logged:false
+        }
+
     });
 
 });
