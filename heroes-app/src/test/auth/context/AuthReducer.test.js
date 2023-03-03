@@ -39,5 +39,7 @@ describe('pruebas en AuthReducer', () => {
         const action = {
             type:'auth logout',
         }
+
+        const {logged} = reducer(state,action)
     });
 });
