@@ -43,5 +43,7 @@ describe('pruebas en PublicRoute.js', () => {
         )
 
         screen.debug()
+
+        expect(screen.getByText('pagina marvel')).toBeTruthy();
     });
 });
