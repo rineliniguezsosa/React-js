@@ -1,4 +1,5 @@
 import { render,screen } from '@testing-library/react'
+import { AuthContext } from '../../auth';
 import { PublicRoute } from '../../router/PublicRoute';
 
 
