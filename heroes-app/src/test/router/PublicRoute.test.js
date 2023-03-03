@@ -36,6 +36,7 @@ describe('pruebas en PublicRoute.js', () => {
                                                 </PublicRoute>}>
 
                     </Route>
+                    <Route path='marvel' element={<h1>pagina marvel</h1>}></Route>
                 </Routes>
             </MemoryRouter>
         </AuthContext.Provider>
