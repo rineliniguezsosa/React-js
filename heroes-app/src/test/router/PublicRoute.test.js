@@ -20,4 +20,8 @@ describe('pruebas en PublicRoute.js', () => {
         expect(screen.getByText('ruta publica')).toBeTruthy();
         screen.debug()
     });
+
+    test('debe de mostrar si esta autenticado', () => {
+        
+    });
 });
