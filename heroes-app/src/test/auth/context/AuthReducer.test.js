@@ -30,4 +30,7 @@ describe('pruebas en AuthReducer', () => {
         expect(user.name).toBe('Rinel iñiguez');
     });
 
+    test('debe de borrar el name del usuario y logged en false', () => {
+                
+    });
 });
