@@ -16,6 +16,8 @@ describe('pruebas en PublicRoute.js', () => {
             </PublicRoute>
         </AuthContext.Provider>
         )
+
+        expect(screen.getByText('ruta publica')).toBeTruthy();
         screen.debug()
     });
 });
