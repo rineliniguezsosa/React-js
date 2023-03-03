@@ -18,7 +18,11 @@ describe('pruebas en AuthReducer', () => {
         const state = {
             logged:false
         }
-
+        
+        const action = {
+            type:'auth login',
+            payload:{id:'124',name:'Rinel iñiguez'}
+        }
     });
 
 });
