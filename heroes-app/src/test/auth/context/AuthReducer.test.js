@@ -41,5 +41,8 @@ describe('pruebas en AuthReducer', () => {
         }
 
         const {logged} = reducer(state,action)
+
+        console.log(logged)
+        expect(logged).toBeFalsy();
     });
 });
