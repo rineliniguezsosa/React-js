@@ -25,7 +25,9 @@ describe('pruebas en AuthReducer', () => {
         }
 
         const { user } = reducer(state,action)
-
+        
+        console.log(user.name)
+        expect(user.name).toBe('Rinel iñiguez');
     });
 
 });
