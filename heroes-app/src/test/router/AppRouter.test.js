@@ -23,6 +23,9 @@ describe('pruebas en AppRouter.js', () => {
     });
 
     test('debe de mostrar el componente marvel si esta autenticado', () => {
-        
+        const initialState = {
+            logged:true,
+            user:{id:'129',name:'rolando fabian'}
+        }
     });
 });
