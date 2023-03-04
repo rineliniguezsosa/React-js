@@ -34,5 +34,8 @@ describe('pruebas en el componente Navbar.js', () => {
             </MemoryRouter>
         </AuthContext.Provider>)
 
+        const btnlogout = screen.getByRole('button',{name:'Logout'})
+        console.log(btnlogout)
+
     });
 });
