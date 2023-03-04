@@ -21,4 +21,8 @@ describe('pruebas en AppRouter.js', () => {
 
         screen.debug()
     });
+
+    test('debe de mostrar el componente marvel si esta autenticado', () => {
+        
+    });
 });
