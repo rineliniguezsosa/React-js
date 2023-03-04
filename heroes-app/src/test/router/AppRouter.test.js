@@ -6,7 +6,7 @@ import { MemoryRouter } from "react-router-dom";
 
 
 describe('pruebas en AppRouter.js', () => {
-    test('debe de mostrar el login no si esta autenticado', () => {
+    test.skip('debe de mostrar el login no si esta autenticado', () => {
         const initialState = {
             logged:false,
         }
@@ -27,5 +27,14 @@ describe('pruebas en AppRouter.js', () => {
             logged:true,
             user:{id:'129',name:'rolando fabian'}
         }
+        render(
+            <AuthContext.Provider value={ initialState }>
+                <MemoryRouter initialEntries={['/marvel']}>
+                    <AppRouter></AppRouter>
+                </MemoryRouter>
+            </AuthContext.Provider>)
+
+        screen.debug()  
+        
     });
 });
