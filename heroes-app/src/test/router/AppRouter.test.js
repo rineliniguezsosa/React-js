@@ -13,8 +13,10 @@ describe('pruebas en AppRouter.js', () => {
         render(
         <AuthContext.Provider value={ initialState }>
             <MemoryRouter initialEntries={['/marvel']}>
-
+                <AppRouter></AppRouter>
             </MemoryRouter>
         </AuthContext.Provider>)
+
+        screen.debug()
     });
 });
