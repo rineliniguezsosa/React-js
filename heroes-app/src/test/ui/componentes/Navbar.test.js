@@ -38,5 +38,7 @@ describe('pruebas en el componente Navbar.js', () => {
         fireEvent.click(btnlogout)
         //console.log(btnlogout)
 
+        expect(initialState.Logoutlogin).toHaveBeenCalled();
+
     });
 });
