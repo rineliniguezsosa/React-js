@@ -14,6 +14,8 @@ describe('pruebas en el componente Navbar.js', () => {
         jest.clearAllMocks()
     })
     test('debe de mostrar el nombre del usuario autenticado', () => {
-        
+        render(<AuthContext.Provider value={initialState}>
+
+        </AuthContext.Provider>)
     });
 });
