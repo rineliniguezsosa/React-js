@@ -1,5 +1,5 @@
 import { AppRouter } from "../../router/AppRouter";
-import {render} from '@testing-library/react'
+import {render,screen} from '@testing-library/react'
 
 
 describe('pruebas en AppRouter.js', () => {
