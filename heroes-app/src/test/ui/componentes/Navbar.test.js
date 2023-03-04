@@ -1,6 +1,7 @@
 import { Navbar } from "../../../ui/components/Navbar";
 import { render,screen } from "@testing-library/react";
 import { AuthContext } from "../../../auth";
+import { MemoryRouter } from "react-router-dom";
 
 
 describe('pruebas en el componente Navbar.js', () => {
