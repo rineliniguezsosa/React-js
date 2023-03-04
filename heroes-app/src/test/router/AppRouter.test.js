@@ -17,6 +17,8 @@ describe('pruebas en AppRouter.js', () => {
             </MemoryRouter>
         </AuthContext.Provider>)
 
+        expect(screen.getAllByText('Login').length).toBe(2);
+
         screen.debug()
     });
 });
