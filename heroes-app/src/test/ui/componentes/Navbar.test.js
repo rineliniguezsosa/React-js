@@ -35,7 +35,8 @@ describe('pruebas en el componente Navbar.js', () => {
         </AuthContext.Provider>)
 
         const btnlogout = screen.getByRole('button',{name:'Logout'})
-        console.log(btnlogout)
+        fireEvent.click(btnlogout)
+        //console.log(btnlogout)
 
     });
 });
