@@ -7,6 +7,10 @@ describe('pruebas en el componente Navbar.js', () => {
         user:{id:'234',name:'rolando fabian'},
         Logoutlogin:jest.fn()
     }
+
+    beforeEach(()=>{
+        
+    })
     test('debe de mostrar el nombre del usuario autenticado', () => {
         
     });
