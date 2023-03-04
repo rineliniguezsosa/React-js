@@ -25,4 +25,8 @@ describe('pruebas en el componente Navbar.js', () => {
 
         expect(screen.getByText('rolando fabian')).toBeTruthy();
     });
+
+    test('debe de llamar el logout y navigate cuando se hace click en el boton', () => {
+        
+    });
 });
