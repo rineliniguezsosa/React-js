@@ -1,5 +1,7 @@
 import { Navbar } from "../../../ui/components/Navbar";
 import { render,screen } from "@testing-library/react";
+import { AuthContext } from "../../../auth";
+
 
 describe('pruebas en el componente Navbar.js', () => {
     const initialState = {
