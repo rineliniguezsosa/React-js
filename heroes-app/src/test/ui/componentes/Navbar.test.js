@@ -28,5 +28,11 @@ describe('pruebas en el componente Navbar.js', () => {
 
     test('debe de llamar el logout y navigate cuando se hace click en el boton', () => {
         
+        render(<AuthContext.Provider value={initialState}>
+            <MemoryRouter>
+                <Navbar></Navbar>
+            </MemoryRouter>
+        </AuthContext.Provider>)
+
     });
 });
