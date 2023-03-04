@@ -17,8 +17,10 @@ describe('pruebas en el componente Navbar.js', () => {
     test('debe de mostrar el nombre del usuario autenticado', () => {
         render(<AuthContext.Provider value={initialState}>
             <MemoryRouter>
-
+                <Navbar></Navbar>
             </MemoryRouter>
         </AuthContext.Provider>)
+
+        screen.debug()
     });
 });
