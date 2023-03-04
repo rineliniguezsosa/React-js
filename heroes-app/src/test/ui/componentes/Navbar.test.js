@@ -22,5 +22,7 @@ describe('pruebas en el componente Navbar.js', () => {
         </AuthContext.Provider>)
 
         screen.debug()
+
+        expect(screen.getByText('rolando fabian')).toBeTruthy();
     });
 });
