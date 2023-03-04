@@ -9,7 +9,7 @@ describe('pruebas en el componente Navbar.js', () => {
     }
 
     beforeEach(()=>{
-        
+        jest.clearAllMocks()
     })
     test('debe de mostrar el nombre del usuario autenticado', () => {
         
