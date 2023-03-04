@@ -7,6 +7,9 @@ import { MemoryRouter } from "react-router-dom";
 
 describe('pruebas en AppRouter.js', () => {
     test('debe de mostrar el login si esta autenticado', () => {
-        
+        render(
+        <AuthContext.Provider>
+
+        </AuthContext.Provider>)
     });
 });
