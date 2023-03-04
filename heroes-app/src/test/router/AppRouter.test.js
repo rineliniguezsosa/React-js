@@ -12,7 +12,9 @@ describe('pruebas en AppRouter.js', () => {
         }
         render(
         <AuthContext.Provider value={ initialState }>
+            <MemoryRouter initialEntries={['/marvel']}>
 
+            </MemoryRouter>
         </AuthContext.Provider>)
     });
 });
