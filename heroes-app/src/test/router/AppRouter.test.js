@@ -34,6 +34,7 @@ describe('pruebas en AppRouter.js', () => {
                 </MemoryRouter>
             </AuthContext.Provider>)
 
+        expect(screen.getByText('Marvel')).toBeGreaterThanOrEqual(1);
         screen.debug()  
         
     });
