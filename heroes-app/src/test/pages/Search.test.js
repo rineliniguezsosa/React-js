@@ -14,7 +14,7 @@ describe('prueba en Search.js', () => {
     });
 
     test('debe de mostrar a batman y el input con el valor del query', () => {
-        const { container } = render(
+        render(
             <MemoryRouter initialEntries={['/search?q=batman']}><Search></Search></MemoryRouter>
             )
     });
