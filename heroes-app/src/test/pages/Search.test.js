@@ -17,5 +17,9 @@ describe('prueba en Search.js', () => {
         render(
             <MemoryRouter initialEntries={['/search?q=batman']}><Search></Search></MemoryRouter>
             )
+        
+            const input = screen.getByRole('textbox')
+           
+        screen.debug()
     });
 });
