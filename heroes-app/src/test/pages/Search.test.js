@@ -12,4 +12,8 @@ describe('prueba en Search.js', () => {
 
         expect(container).toMatchSnapshot();
     });
+
+    test('debe de mostrar a batman y el input con el valor del query', () => {
+        
+    });
 });
