@@ -30,6 +30,10 @@ describe('prueba en Search.js', () => {
     });
 
     test('debe de mostrar un error si encuentra con un error al escribir batman234', () => {
+        render(
+            <MemoryRouter initialEntries={['/search?q=batman234']}><Search></Search></MemoryRouter>
+            )
         
+            screen.debug()
     });
 });
