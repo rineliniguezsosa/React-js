@@ -24,7 +24,8 @@ describe('prueba en Search.js', () => {
             expect(input.value).toBe('batman');
 
             const alert = screen.getByLabelText('danger-alert')
-
+            console.log(alert.style.display)
+            expect(alert.style.display).toBe('none');
         screen.debug()
     });
 });
