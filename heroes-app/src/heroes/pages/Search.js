@@ -56,7 +56,7 @@ export const Search = () => {
           Busca un heroe
       </div>
 
-      <div className="alert alert-danger" style={{display:validatealertdgr?'':'none'}}>
+      <div aria-label="danger-alert" className="alert alert-danger" style={{display:validatealertdgr?'':'none'}}>
           no hay resultados con {q} :/
       </div>
     </div>
