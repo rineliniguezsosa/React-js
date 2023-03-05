@@ -9,5 +9,7 @@ describe('prueba en Search.js', () => {
         const { container } = render(
         <MemoryRouter><Search></Search></MemoryRouter>
         )
+
+        expect(container).toMatchSnapshot();
     });
 });
