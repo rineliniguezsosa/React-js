@@ -28,4 +28,8 @@ describe('prueba en Search.js', () => {
             expect(alert.style.display).toBe('none');
         screen.debug()
     });
+
+    test('debe de mostrar un error si encuentra con un error al escribir batman234', () => {
+        
+    });
 });
