@@ -20,6 +20,7 @@ describe('prueba en Search.js', () => {
         
             const input = screen.getByRole('textbox')
            
+            expect(input.value).toBe('batman');
         screen.debug()
     });
 });
