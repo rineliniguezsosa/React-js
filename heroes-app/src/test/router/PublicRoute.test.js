@@ -5,11 +5,11 @@ import { PublicRoute } from '../../router/PublicRoute';
 
 
 describe('pruebas en PublicRoute.js', () => {
-    
+    const initialState = {
+        logged:false
+    }
     test('debe de mostrar el children si no esta autenticado', () => {
-        const initialState = {
-            logged:false
-        }
+        
         render(
         <AuthContext.Provider value={ initialState }>
             <PublicRoute>
