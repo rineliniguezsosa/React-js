@@ -33,7 +33,7 @@ export const Search = () => {
     <div className="col-5">
       <h4>Busqueda.</h4>
       <hr></hr>
-      <form onSubmit={Sendform}>
+      <form onSubmit={Sendform} aria-label="form">
         <input 
         type="text" 
         placeholder="busqueda" 
