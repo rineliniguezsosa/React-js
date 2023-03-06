@@ -6,6 +6,12 @@ export const Loginpage = () => {
         <Grid item xs={3} sx={{backgroundColor:'white',padding:3,borderRadius:2}}>
             <Typography variant="h5" sx={{mb:1}}>Login</Typography>
         </Grid>
+
+        <form>
+            <Grid item>
+                
+            </Grid>
+        </form>
     </Grid>
   )
 }
