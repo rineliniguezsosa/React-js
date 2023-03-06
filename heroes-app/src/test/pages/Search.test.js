@@ -38,6 +38,8 @@ describe('prueba en Search.js', () => {
     });
 
     test('debe de llamar al navigate a la pantalla nueva', () => {
-        
+        render(
+            <MemoryRouter initialEntries={['/search']}><Search></Search></MemoryRouter>
+            )
     });
 });
