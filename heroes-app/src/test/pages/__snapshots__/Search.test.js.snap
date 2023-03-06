@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`prueba en Search.js debe de coincidir con el snapshot 1`] = `
+<div>
+  <span>
+    Search
+  </span>
+  <hr />
+  <div
+    class="row"
+  >
+    <div
+      class="col-5"
+    >
+      <h4>
+        Busqueda.
+      </h4>
+      <hr />
+      <form>
+        <input
+          autocomplete="off"
+          class="form-control"
+          name="search"
+          placeholder="busqueda"
+          type="text"
+          value=""
+        />
+        <button
+          class="btn btn-outline-primary"
+        >
+          Enviar
+        </button>
+      </form>
+    </div>
+    <div
+      class="col-7"
+    >
+      <h4>
+        Resultados..
+      </h4>
+      <hr />
+      <div
+        class="alert alert-primary"
+      >
+        Busca un heroe
+      </div>
+      <div
+        aria-label="danger-alert"
+        class="alert alert-danger"
+        style="display: none;"
+      >
+        no hay resultados con 
+         :/
+      </div>
+    </div>
+  </div>
+</div>
+`;
