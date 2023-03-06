@@ -36,4 +36,8 @@ describe('prueba en Search.js', () => {
             const alert = screen.getByLabelText('danger-alert')
             expect(alert.style.display).toBe('')
     });
+
+    test('debe de llamar al navigate a la pantalla nueva', () => {
+        
+    });
 });
