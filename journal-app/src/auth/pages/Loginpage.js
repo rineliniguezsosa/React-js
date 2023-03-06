@@ -8,13 +8,15 @@ export const Loginpage = () => {
         </Grid>
 
         <form>
-            <Grid item>
-                <TextField 
-                label="Correo" 
-                type="email"
-                placeholder="rineliniguezsosa@gmail.com"
-                fullWidth
-                ></TextField>
+            <Grid container>
+                <Grid item>
+                    <TextField 
+                    label="Correo" 
+                    type="email"
+                    placeholder="rineliniguezsosa@gmail.com"
+                    fullWidth
+                    ></TextField>
+                </Grid>
             </Grid>
         </form>
     </Grid>
