@@ -3,6 +3,8 @@ import { Journalpage } from '../pages/Journalpage'
 
 export const Journalroutes = () => {
   return (
-    <div>Journalroutes</div>
+    <Routes>
+        <Route path="/" element={<Journalpage></Journalpage>}></Route>
+    </Routes>
   )
 }
