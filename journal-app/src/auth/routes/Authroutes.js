@@ -5,6 +5,8 @@ export const Authroutes = () => {
   return (
     <Routes>
         <Route path="login" element={<Loginpage></Loginpage>}></Route>
+
+        <Route path="registro" element={<Registropage></Registropage>}></Route>
     </Routes>
   )
 }
