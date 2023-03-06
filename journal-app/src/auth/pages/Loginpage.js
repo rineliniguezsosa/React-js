@@ -31,6 +31,12 @@ export const Loginpage = () => {
                     <Grid item xs={12} sm={6}>
                         <Button variant='contained' fullWidth>Login</Button>
                     </Grid>
+
+                    <Grid item xs={12} sm={6}>
+                        <Button variant='contained' fullWidth>
+                            <Typography  sx={{ml:1}}>Google</Typography>
+                        </Button>
+                    </Grid>
                 </Grid>
             </Grid>
         </form>
