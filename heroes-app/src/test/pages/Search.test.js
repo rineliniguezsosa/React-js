@@ -42,6 +42,7 @@ describe('prueba en Search.js', () => {
             )
         
         const input = screen.getByRole('textbox')
+        fireEvent.change(input,{target:{name:'search',value:'superman'}})
         
     });
 });
