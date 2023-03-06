@@ -33,7 +33,7 @@ describe('prueba en Search.js', () => {
         render(
             <MemoryRouter initialEntries={['/search?q=batman234']}><Search></Search></MemoryRouter>
             )
-        
-            screen.debug()
+            const alert = screen.getByLabelText('danger-alert')
+            expect(alert.style.display).toBe('')
     });
 });
