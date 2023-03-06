@@ -3,6 +3,8 @@ import { Loginpage,Registropage } from '../pages'
 
 export const Authroutes = () => {
   return (
-    <div>Authroutes</div>
+    <Routes>
+        <Route path="login" element={<Loginpage></Loginpage>}></Route>
+    </Routes>
   )
 }
