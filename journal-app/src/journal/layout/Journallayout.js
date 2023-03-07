@@ -5,6 +5,8 @@ import { Navbar } from '../componentes/Navbar'
 export const Journallayout = ({children}) => {
   return (
     <Box sx={{display:'flex'}}>
+
+        <Navbar></Navbar>
         {/* NAVBAR */}
 
         {/* SIDEBAR */}
