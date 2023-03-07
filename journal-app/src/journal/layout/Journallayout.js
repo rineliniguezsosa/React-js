@@ -6,6 +6,10 @@ export const Journallayout = () => {
         {/* NAVBAR */}
 
         {/* SIDEBAR */}
+
+        <Box component="main" sx={{flexGrow:1,p:3}}>
+
+        </Box>
     </Box>
   )
 }
