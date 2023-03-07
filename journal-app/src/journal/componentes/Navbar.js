@@ -1,4 +1,4 @@
-import { AppBar } from "@mui/material"
+import { AppBar,Toolbar } from "@mui/material"
 
 export const Navbar = () => {
   return (
