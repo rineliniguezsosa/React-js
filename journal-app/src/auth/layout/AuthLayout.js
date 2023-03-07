@@ -8,7 +8,7 @@ export const AuthLayout = ({children}) => {
             <Typography variant="h5" sx={{mb:1}}>Login</Typography>
         </Grid>
 
-       
+        {children}
     </Grid>
   )
 }
