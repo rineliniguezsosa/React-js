@@ -10,7 +10,7 @@ export const Navbar = () => {
             </IconButton>
 
             <Grid container direction="row" justifyContent="space-between">
-
+                  <Typography variant="h6" noWrap component="div">JournalApp</Typography>
             </Grid>
         </Toolbar>
     </AppBar>
