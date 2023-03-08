@@ -1,4 +1,4 @@
-import { Box,Drawer,Toolbar } from '@mui/material'
+import { Box,Drawer,Toolbar,Typography } from '@mui/material'
 
 export const SideBar = ({drawerWidth}) => {
   return (
@@ -15,7 +15,11 @@ export const SideBar = ({drawerWidth}) => {
             }}
             
             >
-
+                <Toolbar>
+                    <Typography variant="h6" noWrap component="div">
+                        Rinel iñiguez
+                    </Typography>
+                </Toolbar>
             </Drawer>
     </Box>
   )
