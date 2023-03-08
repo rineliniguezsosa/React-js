@@ -1,5 +1,6 @@
 import { Box } from '@mui/material'
-import { Navbar } from '../componentes/Navbar'
+import { SideBar,Navbar } from '../componentes'
+
 
 
 export const Journallayout = ({children}) => {
