@@ -3,7 +3,7 @@ import { MenuOutlined,LogoutOutlined } from '@mui/icons-material'
 
 export const Navbar = () => {
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" color="transparent">
         <Toolbar>
             <IconButton>
               <MenuOutlined/>
