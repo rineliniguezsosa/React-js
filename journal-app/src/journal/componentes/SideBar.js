@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+import { Box,Drawer } from '@mui/material'
 
 export const SideBar = ({drawerWidth}) => {
   return (
