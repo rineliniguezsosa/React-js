@@ -30,7 +30,7 @@ export const SideBar = ({drawerWidth}) => {
                             <ListItem key={item} disablePadding>
                                 <ListItemButton>
                                     <ListItemIcon>
-                                        
+                                       <TurnedInNot></TurnedInNot> 
                                     </ListItemIcon>
                                 </ListItemButton>
                             </ListItem>
