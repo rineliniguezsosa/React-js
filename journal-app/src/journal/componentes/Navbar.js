@@ -1,5 +1,5 @@
 import { AppBar,Toolbar,IconButton,Grid,Typography } from "@mui/material"
-import { MenuOutlined } from '@mui/icons-material'
+import { MenuOutlined,LogoutOutlined } from '@mui/icons-material'
 
 export const Navbar = () => {
   return (
@@ -11,6 +11,10 @@ export const Navbar = () => {
 
             <Grid container direction="row" justifyContent="space-between">
                   <Typography variant="h6" noWrap component="div">JournalApp</Typography>
+
+                  <IconButton color="error">
+                    <LogoutOutlined></LogoutOutlined>
+                  </IconButton>
             </Grid>
         </Toolbar>
     </AppBar>
