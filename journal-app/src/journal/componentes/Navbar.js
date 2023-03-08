@@ -8,6 +8,10 @@ export const Navbar = () => {
             <IconButton>
               <MenuOutlined/>
             </IconButton>
+
+            <Grid container direction="row" justifyContent="space-between">
+
+            </Grid>
         </Toolbar>
     </AppBar>
   )
