@@ -22,6 +22,14 @@ export const SideBar = ({drawerWidth}) => {
                 </Toolbar>
 
                 <Divider></Divider>
+
+                <List>
+                    {
+                        ['Enero','Febrero','Marzo','Abril'].map(item => (
+                            <ListItem></ListItem>
+                        ))
+                    }
+                </List>
             </Drawer>
     </Box>
   )
