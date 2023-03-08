@@ -34,7 +34,8 @@ export const SideBar = ({drawerWidth}) => {
                                     </ListItemIcon>
 
                                     <Grid container>
-
+                                        <ListItemText primary={item}></ListItemText>
+                                        <ListItemText secondary={'lorem'}></ListItemText>
                                     </Grid>
                                 </ListItemButton>
                             </ListItem>
