@@ -6,7 +6,7 @@ export const Navbar = () => {
     <AppBar position="fixed">
         <Toolbar>
             <IconButton>
-                <MenuOutlined></MenuOutlined>
+              <MenuOutlined/>
             </IconButton>
         </Toolbar>
     </AppBar>
