@@ -4,7 +4,9 @@ export const Navbar = () => {
   return (
     <AppBar position="fixed">
         <Toolbar>
-        
+            <IconButton>
+              
+            </IconButton>
         </Toolbar>
     </AppBar>
   )
