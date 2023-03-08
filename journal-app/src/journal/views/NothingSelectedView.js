@@ -2,6 +2,8 @@ import {Grid} from '@mui/material'
 
 export const NothingSelectedView = () => {
   return (
-    <div>NothingSelectedView</div>
+    <Grid container spacing={0} direction="column" alignItems="center" justifyContent="center" sx={{minHeight:'100vh',backgroundColor:'primary',padding:4}}>
+        
+    </Grid>
   )
 }
