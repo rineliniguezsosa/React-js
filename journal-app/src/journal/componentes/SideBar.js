@@ -1,6 +1,6 @@
 import { Box } from '@mui/material'
 
-export const SideBar = () => {
+export const SideBar = ({drawerWidth}) => {
   return (
     <Box 
     component="nav"
