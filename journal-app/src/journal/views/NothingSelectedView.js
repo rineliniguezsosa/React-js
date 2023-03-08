@@ -1,4 +1,6 @@
 import {Grid} from '@mui/material'
+import { StartOutlined } from '@mui/icons-material'
+
 
 export const NothingSelectedView = () => {
   return (
