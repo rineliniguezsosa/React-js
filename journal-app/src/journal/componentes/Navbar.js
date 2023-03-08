@@ -1,7 +1,7 @@
 import { AppBar,Toolbar,IconButton,Grid,Typography } from "@mui/material"
 import { MenuOutlined,LogoutOutlined } from '@mui/icons-material'
 
-export const Navbar = () => {
+export const Navbar = ({drawerWidth= 240}) => {
   return (
     <AppBar position="fixed" color="transparent">
         <Toolbar>
