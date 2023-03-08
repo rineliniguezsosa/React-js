@@ -20,6 +20,8 @@ export const SideBar = ({drawerWidth}) => {
                         Rinel iñiguez
                     </Typography>
                 </Toolbar>
+
+                <Divider></Divider>
             </Drawer>
     </Box>
   )
