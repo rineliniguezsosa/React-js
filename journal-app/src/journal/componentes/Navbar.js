@@ -9,7 +9,7 @@ export const Navbar = () => {
               <MenuOutlined/>
             </IconButton>
 
-            <Grid container direction="row" justifyContent="space-between">
+            <Grid container direction="row" justifyContent="space-between" alignItems="center">
                   <Typography variant="h6" noWrap component="div">JournalApp</Typography>
 
                   <IconButton color="error">
