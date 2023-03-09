@@ -6,6 +6,9 @@ import './App.css'
 
 function App() {
   const { contador } = useSelector(state => state.contador)
+
+  const dispatch = useDispatch()
+  
   return (
     <div className="App">
       <header className="App-header">
