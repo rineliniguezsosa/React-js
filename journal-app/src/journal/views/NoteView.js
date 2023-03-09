@@ -1,5 +1,7 @@
 import {Grid,Typography,Button,TextField} from '@mui/material'
 import { SaveOutlined } from '@mui/icons-material'
+import { ImagenGallery } from '../componentes'
+
 
 export const Noteview = () => {
   return (
