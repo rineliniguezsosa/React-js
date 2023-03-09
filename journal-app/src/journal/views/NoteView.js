@@ -9,7 +9,7 @@ export const Noteview = () => {
         </Grid>
 
         <Grid item>
-            <Button>
+            <Button color="primary" sx={{padding:2}}>
               <SaveOutlined sx={{fontSize:30,mr:1}}></SaveOutlined>
               Guardar
             </Button>
