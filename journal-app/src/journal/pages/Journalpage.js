@@ -5,7 +5,11 @@ import { NothingSelectedView,Noteview } from "../views"
 export const Journalpage = () => {
   return (
     <Journallayout>
-      
+
+        <NothingSelectedView/>
+
+        {/* <Noteview/> */}
+
     </Journallayout>
   )
 }
