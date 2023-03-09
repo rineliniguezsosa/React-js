@@ -15,12 +15,6 @@ export const counterSlice = createSlice({
       // immutable state based off those changes
       state.contador += 1
     },
-    decrement: (state) => {
-      state.value -= 1
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
-    },
   },
 })
 
