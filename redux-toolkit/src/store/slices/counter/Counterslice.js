@@ -4,7 +4,9 @@ import { createSlice } from '@reduxjs/toolkit'
 
 export const counterSlice = createSlice({
   name: 'counter',
-  initialState,
+  initialState:{
+    contador:0
+  },
   reducers: {
     increment: (state) => {
       // Redux Toolkit allows us to write "mutating" logic in reducers. It
