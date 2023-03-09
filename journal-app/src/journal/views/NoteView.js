@@ -17,6 +17,7 @@ export const Noteview = () => {
         </Grid>
 
         <Grid container>
+
             <TextField
               type="text"
               variant='filed'
@@ -24,6 +25,15 @@ export const Noteview = () => {
               placeholder="Ingrese un titulo"
               label="Titulo"
               sx={{border:'none',mb:1}}
+            />
+
+            <TextField
+              type="text"
+              variant='filed'
+              fullWidth
+              multiline
+              placeholder="¡Que sucedio el día de hoy?"
+              minRows={5}
             />
 
         </Grid>
