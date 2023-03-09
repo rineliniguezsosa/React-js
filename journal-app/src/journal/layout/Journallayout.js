@@ -4,7 +4,7 @@ import { SideBar,Navbar } from '../componentes'
 
 
 export const Journallayout = ({children}) => {
-  const drawerWidth = 240;
+  const drawerWidth = 280;
   return (
     <Box sx={{display:'flex'}}>
 
