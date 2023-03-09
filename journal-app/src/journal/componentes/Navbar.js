@@ -3,7 +3,7 @@ import { MenuOutlined,LogoutOutlined } from '@mui/icons-material'
 
 export const Navbar = ({drawerWidth= 240}) => {
   return (
-    <AppBar position="fixed" color="transparent" sx={{
+    <AppBar position="fixed" sx={{
       width:{sm:`calc(100% -${drawerWidth}px)`},ml:{sm:`${drawerWidth}px`}
     }}>
         <Toolbar>
