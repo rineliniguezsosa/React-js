@@ -14,7 +14,7 @@ function App() {
       <header className="App-header">
         <span>la cuenta esta en: {contador}</span>
 
-        <button onClick={()=> dispatch(increment)}></button>
+        <button onClick={()=> dispatch(increment())}></button>
       </header>
     </div>
   );
