@@ -16,7 +16,7 @@ export const Journalpage = () => {
         sx={{
           color:'white',
           backgroundColor:'red',
-          ':hover':{backgroundColor:'white',opacity:0.9},
+          ':hover':{backgroundColor:'red',opacity:0.9},
           position:'fixed',
           right:50,
           bottom:50
