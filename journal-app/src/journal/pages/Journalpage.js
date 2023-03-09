@@ -10,6 +10,20 @@ export const Journalpage = () => {
 
         {/* <Noteview/> */}
 
+        <IconButton
+        size="large"
+        sx={{
+          color:'white',
+          backgroundColor:'red',
+          ':hover':{backgroundColor:'white',opacity:0.9},
+          position:'fixed',
+          right:50,
+          bottom:50
+        }}
+        >
+
+        </IconButton>
+
     </Journallayout>
   )
 }
