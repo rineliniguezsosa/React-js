@@ -6,6 +6,10 @@ export const Noteview = () => {
         <Grid item>
             <Typography fontSize={39} fontWeight="light">2 de agosto,2023</Typography>
         </Grid>
+
+        <Grid item>
+            <Button>Guardar</Button>
+        </Grid>
     </Grid>
   )
 }
