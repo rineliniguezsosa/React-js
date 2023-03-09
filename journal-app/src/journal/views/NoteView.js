@@ -20,7 +20,7 @@ export const Noteview = () => {
 
             <TextField
               type="text"
-              variant='filed'
+              variant='filled'
               fullWidth
               placeholder="Ingrese un titulo"
               label="Titulo"
@@ -29,7 +29,7 @@ export const Noteview = () => {
 
             <TextField
               type="text"
-              variant='filed'
+              variant='filled'
               fullWidth
               multiline
               placeholder="¡Que sucedio el día de hoy?"
