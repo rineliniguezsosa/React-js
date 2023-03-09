@@ -5,16 +5,16 @@ import './App.css'
 
 
 function App() {
-  const { contador } = useSelector(state => state.contador)
+  const { counter } = useSelector(state => state.counter)
 
   const dispatch = useDispatch()
 
   return (
     <div className="App">
       <header className="App-header">
-        <span>la cuenta esta en: {contador}</span>
+        <span>la cuenta esta en: {counter}</span>
 
-        <button onClick={()=> dispatch(increment())}></button>
+        <button onClick={()=> dispatch(increment())}>Incrementar</button>
       </header>
     </div>
   );
