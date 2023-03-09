@@ -22,7 +22,7 @@ export const Journalpage = () => {
           bottom:50
         }}
         >
-
+          <AddOutlined sx={{fontSize:30}}></AddOutlined>
         </IconButton>
 
     </Journallayout>
