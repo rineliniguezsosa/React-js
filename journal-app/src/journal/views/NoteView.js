@@ -39,6 +39,9 @@ export const Noteview = () => {
             />
 
         </Grid>
+
+        {/* GALERY DE IMAGENES */}
+        <ImagenGallery/>
     </Grid>
   )
 }
