@@ -5,11 +5,11 @@ export const getpokemon = (page = 0) =>{
     return async(dispatch,getState)=>{
         dispatch(cargandopokemon())
 
-        const req = await pokemonApi.get(`pokemon?limit=10&offset=${page+1}`)
+        const {data} = await pokemonApi.get(`pokemon?limit=10&offset=${page+1}`)
 
-        console.log(req)
+        console.log(data.results)
 
-        dispatch(añadepokemones({pagina:page+1,pokemones:req.results}))
+        dispatch(añadepokemones({pagina:page+1,pokemones:data.results}))
     }
 }
 
