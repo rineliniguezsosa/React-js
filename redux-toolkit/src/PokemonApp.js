@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux';
 
 export const PokemonApp = () => {
 
+  const dispatch = useDispatch()
+
   useEffect(() => {
     
   },[])
