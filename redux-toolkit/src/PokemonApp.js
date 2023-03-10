@@ -24,6 +24,8 @@ export const PokemonApp = () => {
             <li>Hola</li>
             <li>Hola</li>
         </ul>
+
+        <button>Siguiente</button>
     </>
   )
 }
