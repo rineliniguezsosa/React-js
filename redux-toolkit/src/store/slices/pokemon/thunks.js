@@ -1,6 +1,6 @@
 import { cargandopokemon,añadepokemones } from './PokemonSlice'
 
-export const getpokemon = () =>{
+export const getpokemon = (page = 0) =>{
     return async(dispatch,getState)=>{
 
     }
