@@ -1,4 +1,4 @@
-
+import { cargandopokemon,añadepokemones } from './PokemonSlice'
 
 export const getpokemon = () =>{
     return async()=>{
