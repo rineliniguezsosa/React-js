@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useSelector,useDispatch } from 'react-redux';
 import { getpokemon } from './store/slices/pokemon';
 
 
@@ -7,6 +7,8 @@ export const PokemonApp = () => {
 
   const dispatch = useDispatch()
 
+  const { cargando } = useSelector(state => state.pokemon)
+  console.log(cargando)
   useEffect(() => {
     dispatch(getpokemon())
   // eslint-disable-next-line react-hooks/exhaustive-deps
