@@ -13,7 +13,9 @@ export const pokemonSlice = createSlice({
       state.cargando = true
     },
     añadepokemones:(state,action) =>{ //cuando ya tenemos pokemones
-        console.log(action)
+        state.pagina = action.payload.pagina
+        state.cargando = false
+        state.pokemones = action.payload.pokemones
     }
   },
 })
