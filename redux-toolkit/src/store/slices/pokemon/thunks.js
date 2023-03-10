@@ -5,12 +5,11 @@ export const getpokemon = (page = 0) =>{
     return async(dispatch,getState)=>{
         dispatch(cargandopokemon())
 
-        const req = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${page +1}`)
-        const data = await req.json()
+        const req = await pokemonApi.get(`pokemon?limit=10&offset=${page+1}`)
 
-        console.log(data)
+        console.log(req)
 
-        dispatch(añadepokemones({pagina:page+1,pokemones:data.results}))
+        dispatch(añadepokemones({pagina:page+1,pokemones:req.results}))
     }
 }
 
