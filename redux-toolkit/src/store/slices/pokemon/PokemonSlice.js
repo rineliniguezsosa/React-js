@@ -9,14 +9,14 @@ export const pokemonSlice = createSlice({
     cargando:false
   },
   reducers: {
-    increment: (state) => {
-      state.counter += 1
+    cargandopokemon: (state) => { 
+      state.cargando = true
     },
-    decrementby:(state,action) =>{
-        state.counter+=action.payload
+    añadepokemones:(state,action) =>{ //cuando ya tenemos pokemones
+        console.log(action)
     }
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment,decrementby } = pokemonSlice.actions
+export const { cargandopokemon,añadepokemones } = pokemonSlice.actions
