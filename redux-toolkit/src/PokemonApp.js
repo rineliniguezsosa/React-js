@@ -20,9 +20,11 @@ export const PokemonApp = () => {
         <hr></hr>
         { cargando ? <span>Espera un momento ....</span> : ''}
         <ul>
-            <li>Hola</li>
-            <li>Hola</li>
-            <li>Hola</li>
+          {
+          pokemones.map(pokemon => (
+            <li key={pokemon.name}>{pokemon.name}</li>
+          ))
+          }
         </ul>
         {pagina}
         <button onClick={()=> dispatch(getpokemon(pagina))}>Siguiente</button>
