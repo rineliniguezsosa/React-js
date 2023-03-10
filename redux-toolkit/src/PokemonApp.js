@@ -1,6 +1,11 @@
 import { useEffect } from 'react';
 
 export const PokemonApp = () => {
+
+  useEffect(() => {
+    
+  },[])
+  
   return (
     <>
         <h1>Pokemon</h1>
