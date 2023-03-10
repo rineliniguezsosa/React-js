@@ -7,8 +7,8 @@ export const PokemonApp = () => {
 
   const dispatch = useDispatch()
 
-  const { cargando } = useSelector(state => state.pokemon)
-  console.log(cargando)
+  const { cargando,pokemones } = useSelector(state => state.pokemon)
+  console.log(pokemones)
   useEffect(() => {
     dispatch(getpokemon())
   // eslint-disable-next-line react-hooks/exhaustive-deps
