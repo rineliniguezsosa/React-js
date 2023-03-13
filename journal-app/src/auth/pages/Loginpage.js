@@ -9,7 +9,7 @@ import { verificandoAutenticacion } from '../../store/Auth'
 export const Loginpage = () => {
 
     const dispatch = useDispatch()
-    
+
     const {email,password,onInputChange} = useForm({
         email:'',
         contraseña:''
@@ -18,7 +18,7 @@ export const Loginpage = () => {
     const submitform = (event) =>{
         event.preventDefault()
         //console.log(email,password)
-        verificandoAutenticacion(email,password)
+        dispatch(verificandoAutenticacion(email,password))
     }
   return (
     <AuthLayout titulo="Login">
