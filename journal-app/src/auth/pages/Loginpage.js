@@ -4,6 +4,10 @@ import { useForm } from '../../hooks'
 import { AuthLayout } from '../layout/AuthLayout'
 
 export const Loginpage = () => {
+    const {} = useForm({
+        email:'',
+        contraseña:''
+    })
   return (
     <AuthLayout titulo="Login">
 
