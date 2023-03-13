@@ -27,6 +27,9 @@ export const Loginpage = () => {
 
                 <Grid item xs={12} sx={{ mt: 2 }}>
                     <TextField 
+                        name="password"
+                        onChange={onInputChange}
+                        value={password}
                         label="Contraseña" 
                         type="password" 
                         placeholder='Contraseña' 
