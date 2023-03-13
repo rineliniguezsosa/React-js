@@ -4,8 +4,10 @@ import { Provider } from 'react-redux'
 
 export const JournalApp = () => {
   return (
+    <Provider>
     <BrowserRouter>
         <AppRouter></AppRouter>
     </BrowserRouter>
+    </Provider>
   )
 }
