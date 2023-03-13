@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const authSlice = createSlice({
   name: 'auth',
   initialState:{
-    status:'verificando', //estado de la autenticacion
+    status:'sinautenticar', //estado de la autenticacion
     uid:null, //id user
     email:null, //email user
     photoUrl:null,
