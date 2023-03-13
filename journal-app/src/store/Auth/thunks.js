@@ -1,7 +1,7 @@
 import { verificandocredenciales } from "./Authslice"
 
 export const verificandoAutenticacion = (email,password) =>{
-    return (dispatch) =>{
-
+    return async(dispatch) =>{
+        dispatch(verificandocredenciales(email,password))
     }
 }
