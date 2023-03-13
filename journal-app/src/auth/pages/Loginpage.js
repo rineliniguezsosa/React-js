@@ -8,6 +8,10 @@ export const Loginpage = () => {
         email:'',
         contraseña:''
     })
+
+    const submitform = (event) =>{
+
+    }
   return (
     <AuthLayout titulo="Login">
 
