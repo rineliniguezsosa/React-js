@@ -10,7 +10,7 @@ export const Loginpage = () => {
     })
 
     const submitform = (event) =>{
-
+        event.preventDefault()
     }
   return (
     <AuthLayout titulo="Login">
