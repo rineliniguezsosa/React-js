@@ -15,6 +15,9 @@ export const Loginpage = () => {
             <Grid container>
                 <Grid item xs={12} sx={{ mt: 2 }}>
                     <TextField 
+                    name="email"
+                    onChange={onInputChange}
+                    value={email}
                     label="Correo" 
                     type="email"
                     placeholder="rineliniguezsosa@gmail.com"
