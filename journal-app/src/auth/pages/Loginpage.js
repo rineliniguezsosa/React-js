@@ -8,6 +8,8 @@ import { verificandoAutenticacion } from '../../store/Auth'
 
 export const Loginpage = () => {
 
+    const dispatch = useDispatch()
+    
     const {email,password,onInputChange} = useForm({
         email:'',
         contraseña:''
