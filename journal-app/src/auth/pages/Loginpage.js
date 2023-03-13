@@ -2,11 +2,11 @@ import { Grid,Typography,TextField,Button,Link } from '@mui/material'
 import { Link as RouterLink } from 'react-router-dom'
 import { useForm } from '../../hooks'
 import { AuthLayout } from '../layout/AuthLayout'
-import { useDispatch } from 'react-redux'
 import { verificandoAutenticacion } from '../../store/Auth'
 
 
 export const Loginpage = () => {
+
     const {email,password,onInputChange} = useForm({
         email:'',
         contraseña:''
@@ -14,7 +14,8 @@ export const Loginpage = () => {
 
     const submitform = (event) =>{
         event.preventDefault()
-        console.log(email,password)
+        //console.log(email,password)
+        verificandoAutenticacion(email,password)
     }
   return (
     <AuthLayout titulo="Login">
