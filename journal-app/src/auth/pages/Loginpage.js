@@ -11,6 +11,7 @@ export const Loginpage = () => {
 
     const submitform = (event) =>{
         event.preventDefault()
+        console.log(email,password)
     }
   return (
     <AuthLayout titulo="Login">
@@ -43,7 +44,7 @@ export const Loginpage = () => {
 
                 <Grid container spacing={2} sx={{mb:2,mt:1}}>
                     <Grid item xs={12} sm={6}>
-                        <Button variant='contained' fullWidth>Login</Button>
+                        <Button type="submit" variant='contained' fullWidth>Login</Button>
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
