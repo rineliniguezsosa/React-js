@@ -5,3 +5,9 @@ export const verificandoAutenticacion = (email,password) =>{
         dispatch(verificandocredenciales(email,password))
     }
 }
+
+export const startgooglesignin = () =>{
+    return async(dispatch)=>{
+
+    }
+}
