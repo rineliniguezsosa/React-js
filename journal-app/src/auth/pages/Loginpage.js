@@ -3,7 +3,7 @@ import { Grid,Typography,TextField,Button,Link } from '@mui/material'
 import { Link as RouterLink } from 'react-router-dom'
 import { useForm } from '../../hooks'
 import { AuthLayout } from '../layout/AuthLayout'
-import { verificandoAutenticacion } from '../../store/Auth'
+import { verificandoAutenticacion,startgooglesignin } from '../../store/Auth'
 
 
 export const Loginpage = () => {
@@ -55,7 +55,7 @@ export const Loginpage = () => {
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
-                        <Button variant='contained' fullWidth>
+                        <Button onClick={()=> dispatch(startgooglesignin())} variant='contained' fullWidth>
                             <Typography  sx={{ml:1}}>Google</Typography>
                         </Button>
                     </Grid>
