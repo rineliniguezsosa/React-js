@@ -19,7 +19,7 @@ export const authSlice = createSlice({
     },
     verificandocredenciales:(state,action)=>{
         state.status = 'verificando'
-        console.log(action.payload)
+    
     }
   },
 })
