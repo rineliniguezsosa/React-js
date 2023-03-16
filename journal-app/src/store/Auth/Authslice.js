@@ -14,12 +14,12 @@ export const authSlice = createSlice({
     login: (state,action) => {
       
     },
-    logout:(state,payload) =>{
+    logout:(state,{payload}) =>{
       state.status ='sinautenticar'; //estado de la autenticacion
       state.uid = null; //id user
       state.email = null; //email user
       state.photoUrl = null;
-      state.mensajeserror = payload.errorMessage;
+      state.mensajeserror = payload;
     },
     verificandocredenciales:(state,action)=>{
         state.status = 'verificando'
