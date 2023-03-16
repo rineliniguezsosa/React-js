@@ -12,6 +12,6 @@ export const startgooglesignin = () =>{
         dispatch(verificandocredenciales())
 
         const result = await Signinwithgoogle();
-        if(!result.okay){ dispatch(logout(result.errorMessage))}
+        if(!result.okay){ return dispatch(logout(result.errorMessage))}
     }
 }
