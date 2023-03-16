@@ -8,6 +8,8 @@ import { verificandoAutenticacion,startgooglesignin } from '../../store/Auth'
 
 export const Loginpage = () => {
 
+    const { status } = useSelector(state => state.auth)
+
     const dispatch = useDispatch()
 
     const {email,password,onInputChange} = useForm({
