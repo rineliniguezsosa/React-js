@@ -4,6 +4,7 @@ import { Link as RouterLink } from 'react-router-dom'
 import { useForm } from '../../hooks'
 import { AuthLayout } from '../layout/AuthLayout'
 import { verificandoAutenticacion,startgooglesignin } from '../../store/Auth'
+import { useMemo } from 'react'
 
 
 export const Loginpage = () => {
