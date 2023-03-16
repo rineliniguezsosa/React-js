@@ -23,6 +23,8 @@ export const Loginpage = () => {
         //console.log(email,password)
         dispatch(verificandoAutenticacion(email,password))
     }
+
+    const estautenticado  = useMemo(() => status === 'verificando', [status])
   return (
     <AuthLayout titulo="Login">
 
