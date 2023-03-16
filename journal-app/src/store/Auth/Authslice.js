@@ -24,6 +24,7 @@ export const authSlice = createSlice({
       state.status ='sinautenticar'; //estado de la autenticacion
       state.uid = null; //id user
       state.email = null; //email user
+      state.displayname = null;
       state.photoUrl = null;
       state.mensajeserror = payload;
     },
