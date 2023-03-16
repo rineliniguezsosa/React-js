@@ -56,11 +56,11 @@ export const Loginpage = () => {
 
                 <Grid container spacing={2} sx={{mb:2,mt:1}}>
                     <Grid item xs={12} sm={6}>
-                        <Button type="submit" variant='contained' fullWidth>Login</Button>
+                        <Button disabled={estautenticado} type="submit" variant='contained' fullWidth>Login</Button>
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
-                        <Button onClick={()=> dispatch(startgooglesignin())} variant='contained' fullWidth>
+                        <Button dissabled={estautenticado} onClick={()=> dispatch(startgooglesignin())} variant='contained' fullWidth>
                             <Typography  sx={{ml:1}}>Google</Typography>
                         </Button>
                     </Grid>
