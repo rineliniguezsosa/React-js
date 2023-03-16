@@ -9,8 +9,7 @@ export const Signinwithgoogle = async() =>{
     try {
         provider.setCustomParameters({prompt: 'select_account'}) //1)
         const result = await signInWithPopup(FirebaseAuth,provider)
-       const {displayName,email,photoURL,uid} = result.user
-        console.log(displayName,email,photoURL,uid)
+        const {displayName,email,photoURL,uid} = result.user
         return {
             okay:true,
             displayName,
