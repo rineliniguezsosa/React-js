@@ -24,6 +24,12 @@ export const useForm = ( initialForm = {},forminputvalidaciones ={ } ) => {
 
     const createvalidaciones = () =>{
         const formcheckvalues = {}
+
+        for (const formField of Object.keys(forminputvalidaciones)) {
+            const [fn,errormessage = "El campo es requerido"] = forminputvalidaciones[formField]
+
+            formcheckvalues[`${formField} Valido`] = fn(formState[formField]) ? null : errormessage;
+        }
     }
 
     return {
