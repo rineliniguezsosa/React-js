@@ -5,6 +5,11 @@ export const useForm = ( initialForm = {},formvalidaciones ={ } ) => {
     const [ formState, setFormState ] = useState( initialForm );
     const [formvalidaciones, setformvalidaciones] = useState({})
 
+    useEffect(() => {
+        createvalidaciones()
+    }, [formState])
+    
+
     const onInputChange = ({ target }) => {
         const { name, value } = target;
         setFormState({
