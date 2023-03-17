@@ -41,6 +41,7 @@ export const Registropage = () => {
                         type="password" 
                         placeholder="Contraseña"
                         fullWidth
+                        name={contraseña}
                     ></TextField>
                 </Grid>
 
