@@ -5,7 +5,7 @@ import { useForm } from "../../hooks"
 
 
 export const Registropage = () => {
-    const {displayName,email,constraseña} = useForm({
+    const {displayName,email,contraseña} = useForm({
         displaName:'',
         email:'',
         constraseña:''
@@ -31,6 +31,7 @@ export const Registropage = () => {
                     type="email"
                     placeholder="rineliniguezsosa@gmail.com"
                     fullWidth
+                    name={email}
                     ></TextField>
                 </Grid>
 
