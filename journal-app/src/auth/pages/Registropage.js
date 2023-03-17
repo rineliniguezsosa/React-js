@@ -13,7 +13,7 @@ export const Registropage = () => {
   return (
     <AuthLayout titulo="Crear cuenta">
 
-        <form>
+        <form onSubmit={onsubmit}>
             <Grid container>
                 <Grid item xs={12} sx={{ mt: 2 }}>
                     <TextField 
