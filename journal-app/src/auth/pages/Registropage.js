@@ -7,9 +7,10 @@ import { useForm } from "../../hooks"
 export const Registropage = () => {
 
     const formvalidaciones = {
-        displayName:[(value)=> value.lenght <= 1,'El nombre es requerido']
+        displayName:[(value)=> value.lenght <= 1,'El nombre es requerido'],
+        email:[(value)=> value.includes('@'),'El email debe de tener un @'],
     }
-    
+
     const {displayName,email,contraseña,onInputChange,formState} = useForm({
         displaName:'',
         email:'',
