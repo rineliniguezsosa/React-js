@@ -25,6 +25,7 @@ export const Loginpage = () => {
     }
 
     const estautenticado  = useMemo(() => status === 'verificando', [status])
+    console.log(estautenticado)
   return (
     <AuthLayout titulo="Login">
 
@@ -60,7 +61,7 @@ export const Loginpage = () => {
                     </Grid>
 
                     <Grid item xs={12} sm={6}>
-                        <Button dissabled={estautenticado} onClick={()=> dispatch(startgooglesignin())} variant='contained' fullWidth>
+                        <Button disabled={estautenticado} onClick={()=> dispatch(startgooglesignin())} variant='contained' fullWidth>
                             <Typography  sx={{ml:1}}>Google</Typography>
                         </Button>
                     </Grid>
