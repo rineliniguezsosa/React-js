@@ -46,6 +46,7 @@ export const Registropage = () => {
                         placeholder="Contraseña"
                         fullWidth
                         name={contraseña}
+                        value={contraseña}
                         onChange={onInputChange}
                     ></TextField>
                 </Grid>
