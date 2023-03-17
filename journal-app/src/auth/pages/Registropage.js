@@ -5,7 +5,7 @@ import { useForm } from "../../hooks"
 
 
 export const Registropage = () => {
-    const {displaName,email,constraseña} = useForm({
+    const {displayName,email,constraseña} = useForm({
         displaName:'',
         email:'',
         constraseña:''
@@ -21,6 +21,7 @@ export const Registropage = () => {
                     type="text"
                     placeholder="Rinel"
                     fullWidth
+                    name={displayName}
                     ></TextField>
                 </Grid>
 
