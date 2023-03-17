@@ -5,11 +5,16 @@ import { useForm } from "../../hooks"
 
 
 export const Registropage = () => {
-    const {displayName,email,contraseña,onInputChange} = useForm({
+    const {displayName,email,contraseña,onInputChange,formState} = useForm({
         displaName:'',
         email:'',
         constraseña:''
     })
+
+    const onsubmit = (event) => {
+        event.preventDefault()
+        console.log(formState)
+    }
   return (
     <AuthLayout titulo="Crear cuenta">
 
@@ -53,7 +58,7 @@ export const Registropage = () => {
 
                 <Grid container spacing={2} sx={{mb:2,mt:1}}>
                     <Grid item xs={12} >
-                        <Button variant='contained' fullWidth>Crear cuenta</Button>
+                        <Button type="submit" variant='contained' fullWidth>Crear cuenta</Button>
                     </Grid>
                 </Grid>
 
