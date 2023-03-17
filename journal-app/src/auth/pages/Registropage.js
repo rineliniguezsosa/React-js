@@ -22,6 +22,7 @@ export const Registropage = () => {
                     placeholder="Rinel"
                     fullWidth
                     name={displayName}
+                    onChange={onInputChange}
                     ></TextField>
                 </Grid>
 
@@ -32,6 +33,7 @@ export const Registropage = () => {
                     placeholder="rineliniguezsosa@gmail.com"
                     fullWidth
                     name={email}
+                    onChange={onInputChange}
                     ></TextField>
                 </Grid>
 
@@ -42,6 +44,7 @@ export const Registropage = () => {
                         placeholder="Contraseña"
                         fullWidth
                         name={contraseña}
+                        onChange={onInputChange}
                     ></TextField>
                 </Grid>
 
