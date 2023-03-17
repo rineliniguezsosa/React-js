@@ -38,7 +38,7 @@ export const Registropage = () => {
                     type="email"
                     placeholder="rineliniguezsosa@gmail.com"
                     fullWidth
-                    name={email}
+                    name="email"
                     value={email}
                     onChange={onInputChange}
                     ></TextField>
