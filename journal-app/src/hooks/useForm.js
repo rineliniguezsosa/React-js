@@ -3,6 +3,7 @@ import { useState } from 'react';
 export const useForm = ( initialForm = {},formvalidaciones ={ } ) => {
   
     const [ formState, setFormState ] = useState( initialForm );
+    const [formvalidaciones, setformvalidaciones] = useState({})
 
     const onInputChange = ({ target }) => {
         const { name, value } = target;
@@ -17,7 +18,7 @@ export const useForm = ( initialForm = {},formvalidaciones ={ } ) => {
     }
 
     const createvalidaciones = () =>{
-        
+
     }
 
     return {
