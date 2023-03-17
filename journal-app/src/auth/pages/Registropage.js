@@ -5,7 +5,7 @@ import { useForm } from "../../hooks"
 
 
 export const Registropage = () => {
-    const {displayName,email,contraseña} = useForm({
+    const {displayName,email,contraseña,onInputChange} = useForm({
         displaName:'',
         email:'',
         constraseña:''
