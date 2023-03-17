@@ -16,7 +16,7 @@ export const Registropage = () => {
         displaName:'',
         email:'',
         constraseña:''
-    })
+    },formvalidaciones)
 
     const onsubmit = (event) => {
         event.preventDefault()
