@@ -26,7 +26,7 @@ export const Registropage = () => {
                     type="text"
                     placeholder="Rinel"
                     fullWidth
-                    name={displayName}
+                    name="displayName"
                     value={displayName}
                     onChange={onInputChange}
                     ></TextField>
