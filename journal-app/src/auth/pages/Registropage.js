@@ -5,6 +5,11 @@ import { useForm } from "../../hooks"
 
 
 export const Registropage = () => {
+    const initialForm = {
+        displaName:'',
+        email:'',
+        constraseña:''
+    }
 
     const formvalidaciones = {
         displayName:[(value)=> value.lenght <= 1,'El nombre es requerido'],
@@ -12,11 +17,7 @@ export const Registropage = () => {
         contraseña:[(value)=> value.lenght >= 6,'La contraseña debe de ser mayor o igual a 6 caracteres']
     }
 
-    const {displayName,email,contraseña,onInputChange,formState} = useForm({
-        displaName:'',
-        email:'',
-        constraseña:''
-    },formvalidaciones)
+    const {displayName,email,contraseña,onInputChange,formState} = useForm(initialForm,formvalidaciones)
 
     const onsubmit = (event) => {
         event.preventDefault()
