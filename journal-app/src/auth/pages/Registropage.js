@@ -5,6 +5,11 @@ import { useForm } from "../../hooks"
 
 
 export const Registropage = () => {
+
+    const formvalidaciones = {
+        displayName:[(value)=> value.lenght <= 1,'El nombre es requerido']
+    }
+    
     const {displayName,email,contraseña,onInputChange,formState} = useForm({
         displaName:'',
         email:'',
