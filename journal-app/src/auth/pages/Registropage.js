@@ -5,6 +5,11 @@ import { useForm } from "../../hooks"
 
 
 export const Registropage = () => {
+    const {displaName,email,constraseña} = useForm({
+        displaName:'',
+        email:'',
+        constraseña:''
+    })
   return (
     <AuthLayout titulo="Crear cuenta">
 
