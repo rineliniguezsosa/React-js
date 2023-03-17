@@ -16,6 +16,10 @@ export const useForm = ( initialForm = {},formvalidaciones ={ } ) => {
         setFormState( initialForm );
     }
 
+    const createvalidaciones = () =>{
+        
+    }
+
     return {
         ...formState,
         formState,
