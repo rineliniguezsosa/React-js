@@ -29,6 +29,11 @@ export const Registropage = () => {
         event.preventDefault()
         console.log(formState)
     }
+
+    const onSubmit = (values) =>{
+        console.log("registro page",values)
+    }
+    
   return (
     <AuthLayout titulo="Crear cuenta">
         <Formik initialValues={initialValues}>
