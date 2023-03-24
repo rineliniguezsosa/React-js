@@ -5,6 +5,12 @@ import { useForm } from "../../hooks"
 import { Formik } from 'formik'
 
 export const Registropage = () => {
+
+    const initialValues = {
+        displayName:'',
+        email:'',
+        constraseña:''
+    }
     const initialForm = {
         displaName:'',
         email:'',
