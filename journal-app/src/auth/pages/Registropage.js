@@ -22,8 +22,7 @@ export const Registropage = () => {
         contraseña:[(value)=> value.length >= 6,'La contraseña debe de ser mayor o igual a 6 caracteres']
     }
 
-    const {displayName,email,contraseña,onInputChange,formState} = useForm(initialForm,forminputvalidaciones)
-
+    
     const onsubmit = (event) => {
         event.preventDefault()
         console.log(formState)
