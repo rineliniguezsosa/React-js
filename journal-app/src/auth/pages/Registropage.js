@@ -40,7 +40,7 @@ export const Registropage = () => {
         <Form>
             <Grid container>
                 <Grid item xs={12} sx={{ mt: 2 }}>
-                    <TextField 
+                    <Field 
                     label="Nombre" 
                     type="text"
                     placeholder="Rinel"
@@ -48,11 +48,11 @@ export const Registropage = () => {
                     name="displayName"
                     value={displayName}
                     onChange={onInputChange}
-                    ></TextField>
+                    ></Field>
                 </Grid>
 
                 <Grid item xs={12} sx={{ mt: 2 }}>
-                    <TextField 
+                    <Field 
                     label="Email" 
                     type="email"
                     placeholder="rineliniguezsosa@gmail.com"
@@ -60,11 +60,11 @@ export const Registropage = () => {
                     name="email"
                     value={email}
                     onChange={onInputChange}
-                    ></TextField>
+                    ></Field>
                 </Grid>
 
                 <Grid item xs={12} sx={{ mt: 2 }}>
-                    <TextField 
+                    <Field 
                         label="Contraseña" 
                         type="password" 
                         placeholder="Contraseña"
@@ -72,7 +72,7 @@ export const Registropage = () => {
                         name="contraseña"
                         value={contraseña}
                         onChange={onInputChange}
-                    ></TextField>
+                    ></Field>
                 </Grid>
 
                 <Grid container spacing={2} sx={{mb:2,mt:1}}>
