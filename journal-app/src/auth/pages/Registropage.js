@@ -25,7 +25,7 @@ export const Registropage = () => {
     }
   return (
     <AuthLayout titulo="Crear cuenta">
-
+        <Formik>
         <form onSubmit={onsubmit}>
             <Grid container>
                 <Grid item xs={12} sx={{ mt: 2 }}>
@@ -77,7 +77,7 @@ export const Registropage = () => {
 
             </Grid>
         </form>
-
+        </Formik>
     </AuthLayout>
   )
 }
