@@ -11,11 +11,6 @@ export const Registropage = () => {
         constraseña:''
     }
 
-    const onsubmit = (event) => {
-        event.preventDefault()
-        console.log(formState)
-    }
-
     const onSubmit = (values) =>{
         console.log("registro page",values)
     }
