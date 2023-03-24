@@ -28,8 +28,6 @@ export const Registropage = () => {
                     fullWidth
                     name="displayName"
                     component={TextField}
-                    value={displayName}
-                    onChange={onInputChange}
                     ></Field>
                 </Grid>
 
@@ -41,8 +39,6 @@ export const Registropage = () => {
                     placeholder="rineliniguezsosa@gmail.com"
                     fullWidth
                     name="email"
-                    value={email}
-                    onChange={onInputChange}
                     ></Field>
                 </Grid>
 
@@ -54,8 +50,6 @@ export const Registropage = () => {
                         fullWidth
                         component={TextField}
                         name="contraseña"
-                        value={contraseña}
-                        onChange={onInputChange}
                     ></Field>
                 </Grid>
 
