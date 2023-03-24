@@ -12,9 +12,9 @@ export const Registropage = () => {
     }
 
     const forminputvalidaciones = {
-        displayName:[(value)=> value.lenght <= 1,'El nombre es requerido'],
+        displayName:[(value)=> value.length <= 1,'El nombre es requerido'],
         email:[(value)=> value.includes('@'),'El email debe de tener un @'],
-        contraseña:[(value)=> value.lenght >= 6,'La contraseña debe de ser mayor o igual a 6 caracteres']
+        contraseña:[(value)=> value.length >= 6,'La contraseña debe de ser mayor o igual a 6 caracteres']
     }
 
     const {displayName,email,contraseña,onInputChange,formState} = useForm(initialForm,forminputvalidaciones)
