@@ -10,11 +10,6 @@ export const Registropage = () => {
         email:'',
         constraseña:''
     }
-    const initialForm = {
-        displaName:'',
-        email:'',
-        constraseña:''
-    }
 
     const forminputvalidaciones = {
         displayName:[(value)=> value.length <= 1,'El nombre es requerido'],
