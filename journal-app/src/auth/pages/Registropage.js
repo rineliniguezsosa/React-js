@@ -11,13 +11,6 @@ export const Registropage = () => {
         constraseña:''
     }
 
-    const forminputvalidaciones = {
-        displayName:[(value)=> value.length <= 1,'El nombre es requerido'],
-        email:[(value)=> value.includes('@'),'El email debe de tener un @'],
-        contraseña:[(value)=> value.length >= 6,'La contraseña debe de ser mayor o igual a 6 caracteres']
-    }
-
-    
     const onsubmit = (event) => {
         event.preventDefault()
         console.log(formState)
