@@ -18,8 +18,8 @@ export const Registropage = () => {
 
     const validationSchema = Yup.object({
         displayName:Yup.string().required('El nombre es requerido'),
-        email:Yup.string().email('el correo debe de tener un @'),
-        contraseña:Yup.string().max(6,'La constraseña debe de contener más de 6 letras')
+        email:Yup.string().email('el correo debe de tener un @').required(),
+        contraseña:Yup.string().max(6,'La constraseña debe de contener más de 6 letras').required()
     })
     
   return (
