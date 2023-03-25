@@ -36,6 +36,7 @@ export const Registropage = () => {
                     name="displayName"
                     component={TextField}
                     ></Field>
+                    <ErrorMessage name="displayName"></ErrorMessage>
                 </Grid>
 
                 <Grid item xs={12} sx={{ mt: 2 }}>
@@ -47,6 +48,7 @@ export const Registropage = () => {
                     fullWidth
                     name="email"
                     ></Field>
+                    <ErrorMessage name="email"></ErrorMessage>
                 </Grid>
 
                 <Grid item xs={12} sx={{ mt: 2 }}>
@@ -58,6 +60,7 @@ export const Registropage = () => {
                         component={TextField}
                         name="contraseña"
                     ></Field>
+                    <ErrorMessage name="constraseña"></ErrorMessage>
                 </Grid>
 
                 <Grid container spacing={2} sx={{mb:2,mt:1}}>
