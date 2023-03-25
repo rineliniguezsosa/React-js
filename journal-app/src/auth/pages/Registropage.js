@@ -9,7 +9,7 @@ export const Registropage = () => {
     const initialValues = {
         displayName:'',
         email:'',
-        constraseña:''
+        contrasena:''
     }
 
     const onSubmit = (values) =>{
@@ -18,13 +18,16 @@ export const Registropage = () => {
 
     const validationSchema = Yup.object({
         displayName:Yup.string().required('El nombre es requerido'),
-        email:Yup.string().email('el correo debe de tener un @').required(),
-        contraseña:Yup.string().max(6,'La constraseña debe de contener más de 6 letras').required()
+        email:Yup.string().email('el correo debe de tener un @').required('El email es requerido'),
+        contrasena:Yup.string().length(6,'La constraseña debe de contener más de 6 letras').required('La contraseña es requerida')
     })
     
   return (
     <AuthLayout titulo="Crear cuenta">
         <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
+        {formik =>{ 
+            console.log(formik)
+        return (
         <Form>
             <Grid container>
                 <Grid item xs={12} sx={{ mt: 2 }}>
@@ -34,21 +37,21 @@ export const Registropage = () => {
                     placeholder="Rinel"
                     fullWidth
                     name="displayName"
-                    component={TextField}
+                    as={TextField}
                     ></Field>
-                    <ErrorMessage name="displayName"></ErrorMessage>
+                    <ErrorMessage component="span" name="displayName"/>
                 </Grid>
 
                 <Grid item xs={12} sx={{ mt: 2 }}>
                     <Field 
                     label="Email" 
                     type="email"
-                    component={TextField}
+                    as={TextField}
                     placeholder="rineliniguezsosa@gmail.com"
                     fullWidth
                     name="email"
                     ></Field>
-                    <ErrorMessage name="email"></ErrorMessage>
+                    <ErrorMessage component="span" name="email"/>
                 </Grid>
 
                 <Grid item xs={12} sx={{ mt: 2 }}>
@@ -57,10 +60,10 @@ export const Registropage = () => {
                         type="password" 
                         placeholder="Contraseña"
                         fullWidth
-                        component={TextField}
-                        name="contraseña"
+                        as={TextField}
+                        name="contrasena"
                     ></Field>
-                    <ErrorMessage name="constraseña"></ErrorMessage>
+                    <ErrorMessage component="span" name="contrasena"/>
                 </Grid>
 
                 <Grid container spacing={2} sx={{mb:2,mt:1}}>
@@ -76,6 +79,7 @@ export const Registropage = () => {
 
             </Grid>
         </Form>
+        )}}
         </Formik>
     </AuthLayout>
   )
