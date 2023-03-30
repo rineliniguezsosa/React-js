@@ -10,6 +10,7 @@ import { startcreatinguserwithpasswordemail } from "../../store/Auth"
 export const Registropage = () => {
 
     const dispatch = useDispatch()
+    const { status,mensajeserror } = useSelector(state => state.auth)
 
     const initialValues = {
         displayName:'',
