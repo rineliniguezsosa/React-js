@@ -1,5 +1,5 @@
 //Proveedores de autenticacion
-import { GoogleAuthProvider,signInWithPopup,createUserWithEmailAndPassword } from "firebase/auth";
+import { GoogleAuthProvider,signInWithPopup,createUserWithEmailAndPassword,updateProfile } from "firebase/auth";
 import { FirebaseAuth } from "./config";
 
 
