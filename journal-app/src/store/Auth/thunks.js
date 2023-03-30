@@ -21,5 +21,8 @@ export const startgooglesignin = () =>{
 export const startcreatinguserwithpasswordemail = () =>{
     return async(dispatch) =>{
         dispatch(verificandocredenciales())
+
+        const resp = await createuserwithdisplayNamemailpassword()
+        console.log(resp)
     }
 }
