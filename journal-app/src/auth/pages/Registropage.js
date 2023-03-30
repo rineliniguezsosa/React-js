@@ -12,6 +12,8 @@ export const Registropage = () => {
     const dispatch = useDispatch()
     const { status,mensajeserror } = useSelector(state => state.auth)
 
+    const verificandoautenticacion = useMemo(() => status === 'verificando', [status])
+
     const initialValues = {
         displayName:'',
         email:'',
