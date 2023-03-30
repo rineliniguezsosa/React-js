@@ -23,6 +23,8 @@ export const startcreatinguserwithpasswordemail = ({displayName,email,contrasena
         dispatch(verificandocredenciales())
 
         const {ok} = await createuserwithdisplayNamemailpassword({displayName,email,contrasena})
+
+        if(!ok){ return dispatch(logout(errorMessage))}
         console.log(resp)
     }
 }
