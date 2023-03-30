@@ -25,6 +25,6 @@ export const startcreatinguserwithpasswordemail = ({displayName,email,contrasena
         const {ok,errorMessage} = await createuserwithdisplayNamemailpassword({displayName,email,contrasena})
 
         if(!ok){ return dispatch(logout(errorMessage))}
-        console.log(resp)
+        
     }
 }
