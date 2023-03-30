@@ -26,7 +26,7 @@ export const startcreatinguserwithpasswordemail = ({displayName,email,contrasena
 
         if(!ok){ return dispatch(logout(errorMessage))}
 
-        dispatch(login(displayName,email,contrasena))
+        dispatch(login(displayName,email,contrasena,photoURL,uid))
         
     }
 }
