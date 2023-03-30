@@ -18,7 +18,7 @@ export const startgooglesignin = () =>{
     }
 }
 
-export const startcreatinguserwithpasswordemail = () =>{
+export const startcreatinguserwithpasswordemail = ({displayName,email,contrasena}) =>{
     return async(dispatch) =>{
         dispatch(verificandocredenciales())
 
