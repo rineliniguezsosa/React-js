@@ -17,3 +17,9 @@ export const startgooglesignin = () =>{
         dispatch(login(result))
     }
 }
+
+export const startcreatinguserwithpasswordemail = () =>{
+    return async(dispatch){
+        
+    }
+}
