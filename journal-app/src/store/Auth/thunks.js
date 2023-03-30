@@ -22,7 +22,7 @@ export const startcreatinguserwithpasswordemail = ({displayName,email,contrasena
     return async(dispatch) =>{
         dispatch(verificandocredenciales())
 
-        const resp = await createuserwithdisplayNamemailpassword()
+        const resp = await createuserwithdisplayNamemailpassword({displayName,email,contrasena})
         console.log(resp)
     }
 }
