@@ -34,6 +34,7 @@ export const createuserwithdisplayNamemailpassword = async({displayName,email,co
     try {
         const resp = await createUserWithEmailAndPassword(FirebaseAuth,email,contrasena)
         const {uid,photoURL} = resp.user
+        await updateProfile(FirebaseAuth.currentUser,{displayName}) //Actualizamos el usuario actual
     } catch (error) {
         const errorMessage = error.message;
         console.log(errorMessage)
