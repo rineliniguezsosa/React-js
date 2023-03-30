@@ -7,6 +7,8 @@ import * as Yup from 'yup';
 
 export const Registropage = () => {
 
+    const dispatch = useDispatch()
+    
     const initialValues = {
         displayName:'',
         email:'',
