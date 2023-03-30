@@ -1,5 +1,5 @@
 import { AuthLayout } from "../layout/AuthLayout"
-import { Grid,Typography,TextField,Button,Link } from '@mui/material'
+import { Grid,Typography,TextField,Button,Link,Alert } from '@mui/material'
 import { useDispatch,useSelector } from 'react-redux'
 import { Link as RouterLink } from 'react-router-dom'
 import { Formik,Form,Field,ErrorMessage } from 'formik'
@@ -76,6 +76,9 @@ export const Registropage = () => {
                 </Grid>
 
                 <Grid container spacing={2} sx={{mb:2,mt:1}}>
+                    <Grid item xs={12} display={!!mensajeserror ? '': 'none'}>
+
+                    </Grid>
                     <Grid item xs={12} >
                         <Button type="submit" disabled={verificandoautenticacion} variant='contained' fullWidth>Crear cuenta</Button>
                     </Grid>
