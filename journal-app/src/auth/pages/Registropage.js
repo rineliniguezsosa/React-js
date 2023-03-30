@@ -19,6 +19,7 @@ export const Registropage = () => {
 
     const onSubmit = (values) =>{
         console.log("registro page",values)
+        dispatch(startcreatinguserwithpasswordemail(values))
     }
 
     const validationSchema = Yup.object({
