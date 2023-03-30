@@ -32,7 +32,8 @@ export const Signinwithgoogle = async() =>{
 
 const createuserwithdisplayNamemailpassword = async() =>{
     try {
-        
+        const resp = await createUserWithEmailAndPassword(FirebaseAuth,email,contrasena)
+        const {uid,photoURL} = resp.user
     } catch (error) {
         const errorMessage = error.message;
         console.log(errorMessage)
