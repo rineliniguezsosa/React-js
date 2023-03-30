@@ -34,6 +34,12 @@ const createuserwithdisplayNamemailpassword = async() =>{
     try {
         
     } catch (error) {
+        const errorMessage = error.message;
+        console.log(errorMessage)
+        return {
+            okay:false,
+            errorMessage
+        }
         
     }
 }
