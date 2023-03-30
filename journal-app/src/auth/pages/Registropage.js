@@ -17,7 +17,7 @@ export const Registropage = () => {
         contrasena:''
     }
 
-    const onSubmit = (values) =>{
+    const onSubmit = (values,onSubmitProps) =>{
         console.log("registro page",values)
         dispatch(startcreatinguserwithpasswordemail(values))
     }
