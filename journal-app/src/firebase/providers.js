@@ -31,7 +31,11 @@ export const Signinwithgoogle = async() =>{
 }
 
 const createuserwithdisplayNamemailpassword = async() =>{
-
+    try {
+        
+    } catch (error) {
+        
+    }
 }
 /* comentarios de linea
 1)
