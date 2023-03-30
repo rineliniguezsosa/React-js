@@ -19,7 +19,7 @@ export const startgooglesignin = () =>{
 }
 
 export const startcreatinguserwithpasswordemail = () =>{
-    return async(dispatch){
+    return async(dispatch) =>{
         dispatch(verificandocredenciales())
     }
 }
