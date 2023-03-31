@@ -15,7 +15,7 @@ export const AppRouter = () => {
    // eslint-disable-next-line react-hooks/rules-of-hooks
    useEffect(()=>{
     onAuthStateChanged(FirebaseAuth,async(user)=>{
-      console.log(user)
+      if(!user){ return dispatch(logout())}
     })
   },[])
 
