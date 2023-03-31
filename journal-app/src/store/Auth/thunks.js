@@ -38,5 +38,7 @@ export const startloginwithemailandpassword = ({email,contrasena}) =>{
         const resp = await loginwithemailpassword({email,contrasena})
         
         if(!resp.okay){ return dispatch(logout(resp.errorMessage))}
+
+        dispatch(login(resp))
     }
 }
