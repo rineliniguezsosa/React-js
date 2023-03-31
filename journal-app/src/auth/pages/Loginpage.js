@@ -3,6 +3,7 @@ import { Grid,Typography,TextField,Button,Link } from '@mui/material'
 import { Link as RouterLink } from 'react-router-dom'
 import { useForm } from '../../hooks'
 import { Formik,Form,Field } from 'formik'
+import * as Yup from 'yup';
 import { AuthLayout } from '../layout/AuthLayout'
 import { verificandoAutenticacion,startgooglesignin,startloginwithemailandpassword } from '../../store/Auth'
 import { useMemo } from 'react'
