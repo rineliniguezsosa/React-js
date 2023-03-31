@@ -23,6 +23,9 @@ export const Loginpage = () => {
         contraseña:''
     })
 
+    const onSubmit = () =>{
+        
+    }
     const submitform = (event) =>{
         event.preventDefault()
         //console.log(email,password)
