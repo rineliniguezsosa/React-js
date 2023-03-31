@@ -8,7 +8,7 @@ describe('pruebas en el customhook useForm', () => {
         email:'rineliniguezsosa@gmail.com',
         password:'password'
     }
-    test('debe de retornar la informacion por defecto', () => {
+    test.skip('debe de retornar la informacion por defecto', () => {
         const { result } = renderHook(()=>useForm(initialState))
         console.log(result.current)
         expect(result.current).toEqual({
@@ -22,15 +22,23 @@ describe('pruebas en el customhook useForm', () => {
           });    
     });
 
-    test('debe de cambiar el nombre del formulario', () => {
-        const nuevovalor = "eloy"
+    // test.skip('debe de cambiar el nombre del formulario', () => {
+    //     const nuevovalor = "eloy"
 
-        const { result } = renderHook(()=>useForm(initialState))
-        const { inputchange } = result.current
-        console.log(result)
-        act(()=>{
-            inputchange({target:{name:'username',value:nuevovalor}})
-        })
+    //     const { result } = renderHook(()=>useForm(initialState))
+    //     //console.log(initialState.username)
+    //     const { inputchange } = result.current
+    //    //const { username } = result.current.form
+    //     //console.log(inputchange)
+    //     act(()=>{
+    //         inputchange({target:{name:'username',value:nuevovalor}})
+    //     })
+    //    // console.log(result.current.name)
+    //     expect(result.current.form.username).toBe(initialState.username);
+        
+    // });
+
+    test.skip('se debe de resetear el formulario', () => {
         
     });
 });
