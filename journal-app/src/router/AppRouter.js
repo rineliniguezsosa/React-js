@@ -6,7 +6,7 @@ import { CheckingAuth } from '../ui'
 import { useEffect } from 'react';
 import { FirebaseAuth } from '../firebase/config'
 import { onAuthStateChanged } from 'firebase/auth'
-import { logout } from '../store/Auth'
+import { logout,login } from '../store/Auth'
 
 
 export const AppRouter = () => {
