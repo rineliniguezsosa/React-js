@@ -1,7 +1,7 @@
 import { Routes,Route } from 'react-router-dom'
 import { Authroutes } from '../auth/routes/Authroutes'
 import { Journalroutes } from '../journal/routes/Journalroutes'
-import { useSelector } from 'react-redux'
+import { useSelector,useDispatch } from 'react-redux'
 import { CheckingAuth } from '../ui'
 import { useEffect } from 'react';
 import { FirebaseAuth } from '../firebase/config'
@@ -16,7 +16,7 @@ export const AppRouter = () => {
       console.log(user)
     })
   },[])
-  
+
   if(status === 'verificando'){
     return (
       <CheckingAuth/>
