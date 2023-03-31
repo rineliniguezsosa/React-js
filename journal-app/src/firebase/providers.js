@@ -37,7 +37,7 @@ export const createuserwithdisplayNamemailpassword = async({displayName,email,co
         await updateProfile(FirebaseAuth.currentUser,{displayName}) //Actualizamos el usuario actual
         
         return {
-            ok:true,
+            okay:true,
             uid,
             photoURL,
             email,
@@ -60,7 +60,7 @@ export const loginwithemailpassword = async({email,contrasena}) =>{
         const {uid,photoURL,displayName} = resp.user
 
         return {
-            ok:true,
+            okay:true,
             uid,
             photoURL,
             displayName
