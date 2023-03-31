@@ -16,7 +16,7 @@ export const Loginpage = () => {
 
     const initialValues = {
         email:'',
-        contraseña:''
+        contrasena:''
     }
 
     const validationSchema = Yup.object({
