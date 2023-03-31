@@ -66,7 +66,12 @@ export const loginwithemailpassword = async({email,contrasena}) =>{
             displayName
         }
     } catch (error) {
-        
+        const errorMessage = error.message;
+        console.log(errorMessage)
+        return {
+            okay:false,
+            errorMessage
+        }
     }
 }
 /* comentarios de linea
