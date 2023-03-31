@@ -48,7 +48,7 @@ export const Loginpage = () => {
 
                 <Grid item xs={12} sx={{ mt: 2 }}>
                     <Field 
-                        name="password"
+                        name="contrasena"
                         label="Contraseña" 
                         type="password" 
                         placeholder='Contraseña' 
