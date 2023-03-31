@@ -30,3 +30,7 @@ export const startcreatinguserwithpasswordemail = ({displayName,email,contrasena
         
     }
 }
+
+export const startloginwithemailandpassword = () =>{
+    
+}
