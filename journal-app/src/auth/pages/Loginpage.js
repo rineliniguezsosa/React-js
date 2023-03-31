@@ -10,7 +10,7 @@ import { useMemo } from 'react'
 
 export const Loginpage = () => {
 
-    const { status } = useSelector(state => state.auth)
+    const { status,mensajeserror } = useSelector(state => state.auth)
 
     const dispatch = useDispatch()
 
