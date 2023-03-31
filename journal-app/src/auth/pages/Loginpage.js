@@ -45,6 +45,7 @@ export const Loginpage = () => {
                     fullWidth
                     as={TextField}
                     ></Field>
+                    <ErrorMessage component="span" name="email"/>
                 </Grid>
 
                 <Grid item xs={12} sx={{ mt: 2 }}>
