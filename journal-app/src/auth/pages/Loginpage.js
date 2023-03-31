@@ -42,14 +42,14 @@ export const Loginpage = () => {
                 </Grid>
 
                 <Grid item xs={12} sx={{ mt: 2 }}>
-                    <TextField 
+                    <Field 
                         name="password"
                         label="Contraseña" 
                         type="password" 
                         placeholder='Contraseña' 
                         fullWidth
                         as={TextField}
-                    ></TextField>
+                    ></Field>
                 </Grid>
 
                 <Grid container spacing={2} sx={{mb:2,mt:1}}>
