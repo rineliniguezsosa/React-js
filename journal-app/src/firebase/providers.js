@@ -54,7 +54,7 @@ export const createuserwithdisplayNamemailpassword = async({displayName,email,co
     }
 }
 
-export const loginwithemailpassword = () =>{
+export const loginwithemailpassword = async() =>{
 
 }
 /* comentarios de linea
