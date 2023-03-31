@@ -20,7 +20,8 @@ export const Loginpage = () => {
     }
 
     const validationSchema = Yup.object({
-
+        email:Yup.string().email('el correo debe de tener un @').required('El email es requerido'),
+        contrasena:Yup.string().length(6,'La constraseña debe de contener más de 6 letras').required('La contraseña es requerida')
     })
 
     const onSubmit = (values,onSubmitProps) =>{
