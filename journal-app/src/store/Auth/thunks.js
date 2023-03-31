@@ -35,7 +35,8 @@ export const startloginwithemailandpassword = ({email,contrasena}) =>{
     return async(dispatch) =>{
         dispatch(verificandocredenciales())
 
-        const {okay,uid,photoURL,displayName,errorMessage} = await loginwithemailpassword({email,contrasena})
-       
+        const resp = await loginwithemailpassword({email,contrasena})
+        
+        if(!resp.okay){ return dispatch(logout(resp.errorMessage))}
     }
 }
