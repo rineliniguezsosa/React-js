@@ -31,13 +31,13 @@ export const Loginpage = () => {
         <Form>
             <Grid container>
                 <Grid item xs={12} sx={{ mt: 2 }}>
-                    <TextField 
+                    <Field 
                     name="email"
                     label="Correo" 
                     type="email"
                     placeholder="rineliniguezsosa@gmail.com"
                     fullWidth
-                    ></TextField>
+                    ></Field>
                 </Grid>
 
                 <Grid item xs={12} sx={{ mt: 2 }}>
