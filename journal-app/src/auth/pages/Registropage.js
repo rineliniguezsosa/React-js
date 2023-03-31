@@ -77,7 +77,7 @@ export const Registropage = () => {
 
                 <Grid container spacing={2} sx={{mb:2,mt:1}}>
                     <Grid item xs={12} display={!!mensajeserror ? '': 'none'}>
-
+                        <Alert severity="error">{mensajeserror}</Alert>
                     </Grid>
                     <Grid item xs={12} >
                         <Button type="submit" disabled={verificandoautenticacion} variant='contained' fullWidth>Crear cuenta</Button>
