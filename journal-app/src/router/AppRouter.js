@@ -33,9 +33,9 @@ export const AppRouter = () => {
       {
         (status === 'autenticado')
         ?
-          <Route path="/auth/*" element={<Authroutes></Authroutes>}></Route>
-          :
          <Route path="/*" element={<Journalroutes></Journalroutes>}></Route>
+          :
+         <Route path="/auth/*" element={<Authroutes></Authroutes>}></Route>
       }
     </Routes>
   )
