@@ -7,6 +7,12 @@ import { CheckingAuth } from '../ui'
 
 export const AppRouter = () => {
   const { status } = useSelector(state => state.auth)
+
+  if(status === 'verificando'){
+    return (
+      <CheckingAuth/>
+    )
+  }
   return (
     <Routes>
         <Route path="/auth/*" element={<Authroutes></Authroutes>}></Route>
