@@ -33,7 +33,7 @@ export const Loginpage = () => {
   return (
     <AuthLayout titulo="Login">
         <Formik initialValues={initialValues} onSubmit={onSubmit}>
-        <form onSubmit={submitform}>
+        <Form>
             <Grid container>
                 <Grid item xs={12} sx={{ mt: 2 }}>
                     <TextField 
@@ -72,7 +72,7 @@ export const Loginpage = () => {
                 </Grid>
 
             </Grid>
-        </form>
+        </Form>
         </Formik>
     </AuthLayout>
   )
