@@ -23,8 +23,8 @@ export const Loginpage = () => {
         contraseña:''
     })
 
-    const onSubmit = () =>{
-        
+    const onSubmit = (values,onSubmitProps) =>{
+
     }
     const submitform = (event) =>{
         event.preventDefault()
