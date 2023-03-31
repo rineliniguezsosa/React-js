@@ -19,10 +19,6 @@ export const Loginpage = () => {
         email:'',
         contraseña:''
     }
-    const {email,password,onInputChange} = useForm({
-        email:'',
-        contraseña:''
-    })
 
     const onSubmit = (values,onSubmitProps) =>{
 
