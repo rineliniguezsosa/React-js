@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 import { CheckingAuth } from '../ui'
 import { useEffect } from 'react';
 import { FirebaseAuth } from '../firebase/config'
-
+import { onAuthStateChanged } from 'firebase/auth'
 
 export const AppRouter = () => {
   const { status } = useSelector(state => state.auth)
