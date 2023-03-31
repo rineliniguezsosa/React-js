@@ -54,9 +54,9 @@ export const createuserwithdisplayNamemailpassword = async({displayName,email,co
     }
 }
 
-export const loginwithemailpassword = async() =>{
+export const loginwithemailpassword = async({email,contrasena}) =>{
     try {
-        
+
     } catch (error) {
         
     }
