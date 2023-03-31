@@ -3,6 +3,7 @@ import { Authroutes } from '../auth/routes/Authroutes'
 import { Journalroutes } from '../journal/routes/Journalroutes'
 import { useSelector } from 'react-redux'
 import { CheckingAuth } from '../ui'
+import { useEffect } from 'react';
 
 
 export const AppRouter = () => {
