@@ -53,6 +53,10 @@ export const createuserwithdisplayNamemailpassword = async({displayName,email,co
         
     }
 }
+
+export const loginwithemailpassword = () =>{
+    
+}
 /* comentarios de linea
 1)
 establecemos provider.setCustomParameters para pasar una solicitud de googleAuth para operaciones de inicio de sesion emergentes y redireccionamiento
