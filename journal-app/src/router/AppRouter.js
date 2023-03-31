@@ -4,6 +4,7 @@ import { Journalroutes } from '../journal/routes/Journalroutes'
 import { useSelector } from 'react-redux'
 import { CheckingAuth } from '../ui'
 import { useEffect } from 'react';
+import { FirebaseAuth } from '../firebase/config'
 
 
 export const AppRouter = () => {
@@ -13,7 +14,7 @@ export const AppRouter = () => {
     return (
       <CheckingAuth/>
     )
-  }
+  }  
   return (
     <Routes>
         <Route path="/auth/*" element={<Authroutes></Authroutes>}></Route>
