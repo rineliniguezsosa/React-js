@@ -57,6 +57,7 @@ export const Loginpage = () => {
                         fullWidth
                         as={TextField}
                     ></Field>
+                    <ErrorMessage component="span" name="contrasena"/>
                 </Grid>
 
                 <Grid container>
