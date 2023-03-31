@@ -26,6 +26,7 @@ export const Loginpage = () => {
 
     const onSubmit = (values,onSubmitProps) =>{
         dispatch(startloginwithemailandpassword(values))
+        onSubmitProps.resetForm()
     }
 
     const estautenticado  = useMemo(() => status === 'verificando', [status])
