@@ -37,6 +37,7 @@ export const Loginpage = () => {
                     type="email"
                     placeholder="rineliniguezsosa@gmail.com"
                     fullWidth
+                    as={TextField}
                     ></Field>
                 </Grid>
 
