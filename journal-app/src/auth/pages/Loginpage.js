@@ -32,7 +32,7 @@ export const Loginpage = () => {
     console.log(estautenticado)
   return (
     <AuthLayout titulo="Login">
-        <Formik initialValues={initialValues} onSubmit={onSubmit}>
+        <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
         <Form>
             <Grid container>
                 <Grid item xs={12} sx={{ mt: 2 }}>
