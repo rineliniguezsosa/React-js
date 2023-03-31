@@ -58,6 +58,12 @@ export const Loginpage = () => {
                     ></Field>
                 </Grid>
 
+                <Grid container>
+                    <Grid item xs={12} display={!!mensajeserror ? '': 'none'}>
+                        <Alert severity="error">{mensajeserror}</Alert>
+                    </Grid>
+                </Grid>
+
                 <Grid container spacing={2} sx={{mb:2,mt:1}}>
                     <Grid item xs={12} sm={6}>
                         <Button disabled={estautenticado} type="submit" variant='contained' fullWidth>Login</Button>
