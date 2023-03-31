@@ -22,11 +22,6 @@ export const Loginpage = () => {
     const onSubmit = (values,onSubmitProps) =>{
 
     }
-    const submitform = (event) =>{
-        event.preventDefault()
-        //console.log(email,password)
-        dispatch(verificandoAutenticacion(email,password))
-    }
 
     const estautenticado  = useMemo(() => status === 'verificando', [status])
     console.log(estautenticado)
