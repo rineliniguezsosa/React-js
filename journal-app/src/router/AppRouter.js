@@ -4,6 +4,7 @@ import { Journalroutes } from '../journal/routes/Journalroutes'
 import { useSelector } from 'react-redux'
 
 export const AppRouter = () => {
+  const { status } = useSelector(state => state.auth)
   return (
     <Routes>
         <Route path="/auth/*" element={<Authroutes></Authroutes>}></Route>
