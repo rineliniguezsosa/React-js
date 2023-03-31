@@ -48,6 +48,7 @@ export const Loginpage = () => {
                         type="password" 
                         placeholder='Contraseña' 
                         fullWidth
+                        as={TextField}
                     ></TextField>
                 </Grid>
 
