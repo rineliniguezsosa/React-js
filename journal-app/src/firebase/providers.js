@@ -56,7 +56,7 @@ export const createuserwithdisplayNamemailpassword = async({displayName,email,co
 
 export const loginwithemailpassword = async({email,contrasena}) =>{
     try {
-
+        const resp = await signInWithEmailAndPassword(FirebaseAuth,email,contrasena)
     } catch (error) {
         
     }
