@@ -1,5 +1,5 @@
 //Proveedores de autenticacion
-import { GoogleAuthProvider,signInWithPopup,createUserWithEmailAndPassword,updateProfile } from "firebase/auth";
+import { GoogleAuthProvider,signInWithPopup,createUserWithEmailAndPassword,updateProfile,signInWithEmailAndPassword } from "firebase/auth";
 import { FirebaseAuth } from "./config";
 
 
@@ -55,7 +55,7 @@ export const createuserwithdisplayNamemailpassword = async({displayName,email,co
 }
 
 export const loginwithemailpassword = () =>{
-    
+
 }
 /* comentarios de linea
 1)
