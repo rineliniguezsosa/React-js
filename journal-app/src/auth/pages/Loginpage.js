@@ -33,7 +33,7 @@ export const Loginpage = () => {
     console.log(estautenticado)
   return (
     <AuthLayout titulo="Login">
-        <Formik>
+        <Formik initialValues={initialValues}>
         <form onSubmit={submitform}>
             <Grid container>
                 <Grid item xs={12} sx={{ mt: 2 }}>
