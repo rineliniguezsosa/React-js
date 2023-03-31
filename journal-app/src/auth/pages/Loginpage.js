@@ -4,7 +4,7 @@ import { Link as RouterLink } from 'react-router-dom'
 import { Formik,Form,Field } from 'formik'
 import * as Yup from 'yup';
 import { AuthLayout } from '../layout/AuthLayout'
-import { verificandoAutenticacion,startgooglesignin,startloginwithemailandpassword } from '../../store/Auth'
+import { startgooglesignin,startloginwithemailandpassword } from '../../store/Auth'
 import { useMemo } from 'react'
 
 
