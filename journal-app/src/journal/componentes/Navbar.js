@@ -3,7 +3,7 @@ import { MenuOutlined,LogoutOutlined } from '@mui/icons-material'
 import { useDispatch } from 'react-redux'
 
 export const Navbar = ({drawerWidth= 240}) => {
-
+  const dispatch  = useDispatch()
   const Logout = () =>{
 
   }
