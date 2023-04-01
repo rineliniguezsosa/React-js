@@ -74,6 +74,10 @@ export const loginwithemailpassword = async({email,contrasena}) =>{
         }
     }
 }
+
+export const LogoutFirebase = async() =>{
+    return await FirebaseAuth.signOut()
+}
 /* comentarios de linea
 1)
 establecemos provider.setCustomParameters para pasar una solicitud de googleAuth para operaciones de inicio de sesion emergentes y redireccionamiento
