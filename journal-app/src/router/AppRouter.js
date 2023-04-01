@@ -2,6 +2,7 @@ import { Routes,Route,Navigate } from 'react-router-dom'
 import { Authroutes } from '../auth/routes/Authroutes'
 import { Journalroutes } from '../journal/routes/Journalroutes'
 import { CheckingAuth } from '../ui'
+import { useCheckAuth } from '../hooks'
 
 
 
