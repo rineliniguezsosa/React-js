@@ -10,18 +10,7 @@ import { logout,login } from '../store/Auth'
 
 
 export const AppRouter = () => {
-  const { status } = useSelector(state => state.auth)
-  const dispatch = useDispatch()
-   // eslint-disable-next-line react-hooks/rules-of-hooks
-   useEffect(()=>{
-    onAuthStateChanged(FirebaseAuth,async(user)=>{
-      if(!user){ return dispatch(logout())}
-
-      const {uid,email,displayName,photoURL} = user
-
-      dispatch(login({uid,email,displayName,photoURL}))
-    })
-  },[])
+  
 
   if(status === 'verificando'){
     return (
