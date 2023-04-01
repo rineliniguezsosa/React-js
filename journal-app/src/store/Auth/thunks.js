@@ -42,3 +42,9 @@ export const startloginwithemailandpassword = ({email,contrasena}) =>{
         dispatch(login(resp))
     }
 }
+
+export const startlogoutfirebase = () =>{
+    return async(dispatch)=>{
+
+    }
+}
