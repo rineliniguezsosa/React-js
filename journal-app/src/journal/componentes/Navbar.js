@@ -6,7 +6,7 @@ import { startlogoutfirebase } from "../../store/Auth"
 export const Navbar = ({drawerWidth= 240}) => {
   const dispatch  = useDispatch()
   const Logout = () =>{
-
+    dispatch(startlogoutfirebase())
   }
   return (
     <AppBar position="fixed" sx={{
