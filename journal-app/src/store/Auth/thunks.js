@@ -1,4 +1,4 @@
-import { Signinwithgoogle,createuserwithdisplayNamemailpassword,loginwithemailpassword } from "../../firebase/providers"
+import { Signinwithgoogle,createuserwithdisplayNamemailpassword,loginwithemailpassword,LogoutFirebase } from "../../firebase/providers"
 import { verificandocredenciales,logout,login } from "./Authslice"
 
 export const verificandoAutenticacion = (email,password) =>{
