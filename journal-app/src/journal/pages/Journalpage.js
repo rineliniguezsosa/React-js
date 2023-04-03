@@ -5,6 +5,7 @@ import { AddOutlined } from '@mui/icons-material'
 import { useDispatch } from 'react-redux' 
 
 export const Journalpage = () => {
+  const dispatch = useDispatch()
   const onClickNote = () =>{
 
   }
