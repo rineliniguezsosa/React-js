@@ -20,6 +20,7 @@ export const Journalpage = () => {
 
         <IconButton
         size="large"
+        onClick={onClickNote}
         sx={{
           color:'white',
           backgroundColor:'red',
