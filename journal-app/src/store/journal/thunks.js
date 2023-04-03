@@ -1,6 +1,6 @@
 
 export const startnewnote = () =>{
-    return async(dispatch)=>{
-        
+    return async(dispatch,getState)=>{
+
     }
 }
