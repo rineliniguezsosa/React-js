@@ -1,4 +1,4 @@
-import { doc,collection} from 'firebase/firestore/lite'
+import { doc,collection,setDoc} from 'firebase/firestore/lite'
 import { FirebaseDB } from '../../firebase/config';
 
 
