@@ -2,10 +2,11 @@ import { Journallayout } from "../layout/Journallayout"
 import { NothingSelectedView } from "../views"
 import { IconButton } from '@mui/material'
 import { AddOutlined } from '@mui/icons-material'
+import { useDispatch } from 'react-redux' 
 
 export const Journalpage = () => {
   const onClickNote = () =>{
-    
+
   }
   return (
     <Journallayout>
