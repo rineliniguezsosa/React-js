@@ -10,8 +10,8 @@ export const journalSlice = createSlice({
     activo:null //nota activa
   },
   reducers: {
-    increment: (state) => {
-      state.counter += 1
+    addnewemptynote: (state,payload) => {
+      
     },
     decrementby:(state,action) =>{
         state.counter+=action.payload
