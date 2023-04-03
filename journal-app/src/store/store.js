@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { authSlice } from './Auth'
+import { journalSlice } from './journal'
 
 
 
