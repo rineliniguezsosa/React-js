@@ -4,6 +4,9 @@ import { IconButton } from '@mui/material'
 import { AddOutlined } from '@mui/icons-material'
 
 export const Journalpage = () => {
+  const onClickNote = () =>{
+    
+  }
   return (
     <Journallayout>
 
