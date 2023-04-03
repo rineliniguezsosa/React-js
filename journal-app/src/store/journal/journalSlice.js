@@ -18,6 +18,9 @@ export const journalSlice = createSlice({
     },
     setnotes:(state,payload)=>{
 
+    },
+    setsaving:(state)=>{
+
     }
   },
 })
