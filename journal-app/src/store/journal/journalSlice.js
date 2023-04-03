@@ -24,6 +24,9 @@ export const journalSlice = createSlice({
     },
     updatenote:(state,payload)=>{
 
+    },
+    deletenotebyid:(state,payload)=>{
+
     }
   },
 })
