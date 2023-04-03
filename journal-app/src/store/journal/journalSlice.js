@@ -13,8 +13,8 @@ export const journalSlice = createSlice({
     addnewemptynote: (state,payload) => {
       
     },
-    decrementby:(state,action) =>{
-        state.counter+=action.payload
+    setactivenote:(state,payload) =>{
+        
     }
   },
 })
