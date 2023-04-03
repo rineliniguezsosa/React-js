@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const journalSlice = createSlice({
   name: 'journal',
   initialState:{
-    counter:0
+    issaving:true
   },
   reducers: {
     increment: (state) => {
