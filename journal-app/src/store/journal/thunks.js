@@ -1,4 +1,5 @@
 import { doc,collection} from 'firebase/firestore/lite'
+import { FirebaseDB } from '../../firebase/config';
 
 
 export const startnewnote = () =>{
