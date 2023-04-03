@@ -3,6 +3,8 @@ import { NothingSelectedView } from "../views"
 import { IconButton } from '@mui/material'
 import { AddOutlined } from '@mui/icons-material'
 import { useDispatch } from 'react-redux' 
+import { startnewnote } from "../../store/journal"
+
 
 export const Journalpage = () => {
   const dispatch = useDispatch()
