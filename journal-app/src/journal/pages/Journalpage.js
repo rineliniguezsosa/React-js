@@ -10,7 +10,7 @@ export const Journalpage = () => {
 
   const dispatch = useDispatch()
   const { issaving } = useSelector(state => state.journal)
-  
+
   const onClickNote = () =>{
     dispatch(startnewnote())
   }
@@ -25,6 +25,7 @@ export const Journalpage = () => {
         <IconButton
         size="large"
         onClick={onClickNote}
+        disabled={issaving}
         sx={{
           color:'white',
           backgroundColor:'red',
