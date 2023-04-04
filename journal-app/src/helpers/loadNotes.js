@@ -1,6 +1,6 @@
 
 
-export const loadnotes = (uid = '') =>{
+export const loadnotes = async(uid = '') =>{
     if(!uid){
         throw new Error('El uid del usuario no existe')
     }
