@@ -7,10 +7,13 @@ import { startnewnote } from "../../store/journal"
 
 
 export const Journalpage = () => {
+
   const dispatch = useDispatch()
+
   const onClickNote = () =>{
     dispatch(startnewnote())
   }
+  
   return (
     <Journallayout>
 
