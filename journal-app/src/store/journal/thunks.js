@@ -18,6 +18,7 @@ export const startnewnote = () =>{
             ...newnote
         });
        
+        newnote.id = newnote.id
 
         console.log(doc)
     }
