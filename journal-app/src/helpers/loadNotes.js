@@ -1,4 +1,5 @@
 import { collection } from "firebase/firestore/lite"
+import { FirebaseDB } from "../firebase/config"
 
 
 export const loadnotes = async(uid = '') =>{
