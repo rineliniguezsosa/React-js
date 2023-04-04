@@ -12,6 +12,7 @@ export const journalSlice = createSlice({
   reducers: {
     addnewemptynote: (state,action) => {
       state.notas.push(action.payload)
+      state.issaving = false;
     },
     setactivenote:(state,action) =>{
         
