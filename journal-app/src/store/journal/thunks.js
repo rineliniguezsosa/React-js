@@ -7,7 +7,7 @@ import { addnewemptynote,setactivenote,savingnewnote } from './journalSlice';
 export const startnewnote = () =>{
     return async(dispatch,getState)=>{
         const { uid } = getState().auth;
-
+        dispatch(savingnewnote())
         const newnote = {
             title:'',
             body:'',
