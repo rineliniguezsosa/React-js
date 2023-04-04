@@ -1,3 +1,4 @@
+import { collection } from "firebase/firestore/lite"
 
 
 export const loadnotes = async(uid = '') =>{
