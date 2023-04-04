@@ -10,22 +10,22 @@ export const journalSlice = createSlice({
     activo:null //nota activa
   },
   reducers: {
-    addnewemptynote: (state,payload) => {
-      
+    addnewemptynote: (state,action) => {
+     
     },
-    setactivenote:(state,payload) =>{
+    setactivenote:(state,action) =>{
         
     },
-    setnotes:(state,payload)=>{
+    setnotes:(state,action)=>{
 
     },
     setsaving:(state)=>{
 
     },
-    updatenote:(state,payload)=>{
+    updatenote:(state,action)=>{
 
     },
-    deletenotebyid:(state,payload)=>{
+    deletenotebyid:(state,action)=>{
 
     }
   },
