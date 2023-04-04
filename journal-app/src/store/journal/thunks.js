@@ -24,3 +24,9 @@ export const startnewnote = () =>{
         dispatch(setactivenote(newnote))
     }
 }
+
+export const startloadingnotes = () =>{
+    return async(dispatch) =>{
+
+    }
+}
