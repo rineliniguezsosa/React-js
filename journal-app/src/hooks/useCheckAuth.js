@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { FirebaseAuth } from '../firebase/config'
 import { onAuthStateChanged } from 'firebase/auth'
 import { logout,login } from '../store/Auth'
+import { startloadingnotes } from "../store/journal"
 
 export const useCheckAuth = () => {
 
