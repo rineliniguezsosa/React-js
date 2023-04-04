@@ -9,7 +9,8 @@ import { startnewnote } from "../../store/journal"
 export const Journalpage = () => {
 
   const dispatch = useDispatch()
-
+  const { issaving } = useSelector(state => state.journal)
+  
   const onClickNote = () =>{
     dispatch(startnewnote())
   }
