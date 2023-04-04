@@ -1,5 +1,6 @@
 import { addDoc,collection } from 'firebase/firestore/lite'
 import { FirebaseDB } from '../../firebase/config';
+import { addnewemptynote } from './journalSlice';
 
 
 
