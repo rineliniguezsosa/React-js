@@ -21,5 +21,6 @@ export const startnewnote = () =>{
         newnote.id = doc.id;
 
         dispatch(addnewemptynote(newnote))
+        dispatch(setactivenote(newnote))
     }
 }
