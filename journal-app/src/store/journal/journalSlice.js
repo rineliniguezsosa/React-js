@@ -10,6 +10,9 @@ export const journalSlice = createSlice({
     activo:null //nota activa
   },
   reducers: {
+    savingnewnote: () =>{
+
+    },
     addnewemptynote: (state,action) => {
       state.notas.push(action.payload)
       state.issaving = false;
