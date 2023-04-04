@@ -26,7 +26,7 @@ export const startnewnote = () =>{
 }
 
 export const startloadingnotes = () =>{
-    return async(dispatch) =>{
-
+    return async(dispatch,getState) =>{
+        const { uid }= getState().auth;
     }
 }
