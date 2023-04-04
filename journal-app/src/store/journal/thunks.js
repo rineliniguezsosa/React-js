@@ -20,6 +20,6 @@ export const startnewnote = () =>{
        
         newnote.id = doc.id;
 
-        console.log(doc)
+        dispatch(addnewemptynote(newnote))
     }
 }
