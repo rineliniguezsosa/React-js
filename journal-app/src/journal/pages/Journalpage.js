@@ -1,5 +1,5 @@
 import { Journallayout } from "../layout/Journallayout"
-import { NothingSelectedView } from "../views"
+import { Noteview, NothingSelectedView } from "../views"
 import { IconButton } from '@mui/material'
 import { AddOutlined } from '@mui/icons-material'
 import { useDispatch,useSelector } from 'react-redux' 
@@ -17,10 +17,13 @@ export const Journalpage = () => {
   
   return (
     <Journallayout>
-
+        {
+        (!!activo) 
+        ?
         <NothingSelectedView/>
-
-        {/* <Noteview/> */}
+        :
+        <Noteview/> 
+        }
 
         <IconButton
         size="large"
