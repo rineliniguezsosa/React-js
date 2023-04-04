@@ -11,7 +11,7 @@ export const journalSlice = createSlice({
   },
   reducers: {
     addnewemptynote: (state,action) => {
-     
+      state.notas.push(action.payload)
     },
     setactivenote:(state,action) =>{
         
