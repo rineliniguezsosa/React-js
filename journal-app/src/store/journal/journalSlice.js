@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const journalSlice = createSlice({
   name: 'journal',
   initialState:{
-    issaving:true, //variable para saber si almacene o no un objeto
+    issaving:false, //variable para saber si almacene o no un objeto
     messagesaved:'', //mensage de almacenamiento
     notas:[], //aqui se almacenan los notas
     activo:null //nota activa
