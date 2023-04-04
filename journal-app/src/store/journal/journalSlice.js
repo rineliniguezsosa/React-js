@@ -32,4 +32,11 @@ export const journalSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { increment,decrementby } = journalSlice.actions
+export const { 
+  addnewemptynote,
+  setactivenote,
+  setnotes,
+  setsaving,
+  updatenote,
+  deletenotebyid 
+} = journalSlice.actions
