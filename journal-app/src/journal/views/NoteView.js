@@ -3,6 +3,7 @@ import { SaveOutlined } from '@mui/icons-material'
 import { ImagenGallery } from '../componentes'
 import { Formik,Field } from 'formik'
 import { useSelector } from 'react-redux'
+import { useMemo } from 'react'
 
 
 export const Noteview = () => {
