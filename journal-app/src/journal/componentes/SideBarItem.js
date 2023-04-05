@@ -4,13 +4,13 @@ import { useMemo } from 'react'
 import { setactivenote } from '../../store/journal'
 import { useDispatch } from 'react-redux'
 
-export const SideBarItem = ({title = '',body,id}) => {
+export const SideBarItem = ({title = '',body,id,date}) => {
   const dispatch = useDispatch()
-  
+
   const nuevotitulo = useMemo(() => title.length >= 15 ? title.substring(0,15) + '...' : title, [title])
 
   const onClickNota = () =>{
-
+    dispatch(setactivenote({title,body,id,date}))
   }
   return (
     <ListItem key={id} disablePadding>
