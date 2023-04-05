@@ -29,19 +29,8 @@ export const SideBar = ({drawerWidth}) => {
 
                 <List>
                     {
-                        ['Enero','Febrero','Marzo','Abril'].map(item => (
-                            <ListItem key={item} disablePadding>
-                                <ListItemButton>
-                                    <ListItemIcon>
-                                       <TurnedInNot></TurnedInNot> 
-                                    </ListItemIcon>
-
-                                    <Grid container>
-                                        <ListItemText primary={item}></ListItemText>
-                                        <ListItemText secondary={'lorem'}></ListItemText>
-                                    </Grid>
-                                </ListItemButton>
-                            </ListItem>
+                        notas.map(nota => (
+    
                         ))
                     }
                 </List>
