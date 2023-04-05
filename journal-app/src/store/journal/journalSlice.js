@@ -18,7 +18,7 @@ export const journalSlice = createSlice({
       state.issaving = false;
     },
     setactivenote:(state,action) =>{
-        
+      state.activo = action.payload;
     },
     setnotes:(state,action)=>{
 
