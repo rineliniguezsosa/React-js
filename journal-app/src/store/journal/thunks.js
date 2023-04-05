@@ -31,5 +31,7 @@ export const startloadingnotes = () =>{
         const { uid }= getState().auth;
 
        const resp = await loadnotes(uid)
+
+       dispatch(setnotes(resp))
     }
 }
