@@ -26,7 +26,7 @@ export const Noteview = () => {
               Guardar
             </Button>
         </Grid>
-        <Formik>
+        <Formik initialValues={initialValues}>
         <Grid container>
 
             <TextField
