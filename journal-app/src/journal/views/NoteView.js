@@ -14,11 +14,17 @@ export const Noteview = () => {
   const initialValues = {
     titulo:title
   }
+
+  const fecha = useMemo(() => {
+    const newDate = new Date(date);
+    return newDate.toUTCString()
+  },[date])
+
   return (
     <Grid container direction="row" justifyContent="space-between" alignItems="center" sx={{mb:1}}>
 
         <Grid item>
-            <Typography fontSize={39} fontWeight="light">2 de agosto,2023</Typography>
+            <Typography fontSize={39} fontWeight="light">{fecha}</Typography>
         </Grid>
 
         <Grid item>
