@@ -9,7 +9,7 @@ import { useMemo } from 'react'
 export const Noteview = () => {
   const { activo:nota } = useSelector(state => state.journal)
 
-  const {title} = nota;
+  const {title,date} = nota;
 
   const initialValues = {
     titulo:title
