@@ -9,4 +9,5 @@ export const loadnotes = async(uid = '') =>{
     //referencia para obtener los documentos o registros
     const ref = collection(FirebaseDB, `${ uid }/journal/notas`)
     const resp = await getDocs(ref)
+    const notas = [];
 }
