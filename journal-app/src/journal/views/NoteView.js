@@ -29,13 +29,14 @@ export const Noteview = () => {
         <Formik initialValues={initialValues}>
         <Grid container>
 
-            <TextField
+            <Field
               type="text"
               variant='filled'
               fullWidth
               placeholder="Ingrese un titulo"
               label="Titulo"
               sx={{border:'none',mb:1}}
+              as={TextField}
             />
 
             <TextField
