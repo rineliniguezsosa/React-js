@@ -6,11 +6,11 @@ export const SideBarItem = ({title = '',body,id}) => {
   const nuevotitulo = useMemo(() => title.length >= 15 ? title.substring(0,15) + '...' : title, [title])
 
   const onClickNota = () =>{
-    
+
   }
   return (
     <ListItem key={id} disablePadding>
-        <ListItemButton>
+        <ListItemButton onClick={onClickNota}>
                     <ListItemIcon>
                         <TurnedInNot></TurnedInNot> 
                     </ListItemIcon>
