@@ -30,8 +30,8 @@ export const startloadingnotes = () =>{
     return async(dispatch,getState) =>{
         const { uid }= getState().auth;
 
-       const resp = await loadnotes(uid)
+       const notas = await loadnotes(uid)
 
-       dispatch(setnotes(resp))
+       dispatch(setnotes(notas))
     }
 }
