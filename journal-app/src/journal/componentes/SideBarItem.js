@@ -4,6 +4,10 @@ import { useMemo } from 'react'
 
 export const SideBarItem = ({title = '',body,id}) => {
   const nuevotitulo = useMemo(() => title.length >= 15 ? title.substring(0,15) + '...' : title, [title])
+
+  const onClickNota = () =>{
+    
+  }
   return (
     <ListItem key={id} disablePadding>
         <ListItemButton>
