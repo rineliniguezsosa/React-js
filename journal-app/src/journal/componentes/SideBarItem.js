@@ -3,6 +3,7 @@ import { TurnedInNot } from '@mui/icons-material'
 import { useMemo } from 'react'
 
 export const SideBarItem = ({title = '',body,id}) => {
+  const nuevotitulo = useMemo(() => title.length >= 15 ? title.substring(0,15) + '...' : title, [title])
   return (
     <ListItem key={id} disablePadding>
         <ListItemButton>
@@ -11,7 +12,7 @@ export const SideBarItem = ({title = '',body,id}) => {
                     </ListItemIcon>
 
                     <Grid container>
-                        <ListItemText primary={title}></ListItemText>
+                        <ListItemText primary={nuevotitulo}></ListItemText>
                         <ListItemText secondary={body}></ListItemText>
                     </Grid>
         </ListItemButton>
