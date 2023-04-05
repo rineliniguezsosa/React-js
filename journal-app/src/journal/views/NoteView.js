@@ -1,7 +1,7 @@
 import {Grid,Typography,Button,TextField} from '@mui/material'
 import { SaveOutlined } from '@mui/icons-material'
 import { ImagenGallery } from '../componentes'
-import { Formik } from 'formik'
+import { Formik,Field } from 'formik'
 import { useSelector } from 'react-redux'
 
 
@@ -20,7 +20,7 @@ export const Noteview = () => {
               Guardar
             </Button>
         </Grid>
-
+        <Formik>
         <Grid container>
 
             <TextField
@@ -42,7 +42,7 @@ export const Noteview = () => {
             />
 
         </Grid>
-
+        </Formik>
         {/* GALERY DE IMAGENES */}
         <ImagenGallery/>
     </Grid>
