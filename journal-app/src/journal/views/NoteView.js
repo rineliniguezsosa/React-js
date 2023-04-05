@@ -1,6 +1,7 @@
 import {Grid,Typography,Button,TextField} from '@mui/material'
 import { SaveOutlined } from '@mui/icons-material'
 import { ImagenGallery } from '../componentes'
+import { Formik } from 'formik'
 import { useSelector } from 'react-redux'
 
 
