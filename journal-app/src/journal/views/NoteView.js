@@ -9,6 +9,10 @@ export const Noteview = () => {
   const { activo:nota } = useSelector(state => state.journal)
 
   const {title} = nota;
+
+  const initialValues = {
+    titulo:title
+  }
   return (
     <Grid container direction="row" justifyContent="space-between" alignItems="center" sx={{mb:1}}>
 
