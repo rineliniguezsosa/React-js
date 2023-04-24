@@ -40,6 +40,7 @@ export const Noteview = () => {
               label="Titulo"
               sx={{border:'none',mb:1}}
               name="titulo"
+              onChange={onInputChange}
             />
 
             <TextField
