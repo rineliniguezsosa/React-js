@@ -33,7 +33,7 @@ export const Noteview = () => {
               Guardar
             </Button>
         </Grid>
-        <Formik initialValues={initialValues}>
+
         <Grid container>
 
             <TextField
@@ -56,7 +56,7 @@ export const Noteview = () => {
             />
 
         </Grid>
-        </Formik>
+        
         {/* GALERY DE IMAGENES */}
         <ImagenGallery/>
     </Grid>
