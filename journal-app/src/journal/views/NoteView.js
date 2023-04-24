@@ -51,6 +51,7 @@ export const Noteview = () => {
               multiline
               placeholder="¡Que sucedio el día de hoy?"
               minRows={5}
+              onChange={onInputChange}
             />
 
         </Grid>
