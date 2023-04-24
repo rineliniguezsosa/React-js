@@ -10,10 +10,6 @@ export const Noteview = () => {
 
   const {title,date} = nota;
 
-  const initialValues = {
-    titulo:title
-  }
-
   const fecha = useMemo(() => {
     const newDate = new Date(date);
     return newDate.toUTCString()
