@@ -37,7 +37,7 @@ export const startloadingnotes = () =>{
 }
 
 export const startsavingupdatenote = () =>{
-    return async (dispatch) =>{
+    return async(dispatch,getState) =>{
 
     }
 }
