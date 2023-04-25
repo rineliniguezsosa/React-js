@@ -1,8 +1,7 @@
 import { addDoc,collection,doc,setDoc } from 'firebase/firestore/lite'
 import { FirebaseDB } from '../../firebase/config';
-import { addnewemptynote,setactivenote,savingnewnote,setnotes } from './journalSlice';
+import { addnewemptynote,setactivenote,savingnewnote,setnotes,updatenote } from './journalSlice';
 import { loadnotes } from '../../helpers';
-
 
 
 export const startnewnote = () =>{
