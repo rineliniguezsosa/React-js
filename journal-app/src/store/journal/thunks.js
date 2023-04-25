@@ -1,4 +1,4 @@
-import { addDoc,collection } from 'firebase/firestore/lite'
+import { addDoc,collection,doc } from 'firebase/firestore/lite'
 import { FirebaseDB } from '../../firebase/config';
 import { addnewemptynote,setactivenote,savingnewnote,setnotes } from './journalSlice';
 import { loadnotes } from '../../helpers';
@@ -40,5 +40,8 @@ export const startsavingupdatenote = () =>{
     return async(dispatch,getState) =>{
         const { uid }= getState().auth;
         const { activo:nota }= getState().journal;
+        
+        const ref =  doc(FirebaseDB,`${ uid }/journal/notas/${nota.id}`)
+        
     }
 }
