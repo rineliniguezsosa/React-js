@@ -27,7 +27,7 @@ export const journalSlice = createSlice({
       state.issaving = true
     },
     updatenote:(state,action)=>{
-
+      state.issaving = false;
     },
     deletenotebyid:(state,action)=>{
 
