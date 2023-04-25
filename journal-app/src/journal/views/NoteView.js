@@ -9,7 +9,7 @@ import { useForm } from '../../hooks'
 export const Noteview = () => {
   const { activo:nota } = useSelector(state => state.journal)
 
-  const {title,body,date,onInputChange} = useForm(nota)
+  const {title,body,date,onInputChange,formState} = useForm(nota)
 
   const fecha = useMemo(() => {
     const newDate = new Date(date);
