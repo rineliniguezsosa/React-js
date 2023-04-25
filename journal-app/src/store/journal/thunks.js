@@ -42,6 +42,7 @@ export const startsavingupdatenote = () =>{
         const { activo:nota }= getState().journal;
 
         const notatofirestore  = {...nota}
+        delete notatofirestore.id;
         
         const ref =  doc(FirebaseDB,`${ uid }/journal/notas/${nota.id}`)
         
