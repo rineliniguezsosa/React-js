@@ -1,7 +1,7 @@
 import {Grid,Typography,Button,TextField} from '@mui/material'
 import { SaveOutlined } from '@mui/icons-material'
 import { ImagenGallery } from '../componentes'
-import { useSelector } from 'react-redux'
+import { useSelector,useDispatch } from 'react-redux'
 import { useMemo,useEffect } from 'react'
 import { useForm } from '../../hooks'
 
