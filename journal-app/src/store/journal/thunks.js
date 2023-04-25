@@ -45,6 +45,6 @@ export const startsavingupdatenote = () =>{
         delete notatofirestore.id;
         
         const ref =  doc(FirebaseDB,`${ uid }/journal/notas/${nota.id}`)
-        
+        await setDoc(ref,notatofirestore,{ merge: true });
     }
 }
