@@ -8,6 +8,7 @@ import { useForm } from '../../hooks'
 
 export const Noteview = () => {
   const { activo:nota } = useSelector(state => state.journal)
+  const dispatch = useDispatch();
 
   const {title,body,date,onInputChange,formState} = useForm(nota)
 
