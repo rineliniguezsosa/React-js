@@ -22,6 +22,9 @@ export const Noteview = () => {
     return newDate.toUTCString()
   },[date])
 
+  const savenote = () =>{
+    
+  }
   return (
     <Grid container direction="row" justifyContent="space-between" alignItems="center" sx={{mb:1}}>
 
