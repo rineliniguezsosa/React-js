@@ -23,7 +23,7 @@ export const Noteview = () => {
   },[date])
 
   const savenote = () =>{
-    
+    dispatch(startsavingupdatenote())
   }
   return (
     <Grid container direction="row" justifyContent="space-between" alignItems="center" sx={{mb:1}}>
