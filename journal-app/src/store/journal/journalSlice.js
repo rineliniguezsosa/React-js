@@ -28,6 +28,13 @@ export const journalSlice = createSlice({
     },
     updatenote:(state,action)=>{
       state.issaving = false;
+      state.notas = state.notas.map(nota =>{
+        if(nota.id === action.payload.id){
+          return action.payload;
+        }
+
+        return nota;
+      })
     },
     deletenotebyid:(state,action)=>{
 
