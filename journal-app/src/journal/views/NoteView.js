@@ -4,6 +4,7 @@ import { ImagenGallery } from '../componentes'
 import { useSelector,useDispatch } from 'react-redux'
 import { useMemo,useEffect } from 'react'
 import { useForm } from '../../hooks'
+import { setactivenote } from '../../store/journal'
 
 
 export const Noteview = () => {
