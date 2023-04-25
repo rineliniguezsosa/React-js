@@ -12,6 +12,10 @@ export const useForm = (initialForm = {}) =>{
         });
     }
 
+    useEffect(() => {
+      setFormState(initialForm)
+    }, [initialForm])
+
     const onResetForm = () => {
         setFormState( initialForm );
     }
