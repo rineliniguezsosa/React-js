@@ -35,3 +35,9 @@ export const startloadingnotes = () =>{
        dispatch(setnotes(notas))
     }
 }
+
+export const startsavingupdatenote = () =>{
+    return async (dispatch) =>{
+
+    }
+}
