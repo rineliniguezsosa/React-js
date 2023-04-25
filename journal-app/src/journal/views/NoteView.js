@@ -13,6 +13,10 @@ export const Noteview = () => {
 
   const {title,body,date,onInputChange,formState} = useForm(nota)
 
+  useEffect(() => {
+    dispatch(setactivenote(formState))
+  }, [formState])
+  
   const fecha = useMemo(() => {
     const newDate = new Date(date);
     return newDate.toUTCString()
