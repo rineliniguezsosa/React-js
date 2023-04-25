@@ -39,5 +39,6 @@ export const startloadingnotes = () =>{
 export const startsavingupdatenote = () =>{
     return async(dispatch,getState) =>{
         const { uid }= getState().auth;
+        const { activo:nota }= getState().journal;
     }
 }
