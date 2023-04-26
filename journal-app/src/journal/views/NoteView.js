@@ -37,6 +37,8 @@ export const Noteview = () => {
 
   const oninputfilechange = ({target}) =>{
     if(target.files === 0){ return;}
+
+    dispatch(startuploadingfiles(target.files))
   }
   return (
     <Grid container direction="row" justifyContent="space-between" alignItems="center" sx={{mb:1}}>
