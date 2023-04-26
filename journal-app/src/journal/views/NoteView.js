@@ -4,7 +4,7 @@ import { ImagenGallery } from '../componentes'
 import { useSelector,useDispatch } from 'react-redux'
 import { useMemo,useEffect,useRef } from 'react'
 import { useForm } from '../../hooks'
-import { setactivenote,startsavingupdatenote } from '../../store/journal'
+import { setactivenote,startsavingupdatenote,startuploadingfiles } from '../../store/journal'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
