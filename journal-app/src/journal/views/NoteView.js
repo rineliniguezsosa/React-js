@@ -41,6 +41,9 @@ export const Noteview = () => {
         </Grid>
 
         <Grid item>
+
+            <input type="file"></input>
+            
             <Button onClick={savenote} color="primary" sx={{padding:2}}>
               <SaveOutlined sx={{fontSize:30,mr:1}}></SaveOutlined>
               Guardar
