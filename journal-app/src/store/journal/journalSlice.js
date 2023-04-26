@@ -35,6 +35,7 @@ export const journalSlice = createSlice({
 
         return nota;
       })
+      state.messagesaved = `${action.payload.title}, actualizada correctamente`;
     },
     deletenotebyid:(state,action)=>{
 
