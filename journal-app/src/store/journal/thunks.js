@@ -49,3 +49,9 @@ export const startsavingupdatenote = () =>{
         dispatch(updatenote(nota))
     }
 }
+
+export const startuploadingfiles = (files = []) =>{
+    return async(diapatch) =>{
+        
+    }
+}
