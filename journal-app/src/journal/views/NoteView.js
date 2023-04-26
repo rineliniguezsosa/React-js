@@ -42,7 +42,7 @@ export const Noteview = () => {
 
         <Grid item>
 
-            <input multiple type="file"></input>
+            <input onChange={oninputfilechange} multiple type="file"></input>
 
             <Button onClick={savenote} color="primary" sx={{padding:2}}>
               <SaveOutlined sx={{fontSize:30,mr:1}}></SaveOutlined>
