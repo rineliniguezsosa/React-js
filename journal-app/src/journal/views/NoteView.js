@@ -19,6 +19,12 @@ export const Noteview = () => {
     dispatch(setactivenote(formState))
   }, [formState])
   
+  useEffect(() => {
+    if(messagesaved.length > 0){
+      MySwal.fire('nota actualizada',messagesaved,'success')
+    }
+  }, [messagesaved])
+  
   const fecha = useMemo(() => {
     const newDate = new Date(date);
     return newDate.toUTCString()
