@@ -9,7 +9,7 @@ export const fileupload = async(file) =>{
     formData.append('file',file)
 
     try {
-        
+        const resp = await fetch(cloudurl,{method:'POST',body:formData})
     } catch (error) {
         console.log(error)
         throw new Error(error.message)
