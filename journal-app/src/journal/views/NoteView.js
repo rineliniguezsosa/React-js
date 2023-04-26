@@ -11,6 +11,7 @@ import withReactContent from 'sweetalert2-react-content'
 export const Noteview = () => {
   const { activo:nota,messagesaved } = useSelector(state => state.journal)
   const dispatch = useDispatch();
+  const MySwal = withReactContent(Swal)
 
   const {title,body,date,onInputChange,formState} = useForm(nota)
 
