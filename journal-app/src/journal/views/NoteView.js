@@ -49,7 +49,7 @@ export const Noteview = () => {
 
             <input style={{display:'none'}} ref={inputfileref} onChange={oninputfilechange} multiple type="file"></input>
 
-            <IconButton color="primary">
+            <IconButton onClick={()=> inputfileref.current.click()} color="primary">
               <UploadOutlined></UploadOutlined>
             </IconButton>
 
