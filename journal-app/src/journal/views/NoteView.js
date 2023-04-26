@@ -24,7 +24,7 @@ export const Noteview = () => {
       MySwal.fire('nota actualizada',messagesaved,'success')
     }
   }, [messagesaved])
-  
+
   const fecha = useMemo(() => {
     const newDate = new Date(date);
     return newDate.toUTCString()
@@ -56,7 +56,7 @@ export const Noteview = () => {
               placeholder="Ingrese un titulo"
               label="Titulo"
               sx={{border:'none',mb:1}}
-              name="titulo"
+              name="title"
               value={title}
               onChange={onInputChange}
             />
