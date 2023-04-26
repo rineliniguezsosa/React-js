@@ -26,6 +26,7 @@ export const journalSlice = createSlice({
     },
     setsaving:(state)=>{
       state.issaving = true
+      state.messagesaved = '';
     },
     updatenote:(state,action)=>{
       state.issaving = false;
