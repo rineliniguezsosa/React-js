@@ -35,7 +35,7 @@ export const Noteview = () => {
   }
 
   const oninputfilechange = ({target}) =>{
-
+    if(target.files === 0){ return;}
   }
   return (
     <Grid container direction="row" justifyContent="space-between" alignItems="center" sx={{mb:1}}>
