@@ -12,6 +12,7 @@ export const Noteview = () => {
   const { activo:nota,messagesaved } = useSelector(state => state.journal)
   const dispatch = useDispatch();
   const MySwal = withReactContent(Swal)
+  const inputfileref = useRef()
 
   const {title,body,date,onInputChange,formState} = useForm(nota)
 
