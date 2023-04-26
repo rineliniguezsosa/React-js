@@ -34,8 +34,8 @@ export const Noteview = () => {
     dispatch(startsavingupdatenote())
   }
 
-  const oninputfilechange = () =>{
-    
+  const oninputfilechange = ({target}) =>{
+
   }
   return (
     <Grid container direction="row" justifyContent="space-between" alignItems="center" sx={{mb:1}}>
