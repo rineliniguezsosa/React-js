@@ -5,7 +5,7 @@ import { useSelector,useDispatch } from 'react-redux'
 import { useMemo,useEffect } from 'react'
 import { useForm } from '../../hooks'
 import { setactivenote,startsavingupdatenote } from '../../store/journal'
-
+import Swal from 'sweetalert2'
 
 export const Noteview = () => {
   const { activo:nota,messagesaved } = useSelector(state => state.journal)
