@@ -47,7 +47,7 @@ export const Noteview = () => {
 
         <Grid item>
 
-            <input ref={inputfileref} onChange={oninputfilechange} multiple type="file"></input>
+            <input style={{display:'none'}} ref={inputfileref} onChange={oninputfilechange} multiple type="file"></input>
 
             <IconButton color="primary">
               <UploadOutlined></UploadOutlined>
