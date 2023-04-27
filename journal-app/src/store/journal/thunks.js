@@ -58,5 +58,7 @@ export const startuploadingfiles = (files = []) =>{
         for (const file of files) {
             fileuploadpromises.push(fileupload(file))
         }
+
+        const photourl = await Promise.all(fileuploadpromises)
     }
 }
