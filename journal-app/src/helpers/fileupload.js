@@ -10,6 +10,8 @@ export const fileupload = async(file) =>{
 
     try {
         const resp = await fetch(cloudurl,{method:'POST',body:formData})
+
+        if(!resp.ok){ throw new Error('No se pudo subir la imagen')}
     } catch (error) {
         console.log(error)
         throw new Error(error.message)
