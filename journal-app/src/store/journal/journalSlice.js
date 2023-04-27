@@ -41,6 +41,7 @@ export const journalSlice = createSlice({
     },
     setphotostoactivenote:(state,action) =>{
       state.active.imgurls = [...state.active.imgurls,...action.payload]
+      state.issaving = false;
     },
     deletenotebyid:(state,action)=>{
 
