@@ -7,7 +7,10 @@ export const journalSlice = createSlice({
     issaving:false, //variable para saber si almacene o no un objeto
     messagesaved:'', //mensage de almacenamiento
     notas:[], //aqui se almacenan los notas
-    activo:null //nota activa
+    activo:null, //nota activa
+    active:{
+      imgurls:[]
+    }
   },
   reducers: {
     savingnewnote: (state) =>{
