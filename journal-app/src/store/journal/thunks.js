@@ -55,5 +55,8 @@ export const startuploadingfiles = (files = []) =>{
 
         //await fileupload(files)
         const fileuploadpromises = []
+        for (const file of files) {
+            
+        }
     }
 }
