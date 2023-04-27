@@ -14,6 +14,8 @@ export const fileupload = async(file) =>{
         if(!req.ok){ throw new Error('No se pudo subir la imagen')}
 
         const resp = await req.json()
+
+        return resp.secure_url;
     } catch (error) {
         console.log(error)
         throw new Error(error.message)
