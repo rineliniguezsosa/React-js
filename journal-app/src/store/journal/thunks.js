@@ -52,5 +52,7 @@ export const startsavingupdatenote = () =>{
 export const startuploadingfiles = (files = []) =>{
     return async(dispatch) =>{
         dispatch(setsaving())
+
+        await fileupload(files)
     }
 }
