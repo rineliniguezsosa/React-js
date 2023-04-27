@@ -53,6 +53,7 @@ export const startuploadingfiles = (files = []) =>{
     return async(dispatch) =>{
         dispatch(setsaving())
 
-        await fileupload(files)
+        //await fileupload(files)
+        const fileuploadpromises = []
     }
 }
