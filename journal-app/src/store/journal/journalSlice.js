@@ -57,5 +57,6 @@ export const {
   setsaving,
   updatenote,
   deletenotebyid,
-  savingnewnote 
+  savingnewnote,
+  setphotostoactivenote 
 } = journalSlice.actions
