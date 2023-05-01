@@ -1,4 +1,5 @@
 import { Signinwithgoogle,createuserwithdisplayNamemailpassword,loginwithemailpassword,LogoutFirebase } from "../../firebase/providers"
+import { clearnotaslogout } from "../journal"
 import { verificandocredenciales,logout,login } from "./Authslice"
 
 export const verificandoAutenticacion = (email,password) =>{
