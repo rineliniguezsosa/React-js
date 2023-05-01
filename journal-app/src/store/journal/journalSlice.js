@@ -47,6 +47,7 @@ export const journalSlice = createSlice({
       state.issaving = false;
       state.messagesaved = '';
       state.notas = [];
+      state.activo = null;
     },
     deletenotebyid:(state,action)=>{
 
