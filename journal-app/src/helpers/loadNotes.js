@@ -11,7 +11,13 @@ export const loadnotes = async(uid = '') =>{
     const resp = await getDocs(ref)
     const notas = [];
     resp.forEach(info =>{
-        notas.push({id:info.id,...info.data()})
+        notas.push({
+            id:info.id,
+            body:info.data().body,
+            title:info.data().title,
+            date:info.data().date,
+            imageurls:info.data().imageurls || []
+        })
     })
 
     return notas;
