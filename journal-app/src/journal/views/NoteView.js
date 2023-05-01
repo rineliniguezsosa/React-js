@@ -92,7 +92,9 @@ export const Noteview = () => {
         </Grid>
         
         <Grid container justifyContent="end">
-
+            <Button>
+              Borrar
+            </Button>
         </Grid>
         {/* GALERY DE IMAGENES */}
         <ImagenGallery images={nota.imageurls}/>
