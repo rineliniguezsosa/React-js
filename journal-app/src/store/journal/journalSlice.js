@@ -43,6 +43,9 @@ export const journalSlice = createSlice({
       state.activo.imageurls = [ ...(state.activo.imageurls?.length ? state.activo.imageurls : []), ...action.payload ]
       state.issaving = false;
     },
+    clearnotaslogout:(state) =>{
+
+    },
     deletenotebyid:(state,action)=>{
 
     }
