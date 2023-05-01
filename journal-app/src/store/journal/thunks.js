@@ -69,5 +69,7 @@ export const startdeletenote = () =>{
     return async(dispatch,getState)=>{
         const { uid }= getState().auth;
         const { activo:nota }= getState().journal;
+
+        const ref =  doc(FirebaseDB,`${ uid }/journal/notas/${nota.id}`)
     }
 }
