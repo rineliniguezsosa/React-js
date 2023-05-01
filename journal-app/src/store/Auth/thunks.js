@@ -47,7 +47,7 @@ export const startloginwithemailandpassword = ({email,contrasena}) =>{
 export const startlogoutfirebase = () =>{
     return async(dispatch)=>{
         await LogoutFirebase()
-
+        dispatch(clearnotaslogout())
         dispatch(logout())
     }
 }
