@@ -71,5 +71,7 @@ export const startdeletenote = () =>{
         const { activo:nota }= getState().journal;
 
         const ref =  doc(FirebaseDB,`${ uid }/journal/notas/${nota.id}`)
+
+        await deleteDoc(ref)
     }
 }
