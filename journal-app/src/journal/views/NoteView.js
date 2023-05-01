@@ -93,6 +93,7 @@ export const Noteview = () => {
         
         <Grid container justifyContent="end">
             <Button>
+              <DeleteOutline></DeleteOutline>
               Borrar
             </Button>
         </Grid>
