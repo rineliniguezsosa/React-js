@@ -18,12 +18,14 @@ export const Noteview = () => {
 
   useEffect(() => {
     dispatch(setactivenote(formState))
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formState])
   
   useEffect(() => {
     if(messagesaved.length > 0){
       MySwal.fire('nota actualizada',messagesaved,'success')
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [messagesaved])
 
   const fecha = useMemo(() => {
@@ -90,7 +92,7 @@ export const Noteview = () => {
         </Grid>
         
         {/* GALERY DE IMAGENES */}
-        <ImagenGallery/>
+        <ImagenGallery images={nota.imageurls}/>
     </Grid>
   )
 }
