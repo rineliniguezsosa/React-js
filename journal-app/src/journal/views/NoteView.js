@@ -44,7 +44,7 @@ export const Noteview = () => {
   }
 
   const ondeletenote = () =>{
-    
+    dispatch(startdeletenote())
   }
   return (
     <Grid container direction="row" justifyContent="space-between" alignItems="center" sx={{mb:1}}>
