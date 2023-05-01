@@ -1,5 +1,5 @@
 import {Grid,Typography,Button,TextField,IconButton} from '@mui/material'
-import { SaveOutlined,UploadOutlined } from '@mui/icons-material'
+import { SaveOutlined,UploadOutlined,DeleteOutline } from '@mui/icons-material'
 import { ImagenGallery } from '../componentes'
 import { useSelector,useDispatch } from 'react-redux'
 import { useMemo,useEffect,useRef } from 'react'
