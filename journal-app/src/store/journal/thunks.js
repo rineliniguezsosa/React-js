@@ -67,6 +67,6 @@ export const startuploadingfiles = (files = []) =>{
 
 export const startdeletenote = () =>{
     return async(dispatch,getState)=>{
-
+        const { uid }= getState().auth;
     }
 }
