@@ -8,9 +8,6 @@ export const journalSlice = createSlice({
     messagesaved:'', //mensage de almacenamiento
     notas:[], //aqui se almacenan los notas
     activo:null, //nota activa
-    active:{
-      imgurls:[]
-    }
   },
   reducers: {
     savingnewnote: (state) =>{
@@ -43,7 +40,7 @@ export const journalSlice = createSlice({
       state.messagesaved = `${action.payload.title}, actualizada correctamente`;
     },
     setphotostoactivenote:(state,action) =>{
-      state.active.imgurls = [...state.active.imgurls,...action.payload]
+      state.activo.imageurls = [ ...(state.activo.imageurls?.length ? state.activo.imageurls : []), ...action.payload ]
       state.issaving = false;
     },
     deletenotebyid:(state,action)=>{
