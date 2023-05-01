@@ -73,5 +73,7 @@ export const startdeletenote = () =>{
         const ref =  doc(FirebaseDB,`${ uid }/journal/notas/${nota.id}`)
 
         await deleteDoc(ref)
+
+        dispatch(deletenotebyid(nota.id))
     }
 }
