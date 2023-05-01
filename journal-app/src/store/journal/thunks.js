@@ -64,3 +64,9 @@ export const startuploadingfiles = (files = []) =>{
         dispatch(setphotostoactivenote(photourl))
     }
 }
+
+export const startdeletenote = () =>{
+    return async(dispatch,getState)=>{
+
+    }
+}
