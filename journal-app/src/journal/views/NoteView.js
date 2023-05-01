@@ -92,7 +92,7 @@ export const Noteview = () => {
         </Grid>
         
         <Grid container justifyContent="end">
-            <Button>
+            <Button onClick={ondeletenote} color="error" sx={{mt:2}}>
               <DeleteOutline></DeleteOutline>
               Borrar
             </Button>
