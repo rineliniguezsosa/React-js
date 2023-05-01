@@ -42,6 +42,10 @@ export const Noteview = () => {
 
     dispatch(startuploadingfiles(target.files))
   }
+
+  const ondeletenote = () =>{
+    
+  }
   return (
     <Grid container direction="row" justifyContent="space-between" alignItems="center" sx={{mb:1}}>
 
