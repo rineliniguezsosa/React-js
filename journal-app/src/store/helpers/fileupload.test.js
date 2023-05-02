@@ -10,5 +10,8 @@ describe('Pruebas en fileupload.js',() => {
         const blob = await req.blob()
         const file = new File([blob],'react')
         console.log(file)
+
+        const url = await fileupload(file)
+       
     });
 });
