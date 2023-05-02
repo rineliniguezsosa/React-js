@@ -7,6 +7,7 @@ describe('Pruebas en fileupload.js',() => {
         const imgurl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWP9RJSzgEcQo4C_Os5Jj6ggHijm6Z72l1BA&usqp=CAU"
 
         const req = await fetch(imgurl)
-        console.log(req)
+        const blob = await req.blob()
+        console.log(blob)
     });
 });
