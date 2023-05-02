@@ -8,6 +8,7 @@ describe('Pruebas en fileupload.js',() => {
 
         const req = await fetch(imgurl)
         const blob = await req.blob()
-        console.log(blob)
+        const file = new File([blob],'react')
+        console.log(file)
     });
 });
