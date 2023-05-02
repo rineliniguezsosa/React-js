@@ -53,6 +53,7 @@ export const journalSlice = createSlice({
       state.notas = state.notas.filter(nota =>
         nota.id !== action.payload
       )
+      state.activo = null;
     }
   },
 })
