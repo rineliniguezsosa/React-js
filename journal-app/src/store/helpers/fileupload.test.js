@@ -8,7 +8,7 @@ describe('Pruebas en fileupload.js',() => {
 
         const req = await fetch(imgurl)
         const blob = await req.blob()
-        const file = new File([blob],'react')
+        const file = new File([blob],'react.jpg')
         console.log(file)
 
         const url = await fileupload(file)
