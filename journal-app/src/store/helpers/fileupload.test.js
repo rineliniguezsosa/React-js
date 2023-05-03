@@ -17,6 +17,6 @@ describe('Pruebas en fileupload.js',() => {
     });
 
     test('debe retonar null', async() => { 
-
+        const file = new File([],'react.jpg')
     })
 });
