@@ -1,6 +1,13 @@
 import { fileupload } from "../../helpers/fileupload";
 import { v2 as cloudinary } from 'cloudinary'
 
+cloudinary.config({ 
+    cloud_name: 'dukze43st', 
+    api_key: '334472128782191', 
+    api_secret: 'uDufgooi7dzi7HZw20Be54fGCrU',
+    secure: true
+});
+
 describe('Pruebas en fileupload.js',() => {
 
     test('debe se subir el archivo correctamente a cloudinary',async() => {
