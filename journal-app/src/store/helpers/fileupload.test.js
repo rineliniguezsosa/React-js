@@ -23,7 +23,8 @@ describe('Pruebas en fileupload.js',() => {
         expect(typeof url).toBe('string');
 
         const urlsegments = url.split('/')
-        console.log(urlsegments)
+        const imgid = urlsegments[urlsegments.length-1].replace(".png","")
+        console.log(imgid)
     });
 
     test('debe retonar null',async() => { 
