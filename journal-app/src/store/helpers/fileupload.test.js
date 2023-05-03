@@ -1,5 +1,5 @@
 import { fileupload } from "../../helpers/fileupload";
-
+import { v2 as cloudinary } from 'cloudinary'
 
 describe('Pruebas en fileupload.js',() => {
 
