@@ -1,2 +1,2 @@
 import "whatwg-fetch"
-import "setImmediate"
+import "setimmediate"
