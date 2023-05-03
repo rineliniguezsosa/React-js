@@ -16,8 +16,9 @@ describe('Pruebas en fileupload.js',() => {
         expect(typeof url).toBe('string');
     });
 
-    test('debe retonar null', async() => { 
+    test('debe retonar null',async() => { 
         const file = new File([],'react.jpg')
         const url = await fileupload(file)
+        expect(url).toBe(null);
     })
 });
