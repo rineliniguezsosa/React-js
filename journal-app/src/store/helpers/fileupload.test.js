@@ -21,6 +21,9 @@ describe('Pruebas en fileupload.js',() => {
         const url = await fileupload(file)
 
         expect(typeof url).toBe('string');
+
+        const urlsegments = url.split('/')
+        console.log(urlsegments)
     });
 
     test('debe retonar null',async() => { 
