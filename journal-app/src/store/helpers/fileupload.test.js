@@ -12,7 +12,11 @@ describe('Pruebas en fileupload.js',() => {
         
 
         const url = await fileupload(file)
-      
+
         expect(typeof url).toBe('string');
     });
+
+    test('debe retonar null', async() => { 
+
+    })
 });
