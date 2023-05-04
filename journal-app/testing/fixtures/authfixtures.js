@@ -15,3 +15,12 @@ export const authenticateState = {
     photoUrl:'http://demo.jpg',
     mensajeserror:null
 }
+
+export const noauthenticateState = {
+    status:'sinautenticar', //estado de la autenticacion
+    uid:null, //id user
+    email:null, //email user
+    displayname:null,
+    photoUrl:null,
+    mensajeserror:null
+}
