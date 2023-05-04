@@ -14,6 +14,6 @@ describe('pruebas en Authslice.js', () => {
     });
 
     test('debe de realizar la autenticación', () => {
-        
+        const { reducer } = authSlice
     });
 });
