@@ -17,6 +17,14 @@ describe('pruebas en Authslice.js', () => {
         const { reducer } = authSlice
 
         const state = reducer(initialState,login(demouser))
-        console.log(state)
+        
+        expect(state).toEqual({
+            status: 'autenticado',
+            uid: '123rjnshbd',
+            email: 'rinel@google.com',
+            displayname: 'demo rinel',
+            photoUrl: 'http://demo.jpg',
+            mensajeserror: null
+          });
     });
 });
