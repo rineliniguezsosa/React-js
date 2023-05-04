@@ -42,4 +42,8 @@ describe('pruebas en Authslice.js', () => {
             mensajeserror: undefined
           });
     });
+
+    test('debe de realizarel logout y mostrar un mensaje de error', () => {
+        
+    });
 });
