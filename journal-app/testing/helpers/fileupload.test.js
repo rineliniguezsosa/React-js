@@ -1,4 +1,4 @@
-import { fileupload } from "../../helpers/fileupload";
+import { fileupload } from "../../src/helpers/fileupload";
 import { v2 as cloudinary } from 'cloudinary'
 
 cloudinary.config({ 
