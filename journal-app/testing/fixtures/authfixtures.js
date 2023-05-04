@@ -6,3 +6,12 @@ export const initialState = {
     photoUrl:null,
     mensajeserror:null
 }
+
+export const authenticateState = {
+    status:'verificando', //estado de la autenticacion
+    uid:'123', //id user
+    email:'rinel@demo.com', //email user
+    displayname:'rinel',
+    photoUrl:'http://demo.jpg',
+    mensajeserror:null
+}
