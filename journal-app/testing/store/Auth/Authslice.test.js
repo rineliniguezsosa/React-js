@@ -48,6 +48,14 @@ describe('pruebas en Authslice.js', () => {
         const mensajeserror = "Credenciales no correctas"
 
         const state = reducer(authenticateState,logout(mensajeserror))
-        console.log(state)
+        
+        expect(state).toEqual({
+            status: 'sinautenticar',
+            uid: null,
+            email: null,
+            displayname: null,
+            photoUrl: null,
+            mensajeserror: 'Credenciales no correctas'
+          });
     });
 });
