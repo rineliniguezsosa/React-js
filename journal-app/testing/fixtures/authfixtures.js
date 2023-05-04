@@ -24,3 +24,10 @@ export const noauthenticateState = {
     photoUrl:null,
     mensajeserror:null
 }
+
+export const demouser = {
+    uid:'123rjnshbd', //id user
+    email:'rinel@google.com', //email user
+    displayname:'demo rinel',
+    photoUrl:'http://demo.jpg', 
+}
