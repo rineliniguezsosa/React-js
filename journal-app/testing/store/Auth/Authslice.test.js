@@ -45,5 +45,6 @@ describe('pruebas en Authslice.js', () => {
 
     test('debe de realizarel logout y mostrar un mensaje de error', () => {
         const { reducer } = authSlice
+        const mensajeserror = "Credenciales no correctas"
     });
 });
