@@ -1,4 +1,4 @@
-import { authSlice,login } from "../../../src/store/Auth/Authslice";
+import { authSlice,login,logout } from "../../../src/store/Auth/Authslice";
 import { initialState,demouser,authenticateState } from "../../fixtures/authfixtures";
 
 describe('pruebas en Authslice.js', () => {
@@ -30,5 +30,6 @@ describe('pruebas en Authslice.js', () => {
 
     test('debe de realizar el logout sin argumentos', () => {
         const { reducer } = authSlice
+
     });
 });
