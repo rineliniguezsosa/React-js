@@ -31,5 +31,7 @@ describe('pruebas en Authslice.js', () => {
     test('debe de realizar el logout sin argumentos', () => {
         const { reducer } = authSlice
 
+        const state = reducer(authenticateState,logout())
+        console.log(state)
     });
 });
