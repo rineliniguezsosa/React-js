@@ -8,7 +8,7 @@ export const initialState = {
 }
 
 export const authenticateState = {
-    status:'verificando', //estado de la autenticacion
+    status:'autenticado', //estado de la autenticacion
     uid:'123', //id user
     email:'rinel@demo.com', //email user
     displayname:'rinel',
