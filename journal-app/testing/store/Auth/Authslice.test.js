@@ -9,5 +9,7 @@ describe('pruebas en Authslice.js', () => {
         expect(name).toBe('auth');
 
         const state = reducer(initialState,{})
+       
+        expect(state).toEqual(initialState);
     });
 });
