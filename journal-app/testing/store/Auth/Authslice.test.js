@@ -27,4 +27,8 @@ describe('pruebas en Authslice.js', () => {
             mensajeserror: null
           });
     });
+
+    test('debe de realizar el logout sin argumentos', () => {
+        
+    });
 });
