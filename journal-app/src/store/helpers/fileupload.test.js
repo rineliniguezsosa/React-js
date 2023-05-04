@@ -24,7 +24,12 @@ describe('Pruebas en fileupload.js',() => {
 
         const urlsegments = url.split('/')
         const imgid = urlsegments[urlsegments.length-1].replace(".png","")
-        console.log(imgid)
+        
+        const respcloudinary = await cloudinary.api.delete_resources(["journal-app-images/"+imgid],{
+            resource_type:'image'
+        });
+        //delete img 
+        console.log(respcloudinary)
     });
 
     test('debe retonar null',async() => { 
