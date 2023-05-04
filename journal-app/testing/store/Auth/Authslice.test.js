@@ -1,5 +1,5 @@
 import { authSlice,login } from "../../../src/store/Auth/Authslice";
-import { initialState,demouser } from "../../fixtures/authfixtures";
+import { initialState,demouser,authenticateState } from "../../fixtures/authfixtures";
 
 describe('pruebas en Authslice.js', () => {
     
