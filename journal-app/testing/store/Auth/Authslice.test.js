@@ -32,6 +32,14 @@ describe('pruebas en Authslice.js', () => {
         const { reducer } = authSlice
 
         const state = reducer(authenticateState,logout())
-        console.log(state)
+        
+        expect(state).toEqual({
+            status: 'sinautenticar',
+            uid: null,
+            email: null,
+            displayname: null,
+            photoUrl: null,
+            mensajeserror: undefined
+          });
     });
 });
