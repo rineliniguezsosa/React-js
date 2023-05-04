@@ -12,4 +12,8 @@ describe('pruebas en Authslice.js', () => {
        
         expect(state).toEqual(initialState);
     });
+
+    test('debe de realizar la autenticación', () => {
+        
+    });
 });
